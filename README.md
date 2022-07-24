@@ -48,4 +48,4 @@ npm run deploy
 - [x] Verify Signature (basic, crypto)
 - [x] Create Forwarder To (basic)
 - [x] Re-entrancy Lock (basic, security)
-- [ ] Self Destruct (basic, misc)
+- [x] Self Destruct (basic, misc)
