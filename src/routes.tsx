@@ -18,14 +18,14 @@ interface Route {
 }
 
 const routes: Route[] = [
-    {
-        path: "/hello-world",
-        component: component_hello_world
-    },
-    {
-        path: "",
-        component: component_
-    },
+  {
+    path: "/hello-world",
+    component: component_hello_world,
+  },
+  {
+    path: "",
+    component: component_,
+  },
 ]
 
 export default routes

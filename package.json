@@ -23,6 +23,7 @@
     "copy-index": "ts-node scripts/build.ts",
     "copy-index-to-404": "cp build/index.html build/404.html",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
     "md-to-react": "node scripts/md-to-react.js",
     "lint": "prettier --write src"
