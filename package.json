@@ -1,0 +1,60 @@
+{
+  "name": "vyper-by-example",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://vyper-by-example.org",
+  "dependencies": {
+    "highlight.js": "^11.5.1",
+    "npm-check-updates": "^15.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:prod": "serve -s build",
+    "clean": "rm -rf build",
+    "prebuild": "npm run clean",
+    "build": "react-scripts build",
+    "postbuild": "npm run lint && npm run copy-index && npm run copy-index-to-404",
+    "copy-index": "ts-node scripts/build.ts",
+    "copy-index-to-404": "cp build/index.html build/404.html",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "md-to-react": "node scripts/md-to-react.js",
+    "lint": "prettier --write src"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/highlight.js": "^9.12.4",
+    "@types/marked": "^4.0.3",
+    "@types/mustache": "^4.1.3",
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-helmet": "^6.1.5",
+    "@types/react-router-dom": "^5.3.3",
+    "gh-pages": "^4.0.0",
+    "highlightjs-solidity": "^2.0.5",
+    "marked": "^4.0.17",
+    "mustache": "^4.2.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "serve": "^14.0.1",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4",
+    "yaml": "^2.1.1"
+  }
+}
