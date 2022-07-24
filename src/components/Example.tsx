@@ -53,8 +53,11 @@ const Example: React.FC<Props> = ({
 
         <p>
           Try on{" "}
-          <a href="https://remix.ethereum.org" target="__blank">
-            Remix
+          <a
+            href="https://smartcontract.engineer/challenges?language=vyper"
+            target="__blank"
+          >
+            Smart Contract Engineer
           </a>
         </p>
       </div>
