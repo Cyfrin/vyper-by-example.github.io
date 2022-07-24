@@ -17,9 +17,13 @@ Here we will focus on how to use it to deploy new contracts.
 
 Here is `ContractToDeploy`
 
+ContractToDeploy.vy
+
 ```vyper
 {{{ContractToDeploy}}}
 ```
+
+Create.vy
 
 ```vyper
 {{{Create}}}

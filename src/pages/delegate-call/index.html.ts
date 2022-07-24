@@ -6,6 +6,7 @@ export const description = "Delegate call in Vyper"
 const html = `<p>When contract <code>A</code> delegates call to contract <code>B</code>, <code>B</code>&#39;s code will be executed inside contract <code>A</code>. This will update state variables and Ether balance inside contract <code>A</code> and not <code>B</code>.</p>
 <p>Delegate call is commonly used to create an upgradable contract.</p>
 <p>Here is the contract that we will delegate call to.</p>
+<p>TestDelegateCall.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 <span class="hljs-comment"># State variables must be declared in the same order</span>
@@ -25,6 +26,7 @@ y: public(uint256)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">updateY</span>(<span class="hljs-params">y: uint256</span>):
     self.y = y * y
 </code></pre>
+<p>DelegateCall.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
