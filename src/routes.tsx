@@ -22,30 +22,30 @@ interface Route {
 }
 
 const routes: Route[] = [
-    {
-        path: "/dynamic-arrays",
-        component: component_dynamic_arrays
-    },
-    {
-        path: "/function",
-        component: component_function
-    },
-    {
-        path: "/hello-world",
-        component: component_hello_world
-    },
-    {
-        path: "/references",
-        component: component_references
-    },
-    {
-        path: "/values",
-        component: component_values
-    },
-    {
-        path: "",
-        component: component_
-    },
+  {
+    path: "/dynamic-arrays",
+    component: component_dynamic_arrays,
+  },
+  {
+    path: "/function",
+    component: component_function,
+  },
+  {
+    path: "/hello-world",
+    component: component_hello_world,
+  },
+  {
+    path: "/references",
+    component: component_references,
+  },
+  {
+    path: "/values",
+    component: component_values,
+  },
+  {
+    path: "",
+    component: component_,
+  },
 ]
 
 export default routes
