@@ -16,7 +16,7 @@ const SOL_ROUTES: Route[] = [
   { path: "values", title: "Data Types - Values" },
   { path: "references", title: "Data Types - References" },
   { path: "dynamic-arrays", title: "Dynamic Arrays" },
-  //   { path: "function", title: "Function" },
+  { path: "function", title: "Function" },
   //   { path: "internal-external-functions", title: "Internal and External Functions" },
   //   { path: "view-pure-functions", title: "View and Pure Functions" },
   //   { path: "constructor", title: "Constructor" },
