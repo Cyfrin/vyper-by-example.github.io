@@ -3,7 +3,10 @@ export const version = "0.3.3"
 export const title = "Error"
 export const description = "Error in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p>Use <code>assert</code> and <code>raise</code> to check inputs and validate state.</p>
+<p>When an error occurs, it will halt the entire function call, undoing any changes.</p>
+<p>You will still need to pay gas for the failed transaction.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 x: public(uint256)
 owner: public(address)

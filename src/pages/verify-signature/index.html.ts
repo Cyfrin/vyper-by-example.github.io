@@ -3,7 +3,13 @@ export const version = "0.3.3"
 export const title = "Verify Signature"
 export const description = "Verify signature in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p>Signing and verifying signature takes 3 steps.</p>
+<ol>
+<li>Hash the data to sign. This can be done with and without a smart contract.</li>
+<li>Sign the hash. This must be done off chain.</li>
+<li>Verify the signature. This is done using a smart contract.</li>
+</ol>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
 <span class="hljs-comment"># hash = getHash("Hello Vyper!")</span>

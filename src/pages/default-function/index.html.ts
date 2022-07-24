@@ -3,7 +3,9 @@ export const version = "0.3.3"
 export const title = "Default Function"
 export const description = "Default function in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p>A contract can have a default function, executed when a function that does not exist is called. This is the same function as the fallback function in Solidity.</p>
+<p>This function is named <code>__default__</code> and it is commonly used to receive Ether.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
 event Payment:

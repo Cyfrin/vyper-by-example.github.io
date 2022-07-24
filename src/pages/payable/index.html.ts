@@ -3,7 +3,8 @@ export const version = "0.3.3"
 export const title = "Payable"
 export const description = "Payable in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p>Functions declared with <code>@payable</code> can receive Ether.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
 event Deposit:

@@ -3,7 +3,8 @@ export const version = "0.3.3"
 export const title = "Self Destruct"
 export const description = "Self destruct in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p><code>selfdestruct</code> deletes the contract from the blockchain. It takes a single input, an address to send all of Ether stored in the contract.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
 <span class="hljs-meta">@external</span>

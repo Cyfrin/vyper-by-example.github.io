@@ -3,7 +3,26 @@ export const version = "0.3.3"
 export const title = "Raw Call"
 export const description = "Raw call in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p><code>raw_call</code> is a low level function. It is used to call and send Ether to other functions.</p>
+<p>For this example, we will write a contract that calls this contract below.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+
+
+sender: public(address)
+
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">testAdd</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
+    self.sender = msg.sender
+    <span class="hljs-keyword">return</span> x + y
+
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">testSub</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
+    self.sender = msg.sender
+    <span class="hljs-keyword">return</span> x - y
+</code></pre>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
 <span class="hljs-meta">@external</span>

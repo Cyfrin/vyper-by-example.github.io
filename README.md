@@ -11,7 +11,7 @@
 ```shell
 ## Deploy ##
 # md to react
-npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts src/pages/array
+npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts src/pages/function
 
 # md to react all pages
 find src/pages -type d -not -path "*/__snapshots__" -exec npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts {} \;

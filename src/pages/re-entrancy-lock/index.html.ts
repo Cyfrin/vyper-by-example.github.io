@@ -3,7 +3,10 @@ export const version = "0.3.3"
 export const title = "Re-Entrancy Lock"
 export const description = "Re-entrancy lock in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p>Vyper has a handy way to secure your contract from re-entrancy.</p>
+<p>A re-entrancy lock can be created on a function with <code>@nonreentrant("lock")</code>.</p>
+<p>Functions can be locked together by using the same name for the locks.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 
 <span class="hljs-meta">@external</span>

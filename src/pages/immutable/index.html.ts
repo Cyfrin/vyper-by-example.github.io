@@ -3,7 +3,16 @@ export const version = "0.3.3"
 export const title = "Immutable"
 export const description = "Immutable in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<p>Immutable variables are like constants except value are assigned when the contract is deployed.</p>
+<h3 id="when-to-use-immutable-variables">When to use <code>immutable</code> variables?</h3>
+<ul>
+<li>You have a variable that needs to be set when the contract is deployed,
+for example like setting contract owner to <code>msg.sender</code></li>
+<li>and this variable will never change after deployment</li>
+</ul>
+<h4 id="why-declare-variables-as-immutable">Why declare variables as <code>immutable</code>?</h4>
+<p>Like constants, <code>immutable</code> variables save run time gas</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)
