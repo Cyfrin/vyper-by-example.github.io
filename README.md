@@ -24,9 +24,9 @@ npm run deploy
 ```
 
 - [x] Hello World (basic)
-- [ ] Data Types - Values (basic, data)
-- [ ] Data Types - References (basic, data)
-- [ ] Dynamic Arrays (basic, data)
+- [x] Data Types - Values (basic, data)
+- [x] Data Types - References (basic, data)
+- [x] Dynamic Arrays (basic, data)
 - [ ] Function Intro (basic, function)
 - [ ] Internal and External Functions (basic, function)
 - [ ] View and Pure Functions (basic, function)
