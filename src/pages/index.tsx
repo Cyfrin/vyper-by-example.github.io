@@ -8,7 +8,7 @@ interface Route {
   title: string
 }
 
-const SOL_ROUTES: Route[] = [
+const VY_ROUTES: Route[] = [
   {
     path: "hello-world",
     title: "Hello World",
@@ -46,7 +46,7 @@ const SOL_ROUTES: Route[] = [
 export const ROUTES_BY_CATEGORY = [
   {
     title: "",
-    routes: SOL_ROUTES.map((route) => ({
+    routes: VY_ROUTES.map((route) => ({
       ...route,
       path: `/${route.path}`,
     })),
