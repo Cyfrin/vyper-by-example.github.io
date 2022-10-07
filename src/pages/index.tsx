@@ -43,12 +43,30 @@ const VY_ROUTES: Route[] = [
   { path: "self-destruct", title: "Self Destruct" },
 ]
 
+const DEFI_ROUTES = [
+  {
+    path: "curve-swap",
+    title: "Curve Swap",
+  },
+  {
+    path: "curve-liquidity",
+    title: "Curve Add and Remove Liquidity",
+  },
+]
+
 export const ROUTES_BY_CATEGORY = [
   {
     title: "",
     routes: VY_ROUTES.map((route) => ({
       ...route,
       path: `/${route.path}`,
+    })),
+  },
+  {
+    title: "DeFi",
+    routes: DEFI_ROUTES.map((route) => ({
+      ...route,
+      path: `/defi/${route.path}`,
     })),
   },
 ]
