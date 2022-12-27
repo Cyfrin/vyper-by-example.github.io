@@ -17,6 +17,7 @@ import component_immutable from "./pages/immutable"
 import component_interface from "./pages/interface"
 import component_internal_external_functions from "./pages/internal-external-functions"
 import component_payable from "./pages/payable"
+import component_print from "./pages/print"
 import component_private_public_state_variables from "./pages/private-public-state-variables"
 import component_raw_call from "./pages/raw-call"
 import component_re_entrancy_lock from "./pages/re-entrancy-lock"
@@ -120,6 +121,10 @@ const routes: Route[] = [
   {
     path: "/payable",
     component: component_payable,
+  },
+  {
+    path: "/print",
+    component: component_print,
   },
   {
     path: "/private-public-state-variables",

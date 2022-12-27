@@ -41,6 +41,7 @@ const VY_ROUTES: Route[] = [
   { path: "create-new-contract", title: "Create New Contract" },
   { path: "re-entrancy-lock", title: "Re-entrancy Lock" },
   { path: "self-destruct", title: "Self Destruct" },
+  { path: "print", title: "Debug with Print" },
 ]
 
 const DEFI_ROUTES = [
@@ -95,7 +96,11 @@ export function getPrevNextPaths(path: string): {
   }
 }
 
-const UPDATES = ["2022/07/24 - Launch"]
+const UPDATES = [
+  "2022/12/27 - Print",
+  "2022/12/27 - Vyper 0.3.7",
+  "2022/07/24 - Launch",
+]
 
 export default function HomePage() {
   return (
