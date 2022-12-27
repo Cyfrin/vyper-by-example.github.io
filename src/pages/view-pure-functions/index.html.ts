@@ -1,12 +1,12 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "View and Pure Functions"
 export const description = "View and pure functions in Vyper"
 
 const html = `<p>Both <code>pure</code> and <code>view</code> functions are read only function, they cannot write anything to the blockchain.</p>
 <p><code>pure</code> functions do not read any state or global variables</p>
 <p><code>view</code> functions can read state variables, global variables and call internal functions.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 num: public(uint256)
 

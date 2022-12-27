@@ -1,10 +1,10 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Constants"
 export const description = "Constants in Vyper"
 
 const html = `<p>Constants are variables that cannot change.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 MY_CONSTANT: constant(uint256) = <span class="hljs-number">123</span>
 MIN: constant(uint256) = <span class="hljs-number">1</span>

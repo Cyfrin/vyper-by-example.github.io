@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Create New Contract"
 export const description = "Create new contract in Vyper"
 
@@ -13,7 +13,7 @@ const html = `<p>Vyper contracts can deploy new contracts using the function <co
 </ol>
 <p>Here is <code>ContractToDeploy</code></p>
 <p>ContractToDeploy.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
 owner: public(address)
@@ -38,7 +38,7 @@ owner: public(address)
   selfdestruct(msg.sender)
 </code></pre>
 <p>Create.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
 interface ContractToDeploy:

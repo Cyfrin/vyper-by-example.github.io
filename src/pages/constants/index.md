@@ -1,6 +1,6 @@
 ---
 title: Constants
-version: 0.3.3
+version: 0.3.7
 description: Constants in Vyper
 ---
 

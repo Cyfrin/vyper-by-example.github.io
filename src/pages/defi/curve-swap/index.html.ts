@@ -1,10 +1,10 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Curve Swap"
 export const description = "Curve Swap"
 
 const html = `<p>Swap tokens on Curve</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 <span class="hljs-keyword">from</span> vyper.interfaces <span class="hljs-keyword">import</span> ERC20
 

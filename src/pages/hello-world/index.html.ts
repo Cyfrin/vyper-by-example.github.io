@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Hello World"
 export const description = "Hello world in Vyper"
 

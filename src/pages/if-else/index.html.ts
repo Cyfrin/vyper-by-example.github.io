@@ -1,9 +1,9 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "If Else Conditional Statement"
 export const description = "If else conditional statement in Vyper"
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
 <span class="hljs-meta">@external</span>

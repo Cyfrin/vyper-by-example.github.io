@@ -101,13 +101,13 @@ export default function HomePage() {
   return (
     <div className={styles.component}>
       <SEO
-        title="Vyper by Example | 0.3.3"
+        title="Vyper by Example | 0.3.7"
         description="Learn smart contract programming using Vyper"
       />
       <h1 className={styles.header}>
         <a href="/">Vyper by Example</a>
       </h1>
-      <div className={styles.subHeader}>v 0.3.3</div>
+      <div className={styles.subHeader}>v 0.3.7</div>
       <div className={styles.main}>
         <p>
           an introduction to <a href="https://vyper.readthedocs.io">Vyper</a> with

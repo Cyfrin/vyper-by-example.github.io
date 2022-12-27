@@ -1,10 +1,10 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Payable"
 export const description = "Payable in Vyper"
 
 const html = `<p>Functions declared with <code>@payable</code> can receive Ether.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
 event Deposit:

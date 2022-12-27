@@ -1,4 +1,4 @@
-# @version ^0.3.3
+# @version ^0.3.7
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)

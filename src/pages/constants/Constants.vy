@@ -1,4 +1,4 @@
-# @version ^0.3.3
+# @version ^0.3.7
 
 MY_CONSTANT: constant(uint256) = 123
 MIN: constant(uint256) = 1

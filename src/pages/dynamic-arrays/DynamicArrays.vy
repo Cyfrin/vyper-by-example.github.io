@@ -1,4 +1,4 @@
-# @version ^0.3.3
+# @version ^0.3.7
 
 # Dynamic array of type uint256, max 3 elements
 nums: DynArray[uint256, 3]

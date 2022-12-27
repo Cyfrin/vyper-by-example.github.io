@@ -1,10 +1,10 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Curve Add and Remove Liquidity"
 export const description = "Curve Add and Remove Liquidity"
 
 const html = `<p>Add and remove liquidity from Curve pools</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 <span class="hljs-keyword">from</span> vyper.interfaces <span class="hljs-keyword">import</span> ERC20
 

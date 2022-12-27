@@ -1,6 +1,6 @@
 ---
 title: Create New Contract
-version: 0.3.3
+version: 0.3.7
 description: Create new contract in Vyper
 ---
 

@@ -1,10 +1,10 @@
 // metadata
-export const version = "0.3.3"
+export const version = "0.3.7"
 export const title = "Dynamic Arrays"
 export const description = "Dynamic arrays in Vyper"
 
 const html = `<p>Dynamic arrays are bounded arrays whose length can change. The length of the array cannot exceed the maximum length set where the array is declared.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.3</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 <span class="hljs-comment"># Dynamic array of type uint256, max 3 elements</span>
 nums: DynArray[uint256, <span class="hljs-number">3</span>]
