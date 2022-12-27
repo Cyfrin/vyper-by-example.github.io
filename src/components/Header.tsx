@@ -26,7 +26,7 @@ function Header() {
         <a href="/">Vyper by Example</a>
 
         <div className={styles.versions}>
-          <div className={styles.version}>version 0.3.3</div>
+          <div className={styles.version}>version 0.3.7</div>
         </div>
       </h3>
 
