@@ -24,6 +24,7 @@ import component_re_entrancy_lock from "./pages/re-entrancy-lock"
 import component_references from "./pages/references"
 import component_self_destruct from "./pages/self-destruct"
 import component_send_ether from "./pages/send-ether"
+import component_unsafe_math from "./pages/unsafe-math"
 import component_values from "./pages/values"
 import component_verify_signature from "./pages/verify-signature"
 import component_view_pure_functions from "./pages/view-pure-functions"
@@ -46,126 +47,130 @@ interface Route {
 }
 
 const routes: Route[] = [
-  {
-    path: "/constants",
-    component: component_constants,
-  },
-  {
-    path: "/constructor",
-    component: component_constructor,
-  },
-  {
-    path: "/create-new-contract",
-    component: component_create_new_contract,
-  },
-  {
-    path: "/default-function",
-    component: component_default_function,
-  },
-  {
-    path: "/defi/curve-liquidity",
-    component: component_defi_curve_liquidity,
-  },
-  {
-    path: "/defi/curve-swap",
-    component: component_defi_curve_swap,
-  },
-  {
-    path: "/delegate-call",
-    component: component_delegate_call,
-  },
-  {
-    path: "/dynamic-arrays",
-    component: component_dynamic_arrays,
-  },
-  {
-    path: "/error",
-    component: component_error,
-  },
-  {
-    path: "/event",
-    component: component_event,
-  },
-  {
-    path: "/for-loop",
-    component: component_for_loop,
-  },
-  {
-    path: "/function",
-    component: component_function,
-  },
-  {
-    path: "/hash-function",
-    component: component_hash_function,
-  },
-  {
-    path: "/hello-world",
-    component: component_hello_world,
-  },
-  {
-    path: "/if-else",
-    component: component_if_else,
-  },
-  {
-    path: "/immutable",
-    component: component_immutable,
-  },
-  {
-    path: "/interface",
-    component: component_interface,
-  },
-  {
-    path: "/internal-external-functions",
-    component: component_internal_external_functions,
-  },
-  {
-    path: "/payable",
-    component: component_payable,
-  },
-  {
-    path: "/print",
-    component: component_print,
-  },
-  {
-    path: "/private-public-state-variables",
-    component: component_private_public_state_variables,
-  },
-  {
-    path: "/raw-call",
-    component: component_raw_call,
-  },
-  {
-    path: "/re-entrancy-lock",
-    component: component_re_entrancy_lock,
-  },
-  {
-    path: "/references",
-    component: component_references,
-  },
-  {
-    path: "/self-destruct",
-    component: component_self_destruct,
-  },
-  {
-    path: "/send-ether",
-    component: component_send_ether,
-  },
-  {
-    path: "/values",
-    component: component_values,
-  },
-  {
-    path: "/verify-signature",
-    component: component_verify_signature,
-  },
-  {
-    path: "/view-pure-functions",
-    component: component_view_pure_functions,
-  },
-  {
-    path: "",
-    component: component_,
-  },
+    {
+        path: "/constants",
+        component: component_constants
+    },
+    {
+        path: "/constructor",
+        component: component_constructor
+    },
+    {
+        path: "/create-new-contract",
+        component: component_create_new_contract
+    },
+    {
+        path: "/default-function",
+        component: component_default_function
+    },
+    {
+        path: "/defi/curve-liquidity",
+        component: component_defi_curve_liquidity
+    },
+    {
+        path: "/defi/curve-swap",
+        component: component_defi_curve_swap
+    },
+    {
+        path: "/delegate-call",
+        component: component_delegate_call
+    },
+    {
+        path: "/dynamic-arrays",
+        component: component_dynamic_arrays
+    },
+    {
+        path: "/error",
+        component: component_error
+    },
+    {
+        path: "/event",
+        component: component_event
+    },
+    {
+        path: "/for-loop",
+        component: component_for_loop
+    },
+    {
+        path: "/function",
+        component: component_function
+    },
+    {
+        path: "/hash-function",
+        component: component_hash_function
+    },
+    {
+        path: "/hello-world",
+        component: component_hello_world
+    },
+    {
+        path: "/if-else",
+        component: component_if_else
+    },
+    {
+        path: "/immutable",
+        component: component_immutable
+    },
+    {
+        path: "/interface",
+        component: component_interface
+    },
+    {
+        path: "/internal-external-functions",
+        component: component_internal_external_functions
+    },
+    {
+        path: "/payable",
+        component: component_payable
+    },
+    {
+        path: "/print",
+        component: component_print
+    },
+    {
+        path: "/private-public-state-variables",
+        component: component_private_public_state_variables
+    },
+    {
+        path: "/raw-call",
+        component: component_raw_call
+    },
+    {
+        path: "/re-entrancy-lock",
+        component: component_re_entrancy_lock
+    },
+    {
+        path: "/references",
+        component: component_references
+    },
+    {
+        path: "/self-destruct",
+        component: component_self_destruct
+    },
+    {
+        path: "/send-ether",
+        component: component_send_ether
+    },
+    {
+        path: "/unsafe-math",
+        component: component_unsafe_math
+    },
+    {
+        path: "/values",
+        component: component_values
+    },
+    {
+        path: "/verify-signature",
+        component: component_verify_signature
+    },
+    {
+        path: "/view-pure-functions",
+        component: component_view_pure_functions
+    },
+    {
+        path: "",
+        component: component_
+    },
 ]
 
 export default routes
