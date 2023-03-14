@@ -3,7 +3,7 @@ export const version = "0.3.7"
 export const title = "Unsafe Math"
 export const description = "Unsafe math in Vyper"
 
-const html = `<p>Critical math checks such as overflow, underflow and division by 0 can be skipped useing unsafe functions</p>
+const html = `<p>Critical math checks such as overflow, underflow and division by 0 can be skipped using unsafe functions</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
