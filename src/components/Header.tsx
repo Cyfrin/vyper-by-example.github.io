@@ -1,15 +1,12 @@
 import React from "react"
-import { useAppContext, Theme } from "../contexts/AppContext"
+import { useAppContext } from "../contexts/AppContext"
 import styles from "./Header.module.css"
 import DarkMode from "./svg/DarkMode"
 import LightMode from "./svg/LightMode"
-import logoLight from "./logo.png"
-import logoDark from "./logo-dark.png"
+import Vyper from "./svg/Vyper"
 
 function Header() {
   const { state, setTheme } = useAppContext()
-
-  let logo = state.theme == "dark" ? logoDark : logoLight
 
   function onClickTheme() {
     setTheme(state.theme == "light" ? "dark" : "light")
@@ -19,15 +16,15 @@ function Header() {
   return (
     <div className={styles.component}>
       <a href="/">
-        <img src={logo} alt="logo" className={styles.logo} />
+        <Vyper
+          className={styles.logo}
+          size={40}
+          fill={state.theme == "dark" ? "rgb(255, 0, 255)" : "currentColor"}
+        />
       </a>
 
       <h3 className={styles.header}>
         <a href="/">Vyper by Example</a>
-
-        <div className={styles.versions}>
-          <div className={styles.version}>version 0.3.7</div>
-        </div>
       </h3>
 
       <button className={styles.mode} onClick={onClickTheme}>

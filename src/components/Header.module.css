@@ -8,31 +8,15 @@
   text-decoration: none;
 }
 .logo {
-  width: 40px;
   margin: 10px;
+}
+.header {
+  margin: 0;
+  margin-right: auto;
 }
 .mode {
   background-color: transparent;
   border: 0px;
   margin-right: 20px;
   cursor: pointer;
-}
-.header {
-  margin: 0;
-  margin-right: auto;
-}
-.versions {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-weight: 500;
-  font-size: 1rem;
-}
-.bar {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.version {
-  margin-right: 5px;
 }
