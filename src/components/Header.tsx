@@ -1,18 +1,18 @@
 import React from "react"
 import { useAppContext, Theme } from "../contexts/AppContext"
 import styles from "./Header.module.css"
+import DarkMode from "./svg/DarkMode"
+import LightMode from "./svg/LightMode"
 import logoLight from "./logo.png"
 import logoDark from "./logo-dark.png"
-import modeLight from "./mode-light.png"
-import modeDark from "./mode-dark.png"
 
 function Header() {
   const { state, setTheme } = useAppContext()
 
   let logo = state.theme == "dark" ? logoDark : logoLight
 
-  function onClickTheme(theme: Theme) {
-    setTheme(theme)
+  function onClickTheme() {
+    setTheme(state.theme == "light" ? "dark" : "light")
   }
 
   // NOTE: need to use links for versions so that react-snap can crawl
@@ -30,21 +30,9 @@ function Header() {
         </div>
       </h3>
 
-      {state.theme == "dark" ? (
-        <img
-          src={modeLight}
-          alt="light mode"
-          className={styles.light}
-          onClick={(e) => onClickTheme("light")}
-        />
-      ) : (
-        <img
-          src={modeDark}
-          alt="dark mode"
-          className={styles.dark}
-          onClick={(e) => onClickTheme("dark")}
-        />
-      )}
+      <button className={styles.mode} onClick={onClickTheme}>
+        {state.theme == "dark" ? <DarkMode size={20} /> : <LightMode size={20} />}
+      </button>
     </div>
   )
 }
