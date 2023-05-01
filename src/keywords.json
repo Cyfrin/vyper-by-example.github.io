@@ -1,15 +1,6 @@
 {
-  "/view-pure-functions": [
-    "view",
-    "pure",
-    "function",
-    "functions"
-  ],
-  "/verify-signature": [
-    "verify",
-    "signature",
-    "ecrecover"
-  ],
+  "/view-pure-functions": ["view", "pure", "function", "functions"],
+  "/verify-signature": ["verify", "signature", "ecrecover"],
   "/values": [
     "data",
     "type",
@@ -27,22 +18,9 @@
     "Bytes",
     "String"
   ],
-  "/unsafe-math": [
-    "gas",
-    "unsafe",
-    "math"
-  ],
-  "/send-ether": [
-    "send",
-    "ether",
-    "raw_call",
-    "payable"
-  ],
-  "/self-destruct": [
-    "selfdestruct",
-    "self",
-    "destruct"
-  ],
+  "/unsafe-math": ["gas", "unsafe", "math"],
+  "/send-ether": ["send", "ether", "raw_call", "payable"],
+  "/self-destruct": ["selfdestruct", "self", "destruct"],
   "/references": [
     "data",
     "type",
@@ -58,16 +36,8 @@
     "HashMap",
     "mapping"
   ],
-  "/re-entrancy-lock": [
-    "re-entrancy",
-    "lock",
-    "nonreentrant"
-  ],
-  "/raw-call": [
-    "raw",
-    "call",
-    "raw_call"
-  ],
+  "/re-entrancy-lock": ["re-entrancy", "lock", "nonreentrant"],
+  "/raw-call": ["raw", "call", "raw_call"],
   "/private-public-state-variables": [
     "private",
     "public",
@@ -75,88 +45,22 @@
     "variable",
     "variables"
   ],
-  "/print": [
-    "debug",
-    "print"
-  ],
-  "/payable": [
-    "payable",
-    "function",
-    "functions"
-  ],
-  "/internal-external-functions": [
-    "internal",
-    "external",
-    "function",
-    "functions"
-  ],
-  "/interface": [
-    "interface",
-    "interfaces"
-  ],
-  "/immutable": [
-    "immutable",
-    "immutables",
-    "constant",
-    "constants"
-  ],
-  "/if-else": [
-    "if",
-    "else",
-    "conditional",
-    "statement"
-  ],
-  "/hello-world": [
-    "hello",
-    "world",
-    "version"
-  ],
-  "/hash-function": [
-    "hash",
-    "keccack256",
-    "function",
-    "functions"
-  ],
-  "/function": [
-    "function",
-    "functions"
-  ],
-  "/for-loop": [
-    "for",
-    "loop",
-    "loops",
-    "range"
-  ],
-  "/event": [
-    "event",
-    "events"
-  ],
-  "/error": [
-    "error",
-    "errors"
-  ],
-  "/dynamic-arrays": [
-    "dynamic",
-    "arrays",
-    "array"
-  ],
-  "/delegate-call": [
-    "delegate",
-    "call"
-  ],
-  "/defi/curve-swap": [
-    "curve",
-    "swap",
-    "defi",
-    "amm"
-  ],
-  "/defi/curve-liquidity": [
-    "curve",
-    "add",
-    "remove liquidity",
-    "defi",
-    "amm"
-  ],
+  "/print": ["debug", "print"],
+  "/payable": ["payable", "function", "functions"],
+  "/internal-external-functions": ["internal", "external", "function", "functions"],
+  "/interface": ["interface", "interfaces"],
+  "/immutable": ["immutable", "immutables", "constant", "constants"],
+  "/if-else": ["if", "else", "conditional", "statement"],
+  "/hello-world": ["hello", "world", "version"],
+  "/hash-function": ["hash", "keccack256", "function", "functions"],
+  "/function": ["function", "functions"],
+  "/for-loop": ["for", "loop", "loops", "range"],
+  "/event": ["event", "events"],
+  "/error": ["error", "errors"],
+  "/dynamic-arrays": ["dynamic", "arrays", "array"],
+  "/delegate-call": ["delegate", "call"],
+  "/defi/curve-swap": ["curve", "swap", "defi", "amm"],
+  "/defi/curve-liquidity": ["curve", "add", "remove liquidity", "defi", "amm"],
   "/default-function": [
     "default",
     "function",
@@ -165,17 +69,7 @@
     "fallback",
     "payable"
   ],
-  "/create-new-contract": [
-    "create",
-    "new",
-    "contract",
-    "create_forwarder_to"
-  ],
-  "/constructor": [
-    "constructor"
-  ],
-  "/constants": [
-    "constant",
-    "constants"
-  ]
+  "/create-new-contract": ["create", "new", "contract", "create_forwarder_to"],
+  "/constructor": ["constructor"],
+  "/constants": ["constant", "constants"]
 }
