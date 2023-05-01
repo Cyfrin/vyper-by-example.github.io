@@ -50,7 +50,13 @@
     "reference",
     "references",
     "variable",
-    "variables"
+    "variables",
+    "array",
+    "arrays",
+    "struct",
+    "structs",
+    "HashMap",
+    "mapping"
   ],
   "/re-entrancy-lock": [
     "re-entrancy",

@@ -121,6 +121,26 @@
   "references": [
     "/references"
   ],
+  "array": [
+    "/references",
+    "/dynamic-arrays"
+  ],
+  "arrays": [
+    "/references",
+    "/dynamic-arrays"
+  ],
+  "struct": [
+    "/references"
+  ],
+  "structs": [
+    "/references"
+  ],
+  "HashMap": [
+    "/references"
+  ],
+  "mapping": [
+    "/references"
+  ],
   "re-entrancy": [
     "/re-entrancy-lock"
   ],
@@ -230,12 +250,6 @@
     "/error"
   ],
   "dynamic": [
-    "/dynamic-arrays"
-  ],
-  "arrays": [
-    "/dynamic-arrays"
-  ],
-  "array": [
     "/dynamic-arrays"
   ],
   "delegate": [
