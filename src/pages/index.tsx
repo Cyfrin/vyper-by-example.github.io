@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import SEO from "../components/SEO"
+import SearchBar from "../components/SearchBar"
+import { search, unique } from "../lib/search"
 import styles from "./index.module.css"
 import youTube from "../components/youtube.png"
 
@@ -104,6 +106,61 @@ const UPDATES = [
 ]
 
 export default function HomePage() {
+  const [searchResults, setSearchResults] = useState<{ [key: string]: boolean } | null>(
+    null
+  )
+
+  function onChangeSearchQuery(query: string) {
+    if (query.length == 0) {
+      setSearchResults(null)
+      return
+    }
+
+    const words = unique(query.split(" "))
+    const pages: { [key: string]: boolean } = {}
+
+    for (const word of words) {
+      const res = search(word)
+      for (const page of res) {
+        pages[page] = true
+      }
+    }
+
+    setSearchResults(pages)
+  }
+
+  function renderLinks() {
+    if (searchResults) {
+      if (Object.keys(searchResults).length == 0) {
+        return <div>No results</div>
+      }
+
+      return (
+        <ul className={styles.list}>
+          {ROUTES.filter(({ path }) => searchResults[path]).map(({ path, title }) => (
+            <li className={styles.listItem} key={path}>
+              <a href={path}>{title}</a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    return ROUTES_BY_CATEGORY.map(({ routes, title }, i) => (
+      <div key={i}>
+        {title && <h3 className={styles.category}>{title}</h3>}
+
+        <ul className={styles.list}>
+          {routes.map(({ path, title }) => (
+            <li className={styles.listItem} key={path}>
+              <a href={path}>{title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+
   return (
     <div className={styles.component}>
       <SEO
@@ -136,19 +193,11 @@ export default function HomePage() {
           ))}
         </div>
 
-        {ROUTES_BY_CATEGORY.map(({ routes, title }, i) => (
-          <div key={i}>
-            {title && <h3 className={styles.category}>{title}</h3>}
+        <div className={styles.search}>
+          <SearchBar onChange={onChangeSearchQuery} />
+        </div>
 
-            <ul className={styles.list}>
-              {routes.map(({ path, title }) => (
-                <li className={styles.listItem} key={path}>
-                  <a href={path}>{title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {renderLinks()}
       </div>
     </div>
   )
