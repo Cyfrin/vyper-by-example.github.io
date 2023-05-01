@@ -2,6 +2,7 @@
 title: Verify Signature
 version: 0.3.7
 description: Verify signature in Vyper
+keywords: [verify, signature, ecrecover]
 ---
 
 Signing and verifying signature takes 3 steps.

@@ -2,6 +2,7 @@
 title: Event
 version: 0.3.7
 description: Event in Vyper
+keywords: [event, events]
 ---
 
 Events write logs to the blockchain, commonly used by application to monitor blockchain state and as a cheaper alternative to store data on the blockchain without using state variables.

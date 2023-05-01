@@ -2,6 +2,7 @@
 title: View and Pure Functions
 version: 0.3.7
 description: View and pure functions in Vyper
+keywords: [view, pure, function, functions]
 ---
 
 Both `pure` and `view` functions are read only function, they cannot write anything to the blockchain.

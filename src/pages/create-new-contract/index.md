@@ -2,6 +2,7 @@
 title: Create New Contract
 version: 0.3.7
 description: Create new contract in Vyper
+keywords: [create, new, contract, create_forwarder_to]
 ---
 
 Vyper contracts can deploy new contracts using the function `create_forwarder_to`.

@@ -2,6 +2,7 @@
 title: Immutable
 version: 0.3.7
 description: Immutable in Vyper
+keywords: [immutable, immutables, constant, constants]
 ---
 
 Immutable variables are like constants except value are assigned when the contract is deployed.

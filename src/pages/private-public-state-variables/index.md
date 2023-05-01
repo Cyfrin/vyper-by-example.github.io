@@ -2,6 +2,7 @@
 title: Private and Public State Variables
 version: 0.3.7
 description: Private and public state variables in Vyper
+keywords: [private, public, state, variable, variables]
 ---
 
 Private state variables cannot be accessed from outside the contract.

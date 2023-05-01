@@ -2,6 +2,7 @@
 title: Raw Call
 version: 0.3.7
 description: Raw call in Vyper
+keywords: [raw, call, raw_call]
 ---
 
 `raw_call` is a low level function. It is used to call and send Ether to other functions.

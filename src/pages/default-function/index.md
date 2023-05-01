@@ -2,6 +2,7 @@
 title: Default Function
 version: 0.3.7
 description: Default function in Vyper
+keywords: [default, function, functions, __default__, fallback, payable]
 ---
 
 A contract can have a default function, executed when a function that does not exist is called. This is the same function as the fallback function in Solidity.

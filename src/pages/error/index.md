@@ -2,6 +2,7 @@
 title: Error
 version: 0.3.7
 description: Error in Vyper
+keywords: [error, errors]
 ---
 
 Use `assert` and `raise` to check inputs and validate state.

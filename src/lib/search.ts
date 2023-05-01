@@ -1,16 +1,16 @@
 import { Tree, insert, search as _search } from "./prefix-tree"
 
-// TODO: import, lowercased keywords
-const KEYWORDS: string[] = ["hello", "function"]
+import INDEX from "../search.json"
+import KEYWORDS from "../keywords.json"
 
-// Search index - keyword => pages
-const INDEX: { [key: string]: string[] } = {
-  hello: ["/hello-world"],
-  function: ["/function", "/default-function"],
+const keywords: string[] = []
+for (const key of Object.keys(KEYWORDS)) {
+  // @ts-ignore
+  keywords.push(...KEYWORDS[key])
 }
 
 const tree: Tree = {}
-for (const keyword of KEYWORDS) {
+for (const keyword of keywords) {
   insert(tree, keyword)
 }
 
@@ -23,7 +23,9 @@ export function search(word: string): string[] {
 
   const keywords = _search(tree, word.toLowerCase())
   for (const keyword of keywords) {
+    // @ts-ignore
     if (INDEX[keyword]) {
+      // @ts-ignore
       pages.push(...INDEX[keyword])
     }
   }
