@@ -1,55 +1,13 @@
 import assert from "assert"
 import fs from "fs"
 import path from "path"
-import yaml from "yaml"
 import mustache from "mustache"
 import { marked } from "marked"
 import hljs from "highlight.js"
 // @ts-ignore
-import { exists, copy, removeExt, getExt, renderTemplateToFile } from "./lib"
+import { exists, removeExt, getExt, renderTemplateToFile, parseYaml } from "./lib"
 
 const { readFile, readdir } = fs.promises
-
-function findIndexOfFrontMatter(lines: string[]): number {
-  assert(lines[0] === "---", "Front matter missing")
-
-  // find front matter
-  let i = 1
-  while (i < lines.length && lines[i] !== "---") {
-    i++
-  }
-
-  return i
-}
-
-interface Metadata {
-  title: string
-  description: string
-  version: string
-}
-
-function getMetadata(lines: string[]): Metadata {
-  assert(lines[0] === "---", "Invalid front matter")
-  assert(lines[lines.length - 1] === "---", "Invalid front matter")
-
-  const { title, description, version } = yaml.parse(lines.slice(1, -1).join("\n"))
-
-  return { title, description, version }
-}
-
-function parse(file: string): { content: string; metadata: Metadata } {
-  const lines = file.split("\n")
-
-  const i = findIndexOfFrontMatter(lines)
-
-  const metadata = getMetadata(lines.slice(0, i + 1))
-  const content = lines.slice(i + 1).join("\n")
-
-  return {
-    metadata,
-    content,
-  }
-}
 
 async function findVyperFiles(dir: string): Promise<string[]> {
   const files = await readdir(dir)
@@ -77,8 +35,7 @@ async function mdToHtml(filePath: string) {
   }
 
   // render vyper inside markdown
-  const md = (await readFile(filePath)).toString()
-  const { content, metadata } = parse(md)
+  const { content, metadata } = await parseYaml(filePath)
 
   const markdown = mustache.render(content, codes)
   const html = marked(markdown, {
@@ -102,6 +59,7 @@ async function mdToHtml(filePath: string) {
       title: metadata.title,
       version: metadata.version,
       description: metadata.description,
+      keywords: metadata.keywords,
     }
   )
 }

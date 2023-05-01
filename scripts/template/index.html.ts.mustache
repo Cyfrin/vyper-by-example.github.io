@@ -3,6 +3,12 @@ export const version = "{{{version}}}"
 export const title = "{{{title}}}"
 export const description = "{{{description}}}"
 
+export const keywords = [
+{{#keywords}}
+    "{{{.}}}",
+{{/keywords}}
+]
+
 const html = `{{{html}}}`
 
 export default html
