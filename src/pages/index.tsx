@@ -6,8 +6,6 @@ import { search, unique } from "../lib/search"
 import styles from "./index.module.css"
 import youTube from "../components/youtube.png"
 
-// TODO: search highlight match
-
 interface Route {
   path: string
   title: string
