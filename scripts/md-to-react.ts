@@ -3,6 +3,8 @@ import fs from "fs"
 import path from "path"
 import mustache from "mustache"
 import { marked } from "marked"
+// @ts-ignore
+import { markedHighlight } from "marked-highlight"
 import hljs from "highlight.js"
 // @ts-ignore
 import { exists, removeExt, getExt, renderTemplateToFile, parseYaml } from "./lib"
@@ -38,14 +40,21 @@ async function mdToHtml(filePath: string) {
   const { content, metadata } = await parseYaml(filePath)
 
   const markdown = mustache.render(content, codes)
-  const html = marked(markdown, {
-    highlight: (code, language) => {
-      if (language == "vyper") {
-        return hljs.highlight(code, { language: "python" }).value
-      }
-      return code
-    },
-  })
+
+  marked.use(
+    markedHighlight({
+      // @ts-ignore
+      highlight: (code, language) => {
+        if (language == "vyper") {
+          return hljs.highlight(code, { language: "python" }).value
+        }
+        return code
+      },
+    })
+  )
+
+  const html = marked
+    .parse(markdown)
     .replace(/&quot;/g, `"`)
     // replace \ with \\
     .replace(/\\/g, `\\\\`)
