@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Immutable"
 export const description = "Immutable in Vyper"
 
+export const keywords = ["immutable", "immutables", "constant", "constants"]
+
 const html = `<p>Immutable variables are like constants except value are assigned when the contract is deployed.</p>
 <h3 id="when-to-use-immutable-variables">When to use <code>immutable</code> variables?</h3>
 <ul>
@@ -27,7 +29,6 @@ MY_IMMUTABLE: immutable(uint256)
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">getMyImmutable</span>() -&gt; uint256:
   <span class="hljs-keyword">return</span> MY_IMMUTABLE
-</code></pre>
-`
+</code></pre>`
 
 export default html

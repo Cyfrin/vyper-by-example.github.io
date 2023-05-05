@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Function"
 export const description = "Function in Vyper"
 
+export const keywords = ["function", "functions"]
+
 const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
@@ -37,7 +39,6 @@ const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @ve
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">addAndSub</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; (uint256, uint256):
     <span class="hljs-keyword">return</span> (x + y, x - y)
-</code></pre>
-`
+</code></pre>`
 
 export default html

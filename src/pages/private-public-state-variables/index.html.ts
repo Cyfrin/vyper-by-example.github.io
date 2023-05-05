@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Private and Public State Variables"
 export const description = "Private and public state variables in Vyper"
 
+export const keywords = ["private", "public", "state", "variable", "variables"]
+
 const html = `<p>Private state variables cannot be accessed from outside the contract.</p>
 <p>Public state variables can be read by anyone, including users and other contracts.</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
@@ -19,7 +21,6 @@ bar: public(<span class="hljs-built_in">bool</span>)
     self.owner = msg.sender
     self.foo = <span class="hljs-number">123</span>
     self.bar = <span class="hljs-literal">True</span>
-</code></pre>
-`
+</code></pre>`
 
 export default html

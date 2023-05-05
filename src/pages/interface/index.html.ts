@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Interface"
 export const description = "Interface in Vyper"
 
+export const keywords = ["interface", "interfaces"]
+
 const html = `<p>Use <code>interface</code> to call other smart contracts.</p>
 <p>Here is the <code>TestInterface</code> self.contract that we will call.</p>
 <p>TestInterface.vy</p>
@@ -29,8 +31,7 @@ eth: public(uint256)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setOwnerAndSendEth</span>(<span class="hljs-params">owner: address</span>):
     self.owner = owner
     self.eth = msg.value
-</code></pre>
-<p>Interface.vy</p>
+</code></pre><p>Interface.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
@@ -85,7 +86,6 @@ test: public(TestInterface)
 <span class="hljs-meta">@payable</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setOwnerAndSendEth</span>(<span class="hljs-params">owner: address</span>):
     self.test.setOwnerAndSendEth(owner, value=msg.value)
-</code></pre>
-`
+</code></pre>`
 
 export default html

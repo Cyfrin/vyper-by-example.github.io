@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "View and Pure Functions"
 export const description = "View and pure functions in Vyper"
 
+export const keywords = ["view", "pure", "function", "functions"]
+
 const html = `<p>Both <code>pure</code> and <code>view</code> functions are read only function, they cannot write anything to the blockchain.</p>
 <p><code>pure</code> functions do not read any state or global variables</p>
 <p><code>view</code> functions can read state variables, global variables and call internal functions.</p>
@@ -34,7 +36,6 @@ num: public(uint256)
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">addNum</span>(<span class="hljs-params">x: uint256</span>) -&gt; uint256:
     <span class="hljs-keyword">return</span> x + self.num
-</code></pre>
-`
+</code></pre>`
 
 export default html

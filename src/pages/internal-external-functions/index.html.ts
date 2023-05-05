@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Internal and External Functions"
 export const description = "Internal and external functions in Vyper"
 
+export const keywords = ["internal", "external", "function", "functions"]
+
 const html = `<p><code>@internal</code> functions can only be called inside the contract.</p>
 <p><code>@external</code> functions can only be called from outside the contract.</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
@@ -43,7 +45,6 @@ const html = `<p><code>@internal</code> functions can only be called inside the 
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">sumOfSquares</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
     <span class="hljs-keyword">return</span> self._sqr(x) + self._sqr(y)
-</code></pre>
-`
+</code></pre>`
 
 export default html

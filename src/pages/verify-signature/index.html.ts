@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Verify Signature"
 export const description = "Verify signature in Vyper"
 
+export const keywords = ["verify", "signature", "ecrecover"]
+
 const html = `<p>Signing and verifying signature takes 3 steps.</p>
 <ol>
 <li>Hash the data to sign. This can be done with and without a smart contract.</li>
@@ -61,7 +63,6 @@ const html = `<p>Signing and verifying signature takes 3 steps.</p>
     signer: address = ecrecover(ethSignedHash, v, r, s)
 
     <span class="hljs-keyword">return</span> _signer == signer
-</code></pre>
-`
+</code></pre>`
 
 export default html

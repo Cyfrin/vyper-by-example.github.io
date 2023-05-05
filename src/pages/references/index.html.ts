@@ -3,6 +3,22 @@ export const version = "0.3.7"
 export const title = "Data Types - References"
 export const description = "References in Vyper"
 
+export const keywords = [
+  "data",
+  "type",
+  "types",
+  "reference",
+  "references",
+  "variable",
+  "variables",
+  "array",
+  "arrays",
+  "struct",
+  "structs",
+  "HashMap",
+  "mapping",
+]
+
 const html = `<p>References types are data types that are passed by their reference, pointer to where the actual data is stored.</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
@@ -39,7 +55,6 @@ person: public(Person)
     <span class="hljs-comment"># Does not modify referenced variable (self.person)</span>
     p: Person = self.person
     p.name = <span class="hljs-string">"Solidity"</span>
-</code></pre>
-`
+</code></pre>`
 
 export default html

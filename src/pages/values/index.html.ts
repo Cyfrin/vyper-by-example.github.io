@@ -3,6 +3,24 @@ export const version = "0.3.7"
 export const title = "Data Types - Values"
 export const description = "Values in Vyper"
 
+export const keywords = [
+  "data",
+  "type",
+  "types",
+  "value",
+  "values",
+  "variable",
+  "variables",
+  "bool",
+  "int128",
+  "uint256",
+  "decimals",
+  "address",
+  "bytes32",
+  "Bytes",
+  "String",
+]
+
 const html = `<p>Some values available in Vyper</p>
 <ul>
 <li><code>bool</code></li>
@@ -36,7 +54,6 @@ s: public(String[<span class="hljs-number">100</span>])
     self.b32 = <span class="hljs-number">0xada1b75f8ae9a65dcc16f95678ac203030505c6b465c8206e26ae84b525cdacb</span>
     self.bs = <span class="hljs-string">b"\\x01"</span>
     self.s = <span class="hljs-string">"Hello Vyper"</span>
-</code></pre>
-`
+</code></pre>`
 
 export default html

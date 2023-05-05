@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Curve Swap"
 export const description = "Curve Swap"
 
+export const keywords = ["curve", "swap", "defi", "amm"]
+
 const html = `<p>Swap tokens on Curve</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
@@ -79,7 +81,6 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
 
     bal: uint256 = ERC20(COINS[j]).balanceOf(self)
     self._safeTransfer(COINS[j], msg.sender, bal)
-</code></pre>
-`
+</code></pre>`
 
 export default html

@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Error"
 export const description = "Error in Vyper"
 
+export const keywords = ["error", "errors"]
+
 const html = `<p>Use <code>assert</code> and <code>raise</code> to check inputs and validate state.</p>
 <p>When an error occurs, it will halt the entire function call, undoing any changes.</p>
 <p>You will still need to pay gas for the failed transaction.</p>
@@ -51,7 +53,6 @@ owner: public(address)
     <span class="hljs-keyword">assert</span> msg.sender == self.owner, <span class="hljs-string">"!owner"</span>
     <span class="hljs-keyword">assert</span> owner != ZERO_ADDRESS, <span class="hljs-string">"owner = zero"</span>
     self.owner = owner
-</code></pre>
-`
+</code></pre>`
 
 export default html

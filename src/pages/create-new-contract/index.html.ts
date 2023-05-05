@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Create New Contract"
 export const description = "Create new contract in Vyper"
 
+export const keywords = ["create", "new", "contract", "create_forwarder_to"]
+
 const html = `<p>Vyper contracts can deploy new contracts using the function <code>create_forwarder_to</code>.</p>
 <p><code>create_forwarder_to</code> is also known as "minimal proxy contract". How it works, we won&#39;t explain it here.</p>
 <p>Here we will focus on how to use it to deploy new contracts.</p>
@@ -36,8 +38,7 @@ owner: public(address)
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">kill</span>():
   selfdestruct(msg.sender)
-</code></pre>
-<p>Create.vy</p>
+</code></pre><p>Create.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
@@ -61,7 +62,6 @@ event Log:
     addr: address = create_forwarder_to(_masterCopy)
     ContractToDeploy(addr).setup(self)
     log Log(addr)
-</code></pre>
-`
+</code></pre>`
 
 export default html

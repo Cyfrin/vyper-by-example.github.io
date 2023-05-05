@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Constructor"
 export const description = "Constructor in Vyper"
 
+export const keywords = ["constructor"]
+
 const html = `<p><code>__init__</code> is a special function that is executed only once when the contract is deployed.</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
@@ -20,7 +22,6 @@ expiresAt: public(uint256)
     self.name = name
     self.createdAt = block.timestamp
     self.expiresAt = block.timestamp + duration
-</code></pre>
-`
+</code></pre>`
 
 export default html

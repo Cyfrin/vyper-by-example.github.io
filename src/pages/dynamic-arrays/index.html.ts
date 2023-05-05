@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Dynamic Arrays"
 export const description = "Dynamic arrays in Vyper"
 
+export const keywords = ["dynamic", "arrays", "array"]
+
 const html = `<p>Dynamic arrays are bounded arrays whose length can change. The length of the array cannot exceed the maximum length set where the array is declared.</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
@@ -44,7 +46,6 @@ nums: DynArray[uint256, <span class="hljs-number">3</span>]
         <span class="hljs-keyword">if</span> addr != ZERO_ADDRESS:
             nonzeros.append(addr)
     <span class="hljs-keyword">return</span> nonzeros
-</code></pre>
-`
+</code></pre>`
 
 export default html

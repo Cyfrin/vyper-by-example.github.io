@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "If Else Conditional Statement"
 export const description = "If else conditional statement in Vyper"
 
+export const keywords = ["if", "else", "conditional", "statement"]
+
 const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
 
@@ -22,7 +24,6 @@ const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @ve
     <span class="hljs-keyword">if</span> x &gt;= y:
         <span class="hljs-keyword">return</span> x - y
     <span class="hljs-keyword">return</span> y - x
-</code></pre>
-`
+</code></pre>`
 
 export default html

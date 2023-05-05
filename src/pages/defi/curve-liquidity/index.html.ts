@@ -3,6 +3,8 @@ export const version = "0.3.7"
 export const title = "Curve Add and Remove Liquidity"
 export const description = "Curve Add and Remove Liquidity"
 
+export const keywords = ["curve", "add", "remove liquidity", "defi", "amm"]
+
 const html = `<p>Add and remove liquidity from Curve pools</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
 
@@ -104,7 +106,6 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
 
     bal: uint256 = ERC20(COINS[i]).balanceOf(self)
     self._safeTransfer(COINS[i], msg.sender, bal)
-</code></pre>
-`
+</code></pre>`
 
 export default html
