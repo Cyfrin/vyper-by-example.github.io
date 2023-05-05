@@ -11,6 +11,23 @@ import { exists, removeExt, getExt, renderTemplateToFile, parseYaml } from "./li
 
 const { readFile, readdir } = fs.promises
 
+marked.use({
+  mangle: false,
+  headerIds: false,
+})
+
+marked.use(
+  markedHighlight({
+    // @ts-ignore
+    highlight: (code, language) => {
+      if (language == "vyper") {
+        return hljs.highlight(code, { language: "python" }).value
+      }
+      return code
+    },
+  })
+)
+
 async function findVyperFiles(dir: string): Promise<string[]> {
   const files = await readdir(dir)
   return files.filter((file) => file.split(".").pop() == "vy")
@@ -40,18 +57,6 @@ async function mdToHtml(filePath: string) {
   const { content, metadata } = await parseYaml(filePath)
 
   const markdown = mustache.render(content, codes)
-
-  marked.use(
-    markedHighlight({
-      // @ts-ignore
-      highlight: (code, language) => {
-        if (language == "vyper") {
-          return hljs.highlight(code, { language: "python" }).value
-        }
-        return code
-      },
-    })
-  )
 
   const html = marked
     .parse(markdown)
