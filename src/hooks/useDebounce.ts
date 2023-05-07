@@ -7,7 +7,7 @@ const OPTIONS = {
 }
 
 export default function useDebounce(
-  fn: Function,
+  fn: (...args: any) => void,
   wait: number,
   deps: Array<any>
 ) {
