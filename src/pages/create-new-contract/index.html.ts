@@ -8,7 +8,7 @@ export const keywords = ["create", "new", "contract", "create_forwarder_to"]
 const html = `<p>Vyper contracts can deploy new contracts using the function <code>create_forwarder_to</code>.</p>
 <p><code>create_forwarder_to</code> is also known as "minimal proxy contract". How it works, we won&#39;t explain it here.</p>
 <p>Here we will focus on how to use it to deploy new contracts.</p>
-<h3 id="how-to-use-create_forwarder_to">How to use <code>create_forwarder_to</code></h3>
+<h3>How to use <code>create_forwarder_to</code></h3>
 <ol>
 <li>Deploy <code>ContractToDeploy</code>. This is the "master copy." All deployed contracts will execute code from this master copy.</li>
 <li>Call <code>deploy()</code> passing the address of the master copy and any other arguments needed to setup the new contract</li>
