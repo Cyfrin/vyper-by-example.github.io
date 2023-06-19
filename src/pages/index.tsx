@@ -7,6 +7,24 @@ import { search, unique } from "../lib/search"
 import styles from "./index.module.css"
 import youTube from "../components/youtube.png"
 
+const UPDATES = [
+  "2023/06/19 - Chinese translations",
+  "2023/03/04 - Unsafe math",
+  "2022/12/27 - Print",
+]
+
+interface Translation {
+  lang: string
+  url: string
+}
+
+const TRANSLATIONS: Translation[] = [
+  {
+    lang: "Chinese",
+    url: "https://github.com/Web3-Club/vyper-by-example_Chinese",
+  },
+]
+
 interface Route {
   path: string
   title: string
@@ -101,12 +119,6 @@ export function getPrevNextPaths(path: string): {
   }
 }
 
-const UPDATES = [
-  "2023/03/04 - Unsafe math",
-  "2022/12/27 - Print",
-  "2022/12/27 - Vyper 0.3.7",
-]
-
 export default function HomePage() {
   const [query, setQuery] = useState("")
   const [searchParams, setSearchParams] = useSearchParams()
@@ -173,19 +185,34 @@ export default function HomePage() {
       )
     }
 
-    return ROUTES_BY_CATEGORY.map(({ routes, title }, i) => (
-      <div key={i}>
-        {title && <h3 className={styles.category}>{title}</h3>}
+    return (
+      <>
+        {ROUTES_BY_CATEGORY.map(({ routes, title }, i) => (
+          <div key={i}>
+            {title && <h3 className={styles.category}>{title}</h3>}
 
-        <ul className={styles.list}>
-          {routes.map(({ path, title }) => (
-            <li className={styles.listItem} key={path}>
-              <a href={path}>{title}</a>
+            <ul className={styles.list}>
+              {routes.map(({ path, title }) => (
+                <li className={styles.listItem} key={path}>
+                  <a href={path}>{title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        <div>
+          <h3 className={styles.category}>Translations</h3>
+          {TRANSLATIONS.map(({ lang, url }) => (
+            <li className={styles.listItem} key={url}>
+              <a href={url} target="__blank">
+                {lang}
+              </a>
             </li>
           ))}
-        </ul>
-      </div>
-    ))
+        </div>
+      </>
+    )
   }
 
   return (
