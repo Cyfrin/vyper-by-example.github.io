@@ -1,12 +1,12 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Send Ether"
 export const description = "Send ETH in Vyper"
 
 export const keywords = ["send", "ether", "raw_call", "payable"]
 
 const html = `<p>There are two ways to send Ether from a contract, <code>send</code> and <code>raw_call</code>. Here we introduce the simpler function to use, <code>send</code>.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 
 <span class="hljs-comment"># Receive Ether into this contract</span>

@@ -13,6 +13,16 @@ npm i
 npm start
 ```
 
+### Production
+
+```shell
+npm run build
+# Preview produciton
+npm run preview
+# Deploy
+npm run deploy
+```
+
 ### Memo
 
 ```shell

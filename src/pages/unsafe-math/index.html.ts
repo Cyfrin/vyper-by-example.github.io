@@ -1,12 +1,12 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Unsafe Math"
 export const description = "Unsafe math in Vyper"
 
 export const keywords = ["gas", "unsafe", "math"]
 
 const html = `<p>Critical math checks such as overflow, underflow and division by 0 can be skipped using unsafe functions</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 
 <span class="hljs-meta">@external</span>

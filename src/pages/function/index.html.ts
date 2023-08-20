@@ -1,11 +1,11 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Function"
 export const description = "Function in Vyper"
 
 export const keywords = ["function", "functions"]
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 
 <span class="hljs-meta">@external</span>

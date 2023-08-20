@@ -1,4 +1,4 @@
-# @version ^0.3.7
+# @version ^0.3.9
 
 b: public(bool)
 i: public(int128)  # -2 ** 127 to (2 ** 127 - 1)

@@ -1,6 +1,6 @@
 ---
 title: Create New Contract
-version: 0.3.7
+version: 0.3.9
 description: Create new contract in Vyper
 keywords: [create, new, contract, create_forwarder_to]
 ---

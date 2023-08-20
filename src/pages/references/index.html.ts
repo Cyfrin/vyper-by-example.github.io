@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Data Types - References"
 export const description = "References in Vyper"
 
@@ -20,7 +20,7 @@ export const keywords = [
 ]
 
 const html = `<p>References types are data types that are passed by their reference, pointer to where the actual data is stored.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 
 struct Person:

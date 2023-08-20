@@ -8,9 +8,9 @@ import styles from "./index.module.css"
 import youTube from "../components/youtube.png"
 
 const UPDATES = [
+  "2023/08/20 - Vyper 0.3.9",
   "2023/06/19 - Chinese translations",
   "2023/03/04 - Unsafe math",
-  "2022/12/27 - Print",
 ]
 
 interface Translation {
@@ -218,13 +218,13 @@ export default function HomePage() {
   return (
     <div className={styles.component}>
       <SEO
-        title="Vyper by Example | 0.3.7"
+        title="Vyper by Example | 0.3.9"
         description="Learn smart contract programming using Vyper"
       />
       <h1 className={styles.header}>
         <a href="/">Vyper by Example</a>
       </h1>
-      <div className={styles.subHeader}>v 0.3.7</div>
+      <div className={styles.subHeader}>v 0.3.9</div>
       <div className={styles.main}>
         <p>
           an introduction to <a href="https://vyper.readthedocs.io">Vyper</a> with

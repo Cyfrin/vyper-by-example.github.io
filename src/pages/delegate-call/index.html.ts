@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Delegate Call"
 export const description = "Delegate call in Vyper"
 
@@ -9,7 +9,7 @@ const html = `<p>When contract <code>A</code> delegates call to contract <code>B
 <p>Delegate call is commonly used to create an upgradable contract.</p>
 <p>Here is the contract that we will delegate call to.</p>
 <p>TestDelegateCall.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 <span class="hljs-comment"># State variables must be declared in the same order</span>
 <span class="hljs-comment"># as contract making the call</span>
@@ -28,7 +28,7 @@ y: public(uint256)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">updateY</span>(<span class="hljs-params">y: uint256</span>):
     self.y = y * y
 </code></pre><p>DelegateCall.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 
 x: public(uint256)

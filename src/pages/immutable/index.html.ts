@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Immutable"
 export const description = "Immutable in Vyper"
 
@@ -14,7 +14,7 @@ for example like setting contract owner to <code>msg.sender</code></li>
 </ul>
 <h4>Why declare variables as <code>immutable</code>?</h4>
 <p>Like constants, <code>immutable</code> variables save run time gas</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)

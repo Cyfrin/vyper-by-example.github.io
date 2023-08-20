@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Data Types - Values"
 export const description = "Values in Vyper"
 
@@ -32,7 +32,7 @@ const html = `<p>Some values available in Vyper</p>
 <li><code>Bytes</code></li>
 <li><code>String</code></li>
 </ul>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 b: public(<span class="hljs-built_in">bool</span>)
 i: public(int128)  <span class="hljs-comment"># -2 ** 127 to (2 ** 127 - 1)</span>

@@ -1,6 +1,6 @@
 ---
 title: Self Destruct
-version: 0.3.7
+version: 0.3.9
 description: Self destruct in Vyper
 keywords: [selfdestruct, self, destruct]
 ---

@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Event"
 export const description = "Event in Vyper"
 
@@ -7,7 +7,7 @@ export const keywords = ["event", "events"]
 
 const html = `<p>Events write logs to the blockchain, commonly used by application to monitor blockchain state and as a cheaper alternative to store data on the blockchain without using state variables.</p>
 <p>Events can be efficiently searched by indexing their arguments. Up to 3 parameters can be indexed.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 <span class="hljs-comment"># up to 3 index</span>
 event Transfer:

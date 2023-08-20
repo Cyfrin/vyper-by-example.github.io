@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.7"
+export const version = "0.3.9"
 export const title = "Internal and External Functions"
 export const description = "Internal and external functions in Vyper"
 
@@ -7,7 +7,7 @@ export const keywords = ["internal", "external", "function", "functions"]
 
 const html = `<p><code>@internal</code> functions can only be called inside the contract.</p>
 <p><code>@external</code> functions can only be called from outside the contract.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.7</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
 <span class="hljs-comment"># Internal functions can only be called inside this contract</span>
 <span class="hljs-meta">@internal</span>

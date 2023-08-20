@@ -1,4 +1,4 @@
-# @version ^0.3.7
+# @version ^0.3.9
 
 # State variables must be declared in the same order
 # as contract making the call

@@ -1,6 +1,6 @@
 ---
 title: Hello World
-version: 0.3.7
+version: 0.3.9
 description: Hello world in Vyper
 keywords: [hello, world, version]
 ---

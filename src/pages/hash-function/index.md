@@ -1,6 +1,6 @@
 ---
 title: Hash Function
-version: 0.3.7
+version: 0.3.9
 description: Hash function in Vyper
 keywords: [hash, keccack256, function, functions]
 ---

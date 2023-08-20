@@ -1,6 +1,6 @@
 ---
 title: Payable
-version: 0.3.7
+version: 0.3.9
 description: Payable in Vyper
 keywords: [payable, function, functions]
 ---
