@@ -31,146 +31,146 @@ import component_view_pure_functions from "./pages/view-pure-functions"
 import component_ from "./pages"
 
 interface Path {
-  title: string
-  path: string
+    title: string
+    path: string
 }
 
 interface Paths {
-  prev: Path | null
-  next: Path | null
+    prev: Path | null
+    next: Path | null
 }
 
 interface Route {
-  path: string
-  component: React.FC<Paths>
-  breakingChanges?: boolean
+    path: string
+    component: React.FC<Paths>
+    breakingChanges?: boolean
 }
 
 const routes: Route[] = [
-  {
-    path: "/constants",
-    component: component_constants,
-  },
-  {
-    path: "/constructor",
-    component: component_constructor,
-  },
-  {
-    path: "/create-new-contract",
-    component: component_create_new_contract,
-  },
-  {
-    path: "/default-function",
-    component: component_default_function,
-  },
-  {
-    path: "/defi/curve-liquidity",
-    component: component_defi_curve_liquidity,
-  },
-  {
-    path: "/defi/curve-swap",
-    component: component_defi_curve_swap,
-  },
-  {
-    path: "/delegate-call",
-    component: component_delegate_call,
-  },
-  {
-    path: "/dynamic-arrays",
-    component: component_dynamic_arrays,
-  },
-  {
-    path: "/error",
-    component: component_error,
-  },
-  {
-    path: "/event",
-    component: component_event,
-  },
-  {
-    path: "/for-loop",
-    component: component_for_loop,
-  },
-  {
-    path: "/function",
-    component: component_function,
-  },
-  {
-    path: "/hash-function",
-    component: component_hash_function,
-  },
-  {
-    path: "/hello-world",
-    component: component_hello_world,
-  },
-  {
-    path: "/if-else",
-    component: component_if_else,
-  },
-  {
-    path: "/immutable",
-    component: component_immutable,
-  },
-  {
-    path: "/interface",
-    component: component_interface,
-  },
-  {
-    path: "/internal-external-functions",
-    component: component_internal_external_functions,
-  },
-  {
-    path: "/payable",
-    component: component_payable,
-  },
-  {
-    path: "/print",
-    component: component_print,
-  },
-  {
-    path: "/private-public-state-variables",
-    component: component_private_public_state_variables,
-  },
-  {
-    path: "/raw-call",
-    component: component_raw_call,
-  },
-  {
-    path: "/re-entrancy-lock",
-    component: component_re_entrancy_lock,
-  },
-  {
-    path: "/references",
-    component: component_references,
-  },
-  {
-    path: "/self-destruct",
-    component: component_self_destruct,
-  },
-  {
-    path: "/send-ether",
-    component: component_send_ether,
-  },
-  {
-    path: "/unsafe-math",
-    component: component_unsafe_math,
-  },
-  {
-    path: "/values",
-    component: component_values,
-  },
-  {
-    path: "/verify-signature",
-    component: component_verify_signature,
-  },
-  {
-    path: "/view-pure-functions",
-    component: component_view_pure_functions,
-  },
-  {
-    path: "",
-    component: component_,
-  },
+    {
+        path: "/constants",
+        component: component_constants,
+    },
+    {
+        path: "/constructor",
+        component: component_constructor,
+    },
+    {
+        path: "/create-new-contract",
+        component: component_create_new_contract,
+    },
+    {
+        path: "/default-function",
+        component: component_default_function,
+    },
+    {
+        path: "/defi/curve-liquidity",
+        component: component_defi_curve_liquidity,
+    },
+    {
+        path: "/defi/curve-swap",
+        component: component_defi_curve_swap,
+    },
+    {
+        path: "/delegate-call",
+        component: component_delegate_call,
+    },
+    {
+        path: "/dynamic-arrays",
+        component: component_dynamic_arrays,
+    },
+    {
+        path: "/error",
+        component: component_error,
+    },
+    {
+        path: "/event",
+        component: component_event,
+    },
+    {
+        path: "/for-loop",
+        component: component_for_loop,
+    },
+    {
+        path: "/function",
+        component: component_function,
+    },
+    {
+        path: "/hash-function",
+        component: component_hash_function,
+    },
+    {
+        path: "/hello-world",
+        component: component_hello_world,
+    },
+    {
+        path: "/if-else",
+        component: component_if_else,
+    },
+    {
+        path: "/immutable",
+        component: component_immutable,
+    },
+    {
+        path: "/interface",
+        component: component_interface,
+    },
+    {
+        path: "/internal-external-functions",
+        component: component_internal_external_functions,
+    },
+    {
+        path: "/payable",
+        component: component_payable,
+    },
+    {
+        path: "/print",
+        component: component_print,
+    },
+    {
+        path: "/private-public-state-variables",
+        component: component_private_public_state_variables,
+    },
+    {
+        path: "/raw-call",
+        component: component_raw_call,
+    },
+    {
+        path: "/re-entrancy-lock",
+        component: component_re_entrancy_lock,
+    },
+    {
+        path: "/references",
+        component: component_references,
+    },
+    {
+        path: "/self-destruct",
+        component: component_self_destruct,
+    },
+    {
+        path: "/send-ether",
+        component: component_send_ether,
+    },
+    {
+        path: "/unsafe-math",
+        component: component_unsafe_math,
+    },
+    {
+        path: "/values",
+        component: component_values,
+    },
+    {
+        path: "/verify-signature",
+        component: component_verify_signature,
+    },
+    {
+        path: "/view-pure-functions",
+        component: component_view_pure_functions,
+    },
+    {
+        path: "",
+        component: component_,
+    },
 ]
 
 export default routes
