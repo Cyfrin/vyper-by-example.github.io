@@ -4,21 +4,21 @@ export const title = "Data Types - Values"
 export const description = "Values in Vyper"
 
 export const keywords = [
-    "data",
-    "type",
-    "types",
-    "value",
-    "values",
-    "variable",
-    "variables",
-    "bool",
-    "int128",
-    "uint256",
-    "decimals",
-    "address",
-    "bytes32",
-    "Bytes",
-    "String",
+  "data",
+  "type",
+  "types",
+  "value",
+  "values",
+  "variable",
+  "variables",
+  "bool",
+  "int128",
+  "uint256",
+  "decimals",
+  "address",
+  "bytes32",
+  "Bytes",
+  "String",
 ]
 
 const html = `<p>Some values available in Vyper</p>
