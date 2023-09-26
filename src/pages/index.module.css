@@ -10,12 +10,12 @@
   padding-left: 15px;
   border-radius: 5px;
 }
-.category {
-  color: var(--link-color);
-}
 .search {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.category {
+  color: var(--link-color);
 }
 .listItem {
   display: flex;

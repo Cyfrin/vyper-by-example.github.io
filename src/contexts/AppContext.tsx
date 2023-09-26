@@ -4,27 +4,30 @@ export type Theme = "light" | "dark"
 
 interface State {
   theme: Theme
+  sideNav: boolean
   initialized: boolean
 }
 
 const INITIAL_STATE: State = {
   theme: "light",
+  sideNav: true,
   initialized: false,
 }
 
 const AppContext = createContext({
   state: INITIAL_STATE,
-  setTheme: (theme: Theme) => {},
   loadLocalStorage: () => {},
+  setTheme: (theme: Theme) => {},
+  toggleSideNav: () => {},
 })
 
 export function useAppContext() {
   return useContext(AppContext)
 }
 
-function _saveToLocalStorage(theme: Theme) {
+function _saveToLocalStorage(key: string, val: any) {
   try {
-    localStorage.setItem("theme", theme)
+    localStorage.setItem(key, val)
   } catch (error) {
     console.error(error)
   }
@@ -51,12 +54,14 @@ export const Provider: React.FC<Props> = ({ children }) => {
     try {
       // @ts-ignore
       const theme: Theme = localStorage.getItem("theme") || "light"
-
+      // TODO: initially true on desktop, false on mobile
+      const sideNav: boolean = localStorage.getItem("sideNav") == "true"
       _setTheme(theme)
 
       setState((state) => ({
         ...state,
         theme,
+        sideNav,
       }))
     } catch (error) {
       console.error(error)
@@ -71,7 +76,13 @@ export const Provider: React.FC<Props> = ({ children }) => {
   function setTheme(theme: Theme) {
     _setTheme(theme)
     setState({ ...state, theme })
-    _saveToLocalStorage(theme)
+    _saveToLocalStorage("theme", theme)
+  }
+
+  function toggleSideNav() {
+    const sideNav = !state.sideNav
+    setState({ ...state, sideNav })
+    _saveToLocalStorage("sideNav", sideNav)
   }
 
   return (
@@ -81,6 +92,7 @@ export const Provider: React.FC<Props> = ({ children }) => {
           state,
           loadLocalStorage,
           setTheme,
+          toggleSideNav,
         }),
         [state],
       )}

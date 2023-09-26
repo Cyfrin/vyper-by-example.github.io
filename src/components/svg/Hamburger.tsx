@@ -3,9 +3,10 @@ import React from "react"
 interface Props {
   size: number
   className?: string
+  onClick: () => void
 }
 
-const Hamburger: React.FC<Props> = ({ size, className = "" }) => {
+const Hamburger: React.FC<Props> = ({ size, className = "", onClick }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +17,7 @@ const Hamburger: React.FC<Props> = ({ size, className = "" }) => {
       className={className}
       width={size}
       height={size}
+      onClick={onClick}
     >
       <path
         strokeLinecap="round"

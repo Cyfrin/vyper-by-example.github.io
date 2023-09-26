@@ -1,0 +1,25 @@
+.component {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.sideNav {
+  max-height: 100vh;
+  width: var(--side-nav-width);
+  padding: 20px 10px 60px 10px;
+  overflow-y: auto;
+  background-color: var(--side-nav-color);
+}
+.main {
+  max-height: 100vh;
+  width: calc(100vw - var(--side-nav-width));
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.children {
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

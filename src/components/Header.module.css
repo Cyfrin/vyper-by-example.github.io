@@ -1,14 +1,24 @@
 .component {
-  text-align: left;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - var(--side-nav-width) - 40px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--bg-color);
+}
+.a {
+  text-decoration: none;
+}
+.center {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.component a {
-  text-decoration: none;
-}
 .logo {
-  margin: 10px;
+  margin: 0 5px 0 5px;
 }
 .header {
   margin: 0;
@@ -17,6 +27,8 @@
 .mode {
   background-color: transparent;
   border: 0px;
-  margin-right: 20px;
+  cursor: pointer;
+}
+.hamburger {
   cursor: pointer;
 }
