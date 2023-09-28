@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useLayoutEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useAppContext } from "./contexts/AppContext"
 import styles from "./App.module.css"
@@ -7,10 +7,12 @@ import routes from "./routes"
 import { getPrevNextPaths } from "./nav"
 
 function App() {
-  const { state, loadLocalStorage } = useAppContext()
+  const { state, init } = useAppContext()
 
-  useEffect(() => {
-    loadLocalStorage()
+  useLayoutEffect(() => {
+    init({
+      width: window.document.body.clientWidth,
+    })
   }, [])
 
   if (!state.initialized) {

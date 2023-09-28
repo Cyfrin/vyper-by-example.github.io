@@ -1,6 +1,6 @@
 .component {
-  /* NOTE -20px from .main in App.module.css */
-  width: min(calc(100vw - var(--side-nav-width) - 40px), 1000px);
+  width: 100%;
+  max-width: 1000px;
 }
 .content {
   margin: 15px 10px 15px 10px;

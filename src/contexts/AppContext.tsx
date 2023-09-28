@@ -16,7 +16,7 @@ const INITIAL_STATE: State = {
 
 const AppContext = createContext({
   state: INITIAL_STATE,
-  loadLocalStorage: () => {},
+  init: (params: { width: number }) => {},
   setTheme: (theme: Theme) => {},
   toggleSideNav: () => {},
 })
@@ -50,12 +50,18 @@ export const Provider: React.FC<Props> = ({ children }) => {
     }
   }
 
-  function loadLocalStorage() {
+  function init(params: { width: number }) {
     try {
       // @ts-ignore
       const theme: Theme = localStorage.getItem("theme") || "light"
-      // TODO: initially true on desktop, false on mobile
-      const sideNav: boolean = localStorage.getItem("sideNav") == "true"
+      let sideNav = params.width >= 500
+      {
+        const val = localStorage.getItem("sideNav")
+        if (val) {
+          sideNav = val == "true"
+        }
+      }
+
       _setTheme(theme)
 
       setState((state) => ({
@@ -90,7 +96,7 @@ export const Provider: React.FC<Props> = ({ children }) => {
       value={useMemo(
         () => ({
           state,
-          loadLocalStorage,
+          init,
           setTheme,
           toggleSideNav,
         }),

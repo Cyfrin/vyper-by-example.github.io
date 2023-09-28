@@ -3,10 +3,18 @@ import { useLocation, matchPath } from "react-router-dom"
 import styles from "./SideNav.module.css"
 import { ROUTES_BY_CATEGORY } from "../nav"
 
-interface Props {}
+interface Props {
+  onClick: (path: string) => void
+}
 
-const SideNav: React.FC<Props> = ({}) => {
+const SideNav: React.FC<Props> = ({ onClick }) => {
   const location = useLocation()
+
+  function _onClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, path: string) {
+    e.preventDefault()
+    onClick(path)
+  }
+
   return (
     <>
       <h3 className={styles.category}>Basic</h3>
@@ -23,7 +31,11 @@ const SideNav: React.FC<Props> = ({}) => {
                   className={active ? styles.listItemActive : styles.listItem}
                   key={path}
                 >
-                  <a className={styles.link} href={path}>
+                  <a
+                    className={styles.link}
+                    href={path}
+                    onClick={(e) => _onClick(e, path)}
+                  >
                     {title}
                   </a>
                 </li>
