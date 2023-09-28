@@ -1,7 +1,6 @@
 .component {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: calc(100vw - var(--side-nav-width) - 40px);
   display: flex;
   flex-direction: row;
   align-items: center;
