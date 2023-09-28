@@ -5,14 +5,14 @@
 }
 .sideNav {
   max-height: 100vh;
-  width: var(--side-nav-width);
-  padding: 20px 10px 60px 10px;
   overflow-y: auto;
   background-color: var(--side-nav-color);
+  transition: width 0.3s;
+  transition-timing-function: ease;
 }
 .main {
   max-height: 100vh;
-  width: calc(100vw - var(--side-nav-width));
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;

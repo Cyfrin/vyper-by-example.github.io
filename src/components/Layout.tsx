@@ -14,7 +14,21 @@ const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <div className={styles.component}>
-      <div className={styles.sideNav}>{state.sideNav ? <SideNav /> : null}</div>
+      <div
+        className={styles.sideNav}
+        style={
+          state.sideNav
+            ? {
+                width: "var(--side-nav-width)",
+                padding: "20px 10px 60px 10px",
+              }
+            : {
+                width: 0,
+              }
+        }
+      >
+        {state.sideNav ? <SideNav /> : null}
+      </div>
       <div className={styles.main}>
         <Header />
         <div className={styles.children}>
