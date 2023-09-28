@@ -1,22 +1,33 @@
 .component {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--bg-color);
 }
-.component a {
-    text-decoration: none;
+.a {
+  text-decoration: none;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .logo {
-    margin: 10px;
+  margin: 0 5px 0 5px;
 }
 .header {
-    margin: 0;
-    margin-right: auto;
+  margin: 0;
+  margin-right: auto;
 }
 .mode {
-    background-color: transparent;
-    border: 0px;
-    margin-right: 20px;
-    cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+.hamburger {
+  cursor: pointer;
 }

@@ -8,5 +8,5 @@ keywords: [debug, print]
 Use the built-in function `print` to debug smart contracts.
 
 ```vyper
-{{{Constants}}}
+{{{Print}}}
 ```

@@ -4,12 +4,12 @@ export const title = "Default Function"
 export const description = "Default function in Vyper"
 
 export const keywords = [
-    "default",
-    "function",
-    "functions",
-    "__default__",
-    "fallback",
-    "payable",
+  "default",
+  "function",
+  "functions",
+  "__default__",
+  "fallback",
+  "payable",
 ]
 
 const html = `<p>A contract can have a default function, executed when a function that does not exist is called. This is the same function as the fallback function in Solidity.</p>

@@ -4,19 +4,19 @@ export const title = "Data Types - References"
 export const description = "References in Vyper"
 
 export const keywords = [
-    "data",
-    "type",
-    "types",
-    "reference",
-    "references",
-    "variable",
-    "variables",
-    "array",
-    "arrays",
-    "struct",
-    "structs",
-    "HashMap",
-    "mapping",
+  "data",
+  "type",
+  "types",
+  "reference",
+  "references",
+  "variable",
+  "variables",
+  "array",
+  "arrays",
+  "struct",
+  "structs",
+  "HashMap",
+  "mapping",
 ]
 
 const html = `<p>References types are data types that are passed by their reference, pointer to where the actual data is stored.</p>

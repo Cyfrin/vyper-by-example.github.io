@@ -38,7 +38,4 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
 
 # build search index
 npx ts-node --project ./scripts/tsconfig.json scripts/build-search-index.ts
-
-# deploy
-npm run deploy
 ```
