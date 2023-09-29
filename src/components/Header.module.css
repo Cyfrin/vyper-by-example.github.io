@@ -7,6 +7,8 @@
   justify-content: space-between;
   padding: 10px 20px 10px 20px;
   background-color: var(--bg-color);
+  min-width: var(--min-main-width);
+  white-space: nowrap;
 }
 .a {
   text-decoration: none;
