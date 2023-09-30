@@ -128,10 +128,7 @@ export default function HomePage() {
 
         <div className={styles.youTube}>
           <img src={youTube} alt="logo" className={styles.youTubeLogo} />
-          <a
-            href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
-            target="__blank"
-          >
+          <a href="https://www.youtube.com/@smartcontractprogrammer" target="__blank">
             Most code are explained here
           </a>
         </div>
