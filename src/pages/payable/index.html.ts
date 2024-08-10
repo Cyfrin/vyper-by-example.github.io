@@ -24,7 +24,7 @@ event Deposit:
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">getBalance</span>() -&gt; uint256:
     <span class="hljs-comment"># Get balance of Ether stored in this contract</span>
-    <span class="hljs-keyword">return</span> self.balance
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.balance
 
 
 owner: public(address)
@@ -34,7 +34,7 @@ owner: public(address)
 <span class="hljs-meta">@payable</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">pay</span>():
     <span class="hljs-keyword">assert</span> msg.value &gt; <span class="hljs-number">0</span>, <span class="hljs-string">"msg.value = 0"</span>
-    self.owner = msg.sender
+    <span class="hljs-variable language_">self</span>.owner = msg.sender
 </code></pre>`
 
 export default html

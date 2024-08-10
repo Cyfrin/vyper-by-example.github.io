@@ -23,7 +23,7 @@ num: public(uint256)
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">viewFunc</span>(<span class="hljs-params">x: uint256</span>) -&gt; <span class="hljs-built_in">bool</span>:
-    <span class="hljs-keyword">return</span> x &gt; self.num
+    <span class="hljs-keyword">return</span> x &gt; <span class="hljs-variable language_">self</span>.num
 
 
 <span class="hljs-meta">@external</span>
@@ -35,7 +35,7 @@ num: public(uint256)
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">addNum</span>(<span class="hljs-params">x: uint256</span>) -&gt; uint256:
-    <span class="hljs-keyword">return</span> x + self.num
+    <span class="hljs-keyword">return</span> x + <span class="hljs-variable language_">self</span>.num
 </code></pre>`
 
 export default html

@@ -18,9 +18,9 @@ bar: public(<span class="hljs-built_in">bool</span>)
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
-    self.owner = msg.sender
-    self.foo = <span class="hljs-number">123</span>
-    self.bar = <span class="hljs-literal">True</span>
+    <span class="hljs-variable language_">self</span>.owner = msg.sender
+    <span class="hljs-variable language_">self</span>.foo = <span class="hljs-number">123</span>
+    <span class="hljs-variable language_">self</span>.bar = <span class="hljs-literal">True</span>
 </code></pre>`
 
 export default html

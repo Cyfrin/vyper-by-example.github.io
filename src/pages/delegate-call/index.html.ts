@@ -21,12 +21,12 @@ y: public(uint256)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">updateX</span>(<span class="hljs-params">x: uint256</span>):
     <span class="hljs-comment"># when this function is called with delegate call</span>
     <span class="hljs-comment"># this will update self.x inside the calling contract</span>
-    self.x = x + <span class="hljs-number">1</span>
+    <span class="hljs-variable language_">self</span>.x = x + <span class="hljs-number">1</span>
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">updateY</span>(<span class="hljs-params">y: uint256</span>):
-    self.y = y * y
+    <span class="hljs-variable language_">self</span>.y = y * y
 </code></pre><p>DelegateCall.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 

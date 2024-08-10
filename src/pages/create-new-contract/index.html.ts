@@ -24,14 +24,14 @@ owner: public(address)
 <span class="hljs-comment"># __init__ is not called when deployed from create_forwarder_to</span>
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
-  self.owner = msg.sender
+  <span class="hljs-variable language_">self</span>.owner = msg.sender
 
 
 <span class="hljs-comment"># call once after create_forwarder_to</span>
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params">owner: address</span>):
-  <span class="hljs-keyword">assert</span> self.owner == ZERO_ADDRESS, <span class="hljs-string">"owner != zero address"</span>
-  self.owner = owner
+  <span class="hljs-keyword">assert</span> <span class="hljs-variable language_">self</span>.owner == ZERO_ADDRESS, <span class="hljs-string">"owner != zero address"</span>
+  <span class="hljs-variable language_">self</span>.owner = owner
 
 
 <span class="hljs-comment"># DANGER: never have selfdestruct in original contract used by create_forwarder_to</span>
@@ -60,7 +60,7 @@ event Log:
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">deployTest</span>(<span class="hljs-params">_masterCopy: address</span>):
     addr: address = create_forwarder_to(_masterCopy)
-    ContractToDeploy(addr).setup(self)
+    ContractToDeploy(addr).setup(<span class="hljs-variable language_">self</span>)
     log Log(addr)
 </code></pre>`
 

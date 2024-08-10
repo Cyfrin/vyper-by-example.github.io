@@ -16,13 +16,13 @@ sender: public(address)
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">testAdd</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
-    self.sender = msg.sender
+    <span class="hljs-variable language_">self</span>.sender = msg.sender
     <span class="hljs-keyword">return</span> x + y
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">testSub</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
-    self.sender = msg.sender
+    <span class="hljs-variable language_">self</span>.sender = msg.sender
     <span class="hljs-keyword">return</span> x - y
 </code></pre><p>RawCall.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
@@ -70,7 +70,7 @@ diff: public(uint256)
         max_outsize=<span class="hljs-number">32</span>,
     )
 
-    self.diff = convert(res, uint256)
+    <span class="hljs-variable language_">self</span>.diff = convert(res, uint256)
 </code></pre>`
 
 export default html

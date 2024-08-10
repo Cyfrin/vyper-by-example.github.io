@@ -74,13 +74,13 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">swap</span>(<span class="hljs-params">i: int128, j: int128, dx: uint256, min_dy: uint256</span>):
-    self._safeTransferFrom(COINS[i], msg.sender, self, dx)
-    self._safeApprove(COINS[i], POOL, dx)
+    <span class="hljs-variable language_">self</span>._safeTransferFrom(COINS[i], msg.sender, <span class="hljs-variable language_">self</span>, dx)
+    <span class="hljs-variable language_">self</span>._safeApprove(COINS[i], POOL, dx)
 
     IStableSwap(POOL).exchange(i, j, dx, min_dy)
 
-    bal: uint256 = ERC20(COINS[j]).balanceOf(self)
-    self._safeTransfer(COINS[j], msg.sender, bal)
+    bal: uint256 = ERC20(COINS[j]).balanceOf(<span class="hljs-variable language_">self</span>)
+    <span class="hljs-variable language_">self</span>._safeTransfer(COINS[j], msg.sender, bal)
 </code></pre>`
 
 export default html

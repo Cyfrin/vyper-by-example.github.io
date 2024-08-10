@@ -79,8 +79,8 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">addLiquidity</span>(<span class="hljs-params">amounts: uint256[<span class="hljs-number">3</span>], min_shares: uint256</span>):
     <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">3</span>):
         <span class="hljs-keyword">if</span> amounts[i] &gt; <span class="hljs-number">0</span>:
-            self._safeTransferFrom(COINS[i], msg.sender, self, amounts[i])
-            self._safeApprove(COINS[i], POOL, amounts[i])
+            <span class="hljs-variable language_">self</span>._safeTransferFrom(COINS[i], msg.sender, <span class="hljs-variable language_">self</span>, amounts[i])
+            <span class="hljs-variable language_">self</span>._safeApprove(COINS[i], POOL, amounts[i])
 
     IStableSwap(POOL).add_liquidity(amounts, min_shares)
 
@@ -96,16 +96,16 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
     IStableSwap(POOL).remove_liquidity(shares, min_amounts)
 
     <span class="hljs-keyword">for</span> coin <span class="hljs-keyword">in</span> COINS:
-        bal: uint256 = ERC20(coin).balanceOf(self)
-        self._safeTransfer(coin, msg.sender, bal)
+        bal: uint256 = ERC20(coin).balanceOf(<span class="hljs-variable language_">self</span>)
+        <span class="hljs-variable language_">self</span>._safeTransfer(coin, msg.sender, bal)
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeLiquidityOneCoin</span>(<span class="hljs-params">shares: uint256, i: int128, min_amount: uint256</span>):
     IStableSwap(POOL).remove_liquidity_one_coin(shares, i, min_amount)
 
-    bal: uint256 = ERC20(COINS[i]).balanceOf(self)
-    self._safeTransfer(COINS[i], msg.sender, bal)
+    bal: uint256 = ERC20(COINS[i]).balanceOf(<span class="hljs-variable language_">self</span>)
+    <span class="hljs-variable language_">self</span>._safeTransfer(COINS[i], msg.sender, bal)
 </code></pre>`
 
 export default html

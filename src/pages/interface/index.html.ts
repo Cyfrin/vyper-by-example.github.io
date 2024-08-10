@@ -17,20 +17,20 @@ eth: public(uint256)
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setOwner</span>(<span class="hljs-params">owner: address</span>):
-    self.owner = owner
+    <span class="hljs-variable language_">self</span>.owner = owner
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">sendEth</span>():
-    self.eth = msg.value
+    <span class="hljs-variable language_">self</span>.eth = msg.value
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setOwnerAndSendEth</span>(<span class="hljs-params">owner: address</span>):
-    self.owner = owner
-    self.eth = msg.value
+    <span class="hljs-variable language_">self</span>.owner = owner
+    <span class="hljs-variable language_">self</span>.eth = msg.value
 </code></pre><p>Interface.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
 
@@ -53,15 +53,15 @@ test: public(TestInterface)
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">test: address</span>):
     <span class="hljs-comment"># store contract instance</span>
-    self.test = TestInterface(test)
+    <span class="hljs-variable language_">self</span>.test = TestInterface(test)
     <span class="hljs-comment"># if you need to get address from self.test</span>
-    addr: address = self.test.address
+    addr: address = <span class="hljs-variable language_">self</span>.test.address
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">getOwner</span>() -&gt; address:
-    <span class="hljs-keyword">return</span> self.test.owner()
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.test.owner()
 
 
 <span class="hljs-meta">@external</span>
@@ -73,19 +73,19 @@ test: public(TestInterface)
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setOwner</span>(<span class="hljs-params">owner: address</span>):
-    self.test.setOwner(owner)
+    <span class="hljs-variable language_">self</span>.test.setOwner(owner)
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">sendEth</span>():
-    self.test.sendEth(value=msg.value)
+    <span class="hljs-variable language_">self</span>.test.sendEth(value=msg.value)
 
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">setOwnerAndSendEth</span>(<span class="hljs-params">owner: address</span>):
-    self.test.setOwnerAndSendEth(owner, value=msg.value)
+    <span class="hljs-variable language_">self</span>.test.setOwnerAndSendEth(owner, value=msg.value)
 </code></pre>`
 
 export default html

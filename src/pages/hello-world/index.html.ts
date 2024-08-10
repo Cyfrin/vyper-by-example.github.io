@@ -13,7 +13,7 @@ greet: public(String[<span class="hljs-number">100</span>])
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
-    self.greet = <span class="hljs-string">"Hello World"</span>
+    <span class="hljs-variable language_">self</span>.greet = <span class="hljs-string">"Hello World"</span>
 </code></pre>`
 
 export default html

@@ -26,7 +26,7 @@ const html = `<p>There are two ways to send Ether from a contract, <code>send</c
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">sendAll</span>(<span class="hljs-params">to: address</span>):
-    send(to, self.balance)
+    send(to, <span class="hljs-variable language_">self</span>.balance)
 </code></pre>`
 
 export default html

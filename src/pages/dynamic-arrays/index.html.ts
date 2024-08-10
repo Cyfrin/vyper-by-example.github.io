@@ -13,19 +13,19 @@ nums: DynArray[uint256, <span class="hljs-number">3</span>]
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
-    self.nums.append(<span class="hljs-number">11</span>)
-    self.nums.append(<span class="hljs-number">22</span>)
-    self.nums.append(<span class="hljs-number">33</span>)
+    <span class="hljs-variable language_">self</span>.nums.append(<span class="hljs-number">11</span>)
+    <span class="hljs-variable language_">self</span>.nums.append(<span class="hljs-number">22</span>)
+    <span class="hljs-variable language_">self</span>.nums.append(<span class="hljs-number">33</span>)
     <span class="hljs-comment"># This will revert (Appending to array with max 3 elements)</span>
     <span class="hljs-comment"># self.nums.append(44)</span>
 
     <span class="hljs-comment"># Remove last element</span>
-    self.nums.pop()
+    <span class="hljs-variable language_">self</span>.nums.pop()
 
     <span class="hljs-comment"># Delete all elements</span>
-    self.nums = []
+    <span class="hljs-variable language_">self</span>.nums = []
     <span class="hljs-comment"># Set values</span>
-    self.nums = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+    <span class="hljs-variable language_">self</span>.nums = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
 
 
 <span class="hljs-meta">@external</span>

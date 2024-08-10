@@ -46,14 +46,14 @@ s: public(String[<span class="hljs-number">100</span>])
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
-    self.b = <span class="hljs-literal">False</span>
-    self.i = -<span class="hljs-number">1</span>
-    self.u = <span class="hljs-number">123</span>
-    self.dec = <span class="hljs-number">3.14</span>
-    self.addr = <span class="hljs-number">0x5B38Da6a701c568545dCfcB03FcB875f56beddC4</span>
-    self.b32 = <span class="hljs-number">0xada1b75f8ae9a65dcc16f95678ac203030505c6b465c8206e26ae84b525cdacb</span>
-    self.bs = <span class="hljs-string">b"\\x01"</span>
-    self.s = <span class="hljs-string">"Hello Vyper"</span>
+    <span class="hljs-variable language_">self</span>.b = <span class="hljs-literal">False</span>
+    <span class="hljs-variable language_">self</span>.i = -<span class="hljs-number">1</span>
+    <span class="hljs-variable language_">self</span>.u = <span class="hljs-number">123</span>
+    <span class="hljs-variable language_">self</span>.dec = <span class="hljs-number">3.14</span>
+    <span class="hljs-variable language_">self</span>.addr = <span class="hljs-number">0x5B38Da6a701c568545dCfcB03FcB875f56beddC4</span>
+    <span class="hljs-variable language_">self</span>.b32 = <span class="hljs-number">0xada1b75f8ae9a65dcc16f95678ac203030505c6b465c8206e26ae84b525cdacb</span>
+    <span class="hljs-variable language_">self</span>.bs = <span class="hljs-string">b"\\x01"</span>
+    <span class="hljs-variable language_">self</span>.s = <span class="hljs-string">"Hello Vyper"</span>
 </code></pre>`
 
 export default html

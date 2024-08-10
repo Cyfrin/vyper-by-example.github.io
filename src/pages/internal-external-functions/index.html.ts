@@ -30,7 +30,7 @@ const html = `<p><code>@internal</code> functions can only be called inside the 
     <span class="hljs-comment"># self.extFunc()</span>
 
     <span class="hljs-comment"># can call internal functions</span>
-    z: uint256 = self._add(x, y)
+    z: uint256 = <span class="hljs-variable language_">self</span>._add(x, y)
 
     <span class="hljs-keyword">return</span> (x + y) / <span class="hljs-number">2</span>
 
@@ -44,7 +44,7 @@ const html = `<p><code>@internal</code> functions can only be called inside the 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">sumOfSquares</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
-    <span class="hljs-keyword">return</span> self._sqr(x) + self._sqr(y)
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>._sqr(x) + <span class="hljs-variable language_">self</span>._sqr(y)
 </code></pre>`
 
 export default html
