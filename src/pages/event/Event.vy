@@ -1,4 +1,4 @@
-# @version ^0.3.9
+# @pragma version ^0.4.0
 
 # up to 3 index
 event Transfer:
@@ -8,20 +8,17 @@ event Transfer:
     receiver: indexed(address)
     amount: uint256
 
-
 @external
 def transfer(receiver: address, amount: uint256):
     # some code ...
     log Transfer(msg.sender, receiver, amount)
 
-
 @external
 def mint(amount: uint256):
     # some code ...
-    log Transfer(ZERO_ADDRESS, msg.sender, amount)
-
+    log Transfer(empty(address), msg.sender, amount)
 
 @external
 def burn(amount: uint256):
     # some code ...
-    log Transfer(msg.sender, ZERO_ADDRESS, amount)
+    log Transfer(msg.sender, empty(address), amount)

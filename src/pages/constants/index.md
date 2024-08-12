@@ -1,6 +1,6 @@
 ---
 title: Constants
-version: 0.3.9
+version: 0.4.0
 description: Constants in Vyper
 keywords: [constant, constants]
 ---

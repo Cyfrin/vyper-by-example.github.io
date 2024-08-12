@@ -1,4 +1,4 @@
-# @version ^0.3.9
+# @pragma version ^0.4.0
 
 # publis state variable
 owner: public(address)
@@ -6,8 +6,7 @@ owner: public(address)
 foo: uint256
 bar: public(bool)
 
-
-@external
+@deploy
 def __init__():
     self.owner = msg.sender
     self.foo = 123

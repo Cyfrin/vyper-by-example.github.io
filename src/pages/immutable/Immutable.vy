@@ -1,15 +1,15 @@
-# @version ^0.3.9
+# @pragma version ^0.4.0
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)
 
-@external
-def __init__(_val: uint256):
+@deploy
+def __init__(val: uint256):
     OWNER = msg.sender
-    MY_IMMUTABLE = _val
+    MY_IMMUTABLE = val
 
 
 @external
-@pure
-def getMyImmutable() -> uint256:
+@view
+def get_my_immutable() -> uint256:
   return MY_IMMUTABLE

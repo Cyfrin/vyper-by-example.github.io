@@ -1,6 +1,6 @@
 ---
 title: Default Function
-version: 0.3.9
+version: 0.4.0
 description: Default function in Vyper
 keywords: [default, function, functions, __default__, fallback, payable]
 ---

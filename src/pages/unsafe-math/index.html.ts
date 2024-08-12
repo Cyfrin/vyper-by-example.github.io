@@ -1,13 +1,12 @@
 // metadata
-export const version = "0.3.9"
+export const version = "0.4.0"
 export const title = "Unsafe Math"
 export const description = "Unsafe math in Vyper"
 
 export const keywords = ["gas", "unsafe", "math"]
 
 const html = `<p>Critical math checks such as overflow, underflow and division by 0 can be skipped using unsafe functions</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
-
+<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_add</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
@@ -17,7 +16,6 @@ const html = `<p>Critical math checks such as overflow, underflow and division b
     <span class="hljs-comment"># 21472 gas</span>
     <span class="hljs-keyword">return</span> unsafe_add(x, y)
 
-
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_sub</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
     <span class="hljs-comment"># 21533 gas</span>
@@ -25,7 +23,6 @@ const html = `<p>Critical math checks such as overflow, underflow and division b
 
     <span class="hljs-comment"># 21495 gas</span>
     <span class="hljs-keyword">return</span> unsafe_sub(x, y)
-
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_mul</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
@@ -35,11 +32,10 @@ const html = `<p>Critical math checks such as overflow, underflow and division b
     <span class="hljs-comment"># 21520 gas</span>
     <span class="hljs-keyword">return</span> unsafe_mul(x, y)
 
-
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_div</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
     <span class="hljs-comment"># 21578 gas</span>
-    <span class="hljs-comment"># return x / y</span>
+    <span class="hljs-comment"># return x // y</span>
 
     <span class="hljs-comment"># 21543 gas</span>
     <span class="hljs-keyword">return</span> unsafe_div(x, y)

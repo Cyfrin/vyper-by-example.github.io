@@ -1,6 +1,6 @@
 ---
 title: Verify Signature
-version: 0.3.9
+version: 0.4.0
 description: Verify signature in Vyper
 keywords: [verify, signature, ecrecover]
 ---

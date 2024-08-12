@@ -1,6 +1,6 @@
 ---
 title: Dynamic Arrays
-version: 0.3.9
+version: 0.4.0
 description: Dynamic arrays in Vyper
 keywords: [dynamic, arrays, array]
 ---

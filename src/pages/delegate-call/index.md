@@ -1,6 +1,6 @@
 ---
 title: Delegate Call
-version: 0.3.9
+version: 0.4.0
 description: Delegate call in Vyper
 keywords: [delegate, call]
 ---

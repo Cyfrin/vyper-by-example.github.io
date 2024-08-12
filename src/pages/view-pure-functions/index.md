@@ -1,6 +1,6 @@
 ---
 title: View and Pure Functions
-version: 0.3.9
+version: 0.4.0
 description: View and pure functions in Vyper
 keywords: [view, pure, function, functions]
 ---

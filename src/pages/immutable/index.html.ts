@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.9"
+export const version = "0.4.0"
 export const title = "Immutable"
 export const description = "Immutable in Vyper"
 
@@ -14,20 +14,20 @@ for example like setting contract owner to <code>msg.sender</code></li>
 </ul>
 <h4>Why declare variables as <code>immutable</code>?</h4>
 <p>Like constants, <code>immutable</code> variables save run time gas</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)
 
-<span class="hljs-meta">@external</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">_val: uint256</span>):
+<span class="hljs-meta">@deploy</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">val: uint256</span>):
     OWNER = msg.sender
-    MY_IMMUTABLE = _val
+    MY_IMMUTABLE = val
 
 
 <span class="hljs-meta">@external</span>
-<span class="hljs-meta">@pure</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">getMyImmutable</span>() -&gt; uint256:
+<span class="hljs-meta">@view</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_my_immutable</span>() -&gt; uint256:
   <span class="hljs-keyword">return</span> MY_IMMUTABLE
 </code></pre>`
 

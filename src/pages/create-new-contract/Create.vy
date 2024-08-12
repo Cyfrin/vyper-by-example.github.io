@@ -1,23 +1,19 @@
-# @version ^0.3.9
-
+# @pragma version ^0.4.0
 
 interface ContractToDeploy:
-    def setup(owner: address): nonpayable
-
+    def set_owner(owner: address): nonpayable
 
 event Log:
     addr: address
 
-
 @external
-def deploy(_masterCopy: address, owner: address):
-    addr: address = create_forwarder_to(_masterCopy)
-    ContractToDeploy(addr).setup(owner)
+def deploy(master_copy: address, owner: address):
+    addr: address = create_minimal_proxy_to(master_copy)
+    extcall ContractToDeploy(addr).set_owner(owner)
     log Log(addr)
 
-
 @external
-def deployTest(_masterCopy: address):
-    addr: address = create_forwarder_to(_masterCopy)
-    ContractToDeploy(addr).setup(self)
+def deploy_test(master_copy: address):
+    addr: address = create_minimal_proxy_to(master_copy)
+    extcall ContractToDeploy(addr).set_owner(self)
     log Log(addr)

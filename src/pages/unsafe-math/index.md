@@ -1,6 +1,6 @@
 ---
 title: Unsafe Math
-version: 0.3.9
+version: 0.4.0
 description: Unsafe math in Vyper
 keywords: [gas, unsafe, math]
 ---

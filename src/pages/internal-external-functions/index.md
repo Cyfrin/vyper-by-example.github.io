@@ -1,6 +1,6 @@
 ---
 title: Internal and External Functions
-version: 0.3.9
+version: 0.4.0
 description: Internal and external functions in Vyper
 keywords: [internal, external, function, functions]
 ---

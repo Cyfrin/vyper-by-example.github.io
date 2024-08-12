@@ -1,6 +1,6 @@
 ---
 title: Private and Public State Variables
-version: 0.3.9
+version: 0.4.0
 description: Private and public state variables in Vyper
 keywords: [private, public, state, variable, variables]
 ---

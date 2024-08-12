@@ -27,6 +27,13 @@ npm run deploy
 
 ```shell
 ## Deploy ##
+
+# Compile contracts
+find vy -type f -exec vyper --enable-decimals {} \;
+
+# Copy contracts
+npx ts-node scripts/copy.ts
+
 # md to react
 npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts src/pages/function
 
@@ -38,4 +45,5 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
 
 # build search index
 npx ts-node --project ./scripts/tsconfig.json scripts/build-search-index.ts
+
 ```

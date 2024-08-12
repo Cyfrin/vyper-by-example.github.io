@@ -1,18 +1,15 @@
-# @version ^0.3.9
-
+# @pragma version ^0.4.0
 
 struct Person:
     name: String[100]
     age: uint256
-
 
 # Fixed sized list
 nums: public(uint256[10])  # must be bounded
 myMap: public(HashMap[address, uint256])
 person: public(Person)
 
-
-@external
+@deploy
 def __init__():
     # This updates self.nums[0]
     self.nums[0] = 123

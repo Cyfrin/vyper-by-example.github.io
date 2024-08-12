@@ -1,24 +1,22 @@
 // metadata
-export const version = "0.3.9"
+export const version = "0.4.0"
 export const title = "Function"
 export const description = "Function in Vyper"
 
 export const keywords = ["function", "functions"]
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
-
+const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">multiply</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
     <span class="hljs-keyword">return</span> x * y
 
-
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
-    <span class="hljs-keyword">return</span> x / y
-
+    <span class="hljs-comment"># integer division</span>
+    <span class="hljs-keyword">return</span> x // y
 
 <span class="hljs-comment"># A funciton that does nothing</span>
 <span class="hljs-meta">@external</span>
@@ -27,13 +25,11 @@ const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @ve
     <span class="hljs-comment"># write the code later</span>
     <span class="hljs-keyword">pass</span>
 
-
 <span class="hljs-comment"># Functions can return multiple outputs</span>
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">multiOut</span>() -&gt; (uint256, <span class="hljs-built_in">bool</span>):
     <span class="hljs-keyword">return</span> (<span class="hljs-number">1</span>, <span class="hljs-literal">True</span>)
-
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>

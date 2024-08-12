@@ -1,6 +1,6 @@
 ---
 title: Constructor
-version: 0.3.9
+version: 0.4.0
 description: Constructor in Vyper
 keywords: [constructor]
 ---

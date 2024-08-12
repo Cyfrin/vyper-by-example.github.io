@@ -1,6 +1,6 @@
 ---
 title: Data Types - References
-version: 0.3.9
+version: 0.4.0
 description: References in Vyper
 keywords:
   [

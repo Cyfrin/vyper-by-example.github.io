@@ -8,12 +8,12 @@ event Log:
 
 @external
 def deploy(master_copy: address, owner: address):
-    addr: address = create_forwarder_to(master_copy)
+    addr: address = create_minimal_proxy_to(master_copy)
     extcall ContractToDeploy(addr).set_owner(owner)
     log Log(addr)
 
 @external
 def deploy_test(master_copy: address):
-    addr: address = create_forwarder_to(master_copy)
+    addr: address = create_minimal_proxy_to(master_copy)
     extcall ContractToDeploy(addr).set_owner(self)
     log Log(addr)

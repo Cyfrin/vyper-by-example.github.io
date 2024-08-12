@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.3.9"
+export const version = "0.4.0"
 export const title = "Data Types - References"
 export const description = "References in Vyper"
 
@@ -20,21 +20,18 @@ export const keywords = [
 ]
 
 const html = `<p>References types are data types that are passed by their reference, pointer to where the actual data is stored.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @version ^0.3.9</span>
-
+<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
 
 struct Person:
     name: String[<span class="hljs-number">100</span>]
     age: uint256
-
 
 <span class="hljs-comment"># Fixed sized list</span>
 nums: public(uint256[<span class="hljs-number">10</span>])  <span class="hljs-comment"># must be bounded</span>
 myMap: public(HashMap[address, uint256])
 person: public(Person)
 
-
-<span class="hljs-meta">@external</span>
+<span class="hljs-meta">@deploy</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
     <span class="hljs-comment"># This updates self.nums[0]</span>
     <span class="hljs-variable language_">self</span>.nums[<span class="hljs-number">0</span>] = <span class="hljs-number">123</span>

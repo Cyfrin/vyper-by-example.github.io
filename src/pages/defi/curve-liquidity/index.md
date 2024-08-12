@@ -1,6 +1,6 @@
 ---
 title: Curve Add and Remove Liquidity
-version: 0.3.9
+version: 0.4.0
 description: Curve Add and Remove Liquidity
 keywords: [curve, add, remove liquidity, defi, amm]
 ---

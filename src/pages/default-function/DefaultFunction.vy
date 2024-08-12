@@ -1,10 +1,8 @@
-# @version ^0.3.9
-
+# @pragma version ^0.4.0
 
 event Payment:
     sender: indexed(address)
     amount: uint256
-
 
 @external
 @payable

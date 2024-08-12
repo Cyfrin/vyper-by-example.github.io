@@ -1,6 +1,6 @@
 ---
 title: Re-Entrancy Lock
-version: 0.3.9
+version: 0.4.0
 description: Re-entrancy lock in Vyper
 keywords: [re-entrancy, lock, nonreentrant]
 ---

@@ -1,6 +1,6 @@
 ---
 title: For Loop
-version: 0.3.9
+version: 0.4.0
 description: For loop in Vyper
 keywords: [for, loop, loops, range]
 ---

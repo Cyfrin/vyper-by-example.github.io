@@ -1,28 +1,25 @@
-# @version ^0.3.9
-
+# @pragma version ^0.4.0
 
 x: public(uint256)
 y: public(uint256)
 
-
 @external
-def updateX(to: address, x: uint256):
+def update_x(to: address, x: uint256):
     raw_call(
         to,
         concat(
-            method_id("updateX(uint256)"),
+            method_id("update_x(uint256)"),
             convert(x, bytes32)
         ),
         is_delegate_call=True
     )
 
-
 @external
-def updateY(to: address, y: uint256):
+def update_y(to: address, y: uint256):
     raw_call(
         to,
         concat(
-            method_id("updateY(uint256)"),
+            method_id("update_y(uint256)"),
             convert(y, bytes32)
         ),
         is_delegate_call=True

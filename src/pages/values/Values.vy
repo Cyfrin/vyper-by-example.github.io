@@ -1,4 +1,6 @@
-# @version ^0.3.9
+# @pragma version ^0.4.0
+
+# Must be compiled with --enable-decimals
 
 b: public(bool)
 i: public(int128)  # -2 ** 127 to (2 ** 127 - 1)
@@ -9,8 +11,7 @@ b32: public(bytes32)
 bs: public(Bytes[100])
 s: public(String[100])
 
-
-@external
+@deploy
 def __init__():
     self.b = False
     self.i = -1

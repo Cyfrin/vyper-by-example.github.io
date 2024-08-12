@@ -1,6 +1,6 @@
 ---
 title: Send Ether
-version: 0.3.9
+version: 0.4.0
 description: Send ETH in Vyper
 keywords: [send, ether, raw_call, payable]
 ---
