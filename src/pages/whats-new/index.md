@@ -8,11 +8,13 @@ keywords: [vyper, 0.4]
 ### pragma version
 
 0.3
+
 ```vyper
 # @version ^0.3.0
 ```
 
 0.4
+
 ```vyper
 #pragma version ^0.4.0
 ```
@@ -28,6 +30,7 @@ keywords: [vyper, 0.4]
 ### Constructor
 
 0.3
+
 ```vyper
 @external
 def __init__():
@@ -35,6 +38,7 @@ def __init__():
 ```
 
 0.4
+
 ```vyper
 @deploy
 def __init__():
@@ -44,12 +48,14 @@ def __init__():
 ### For loop
 
 0.3
+
 ```vyper
 for addr in addrs:
     ...
 ```
 
 0.4
+
 ```vyper
 for addr: address in addrs:
     ...
@@ -58,11 +64,13 @@ for addr: address in addrs:
 ### Division
 
 0.3
+
 ```shell
 x / y
 ```
 
 0.4
+
 ```shell
 x // y
 ```
@@ -70,6 +78,7 @@ x // y
 ### Constants
 
 0.3
+
 ```vyper
 ZERO_ADDRESS
 MAX_UINT256
@@ -77,6 +86,7 @@ EMPTY_BYTES32
 ```
 
 0.4
+
 ```vyper
 empty(address)
 max_value(uint256)
@@ -93,11 +103,13 @@ extcall IFoo(addr).bar()
 ### Re-entrancy locks
 
 0.3
+
 ```vyper
 @nonreentrant("lock")
 ```
 
 0.4
+
 ```vyper
 @nonreentrant
 ```
