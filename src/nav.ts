@@ -23,12 +23,12 @@ export const VY_ROUTES: Route[] = [
   { path: "values", title: "Data Types - Values" },
   { path: "references", title: "Data Types - References" },
   { path: "dynamic-arrays", title: "Dynamic Arrays" },
+  { path: "constants", title: "Constants" },
   { path: "constructor", title: "Constructor" },
   {
     path: "private-public-state-variables",
     title: "Private and Public State Variables",
   },
-  { path: "constants", title: "Constants" },
   { path: "immutable", title: "Immutable" },
   { path: "function", title: "Function" },
   { path: "internal-external-functions", title: "Internal and External Functions" },
