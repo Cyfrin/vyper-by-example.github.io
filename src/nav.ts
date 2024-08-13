@@ -17,6 +17,10 @@ export const TRANSLATIONS: Translation[] = [
 
 export const VY_ROUTES: Route[] = [
   {
+    path: "whats-new",
+    title: "What's New in Vyper 0.4",
+  },
+  {
     path: "hello-world",
     title: "Hello World",
   },
