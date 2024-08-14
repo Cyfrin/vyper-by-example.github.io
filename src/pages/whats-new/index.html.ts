@@ -3,7 +3,10 @@ export const version = "0.4.0"
 export const title = "What's New"
 export const description = "What's new in Vyper 0.4"
 
-export const keywords = ["vyper", "0.4"]
+export const keywords = [
+    "vyper",
+    "0.4",
+]
 
 const html = `<h3>pragma version</h3>
 <p>0.3</p>
@@ -51,6 +54,8 @@ extcall IFoo(addr).bar()
 <pre><code class="language-vyper"><span class="hljs-meta">@nonreentrant(<span class="hljs-params"><span class="hljs-string">"lock"</span></span>)</span>
 </code></pre><p>0.4</p>
 <pre><code class="language-vyper"><span class="hljs-meta">@nonreentrant</span>
-</code></pre>`
+</code></pre><h3>Modules</h3>
+<p>See <a href="/modules">modules</a></p>
+`
 
 export default html

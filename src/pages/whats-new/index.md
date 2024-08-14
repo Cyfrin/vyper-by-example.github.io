@@ -113,3 +113,7 @@ extcall IFoo(addr).bar()
 ```vyper
 @nonreentrant
 ```
+
+### Modules
+
+See [modules](/modules)
