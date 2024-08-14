@@ -1,3 +1,4 @@
+import component_app_rebase_token from "./pages/app/rebase-token"
 import component_constants from "./pages/constants"
 import component_constructor from "./pages/constructor"
 import component_create_new_contract from "./pages/create-new-contract"
@@ -49,6 +50,10 @@ interface Route {
 }
 
 const routes: Route[] = [
+  {
+    path: "/app/rebase-token",
+    component: component_app_rebase_token,
+  },
   {
     path: "/constants",
     component: component_constants,

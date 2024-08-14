@@ -57,6 +57,13 @@ export const VY_ROUTES: Route[] = [
   { path: "modules", title: "Modules" },
 ]
 
+export const APP_ROUTES = [
+  {
+    path: "rebase-token",
+    title: "Rebase token",
+  },
+]
+
 export const DEFI_ROUTES = [
   {
     path: "curve-swap",
@@ -74,6 +81,13 @@ export const ROUTES_BY_CATEGORY = [
     routes: VY_ROUTES.map((route) => ({
       ...route,
       path: `/${route.path}`,
+    })),
+  },
+  {
+    title: "App",
+    routes: APP_ROUTES.map((route) => ({
+      ...route,
+      path: `/app/${route.path}`,
     })),
   },
   {
