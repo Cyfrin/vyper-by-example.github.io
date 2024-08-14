@@ -16,6 +16,7 @@ import component_if_else from "./pages/if-else"
 import component_immutable from "./pages/immutable"
 import component_interface from "./pages/interface"
 import component_internal_external_functions from "./pages/internal-external-functions"
+import component_modules from "./pages/modules"
 import component_payable from "./pages/payable"
 import component_print from "./pages/print"
 import component_private_public_state_variables from "./pages/private-public-state-variables"
@@ -119,6 +120,10 @@ const routes: Route[] = [
   {
     path: "/internal-external-functions",
     component: component_internal_external_functions,
+  },
+  {
+    path: "/modules",
+    component: component_modules,
   },
   {
     path: "/payable",

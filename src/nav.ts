@@ -54,6 +54,7 @@ export const VY_ROUTES: Route[] = [
   { path: "self-destruct", title: "Self Destruct" },
   { path: "print", title: "Debug with Print" },
   { path: "unsafe-math", title: "Unsafe Math" },
+  { path: "modules", title: "Modules" },
 ]
 
 export const DEFI_ROUTES = [
