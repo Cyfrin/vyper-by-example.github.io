@@ -1,4 +1,5 @@
 {
+  "/whats-new": ["vyper", 0.4],
   "/view-pure-functions": ["view", "pure", "function", "functions"],
   "/verify-signature": ["verify", "signature", "ecrecover"],
   "/values": [
@@ -47,8 +48,10 @@
   ],
   "/print": ["debug", "print"],
   "/payable": ["payable", "function", "functions"],
+  "/modules": ["modules", "use", "exports", "initializes"],
   "/internal-external-functions": ["internal", "external", "function", "functions"],
   "/interface": ["interface", "interfaces"],
+  "/imports": ["imports"],
   "/immutable": ["immutable", "immutables", "constant", "constants"],
   "/if-else": ["if", "else", "conditional", "statement"],
   "/hello-world": ["hello", "world", "version"],
@@ -71,5 +74,6 @@
   ],
   "/create-new-contract": ["create", "new", "contract", "create_forwarder_to"],
   "/constructor": ["constructor"],
-  "/constants": ["constant", "constants"]
+  "/constants": ["constant", "constants"],
+  "/app/rebase-token": ["rebase", "token", "app"]
 }

@@ -1,4 +1,6 @@
 {
+  "vyper": ["/whats-new"],
+  "0.4": ["/whats-new"],
   "view": ["/view-pure-functions"],
   "pure": ["/view-pure-functions"],
   "function": [
@@ -63,10 +65,15 @@
   "state": ["/private-public-state-variables"],
   "debug": ["/print"],
   "print": ["/print"],
+  "modules": ["/modules"],
+  "use": ["/modules"],
+  "exports": ["/modules"],
+  "initializes": ["/modules"],
   "internal": ["/internal-external-functions"],
   "external": ["/internal-external-functions"],
   "interface": ["/interface"],
   "interfaces": ["/interface"],
+  "imports": ["/imports"],
   "immutable": ["/immutable"],
   "immutables": ["/immutable"],
   "constant": ["/immutable", "/constants"],
@@ -103,5 +110,8 @@
   "new": ["/create-new-contract"],
   "contract": ["/create-new-contract"],
   "create_forwarder_to": ["/create-new-contract"],
-  "constructor": ["/constructor"]
+  "constructor": ["/constructor"],
+  "rebase": ["/app/rebase-token"],
+  "token": ["/app/rebase-token"],
+  "app": ["/app/rebase-token"]
 }

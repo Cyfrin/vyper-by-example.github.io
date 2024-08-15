@@ -15,6 +15,7 @@ import component_hash_function from "./pages/hash-function"
 import component_hello_world from "./pages/hello-world"
 import component_if_else from "./pages/if-else"
 import component_immutable from "./pages/immutable"
+import component_imports from "./pages/imports"
 import component_interface from "./pages/interface"
 import component_internal_external_functions from "./pages/internal-external-functions"
 import component_modules from "./pages/modules"
@@ -117,6 +118,10 @@ const routes: Route[] = [
   {
     path: "/immutable",
     component: component_immutable,
+  },
+  {
+    path: "/imports",
+    component: component_imports,
   },
   {
     path: "/interface",
