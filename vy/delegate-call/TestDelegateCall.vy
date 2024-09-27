@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 # State variables must be declared in the same order
 # as contract making the call

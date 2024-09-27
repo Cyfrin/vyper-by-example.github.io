@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 # Rebase token (compound interest rate)
 

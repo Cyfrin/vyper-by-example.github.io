@@ -5,7 +5,7 @@ export const description = "Function in Vyper"
 
 export const keywords = ["function", "functions"]
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+const html = `<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>

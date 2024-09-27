@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 # hash = get_hash("Hello Vyper!")
 # 0x5436c86f18e3d25a10e557ae125450118dd0a481ca22112b1977d55a676e4c91

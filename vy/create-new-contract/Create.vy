@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 interface ContractToDeploy:
     def set_owner(owner: address): nonpayable

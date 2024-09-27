@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 # up to 3 index
 event Transfer:

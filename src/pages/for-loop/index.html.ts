@@ -6,7 +6,7 @@ export const description = "For loop in Vyper"
 export const keywords = ["for", "loop", "loops", "range"]
 
 const html = `<p>There are 2 ways to loop through an array, using <code>range</code> and directly looping through array elements.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>

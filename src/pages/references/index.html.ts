@@ -20,7 +20,7 @@ export const keywords = [
 ]
 
 const html = `<p>References types are data types that are passed by their reference, pointer to where the actual data is stored.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 struct Person:
     name: String[<span class="hljs-number">100</span>]

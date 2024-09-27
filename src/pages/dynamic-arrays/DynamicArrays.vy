@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 # Dynamic array of type uint256, max 3 elements
 nums: DynArray[uint256, 3]

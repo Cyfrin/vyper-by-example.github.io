@@ -6,7 +6,7 @@ export const description = "Payable in Vyper"
 export const keywords = ["payable", "function", "functions"]
 
 const html = `<p>Functions declared with <code>@payable</code> can receive Ether.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 event Deposit:
     sender: indexed(address)

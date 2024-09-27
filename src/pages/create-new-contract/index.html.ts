@@ -15,7 +15,7 @@ const html = `<p>Vyper contracts can deploy new contracts using the function <co
 </ol>
 <p>Here is <code>ContractToDeploy</code></p>
 <p>ContractToDeploy.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 owner: public(address)
 
@@ -37,7 +37,7 @@ owner: public(address)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">kill</span>():
   selfdestruct(msg.sender)
 </code></pre><p>Create.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 interface ContractToDeploy:
     <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner</span>(<span class="hljs-params">owner: address</span>): nonpayable

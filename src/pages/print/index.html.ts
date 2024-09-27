@@ -6,7 +6,7 @@ export const description = "Debug with Print"
 export const keywords = ["debug", "print"]
 
 const html = `<p>Use the built-in function <code>print</code> to debug smart contracts.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_print</span>():

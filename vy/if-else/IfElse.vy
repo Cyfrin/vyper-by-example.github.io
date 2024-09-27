@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 @external
 def if_else(x: uint256) -> uint256:

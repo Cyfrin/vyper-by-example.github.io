@@ -8,7 +8,7 @@ export const keywords = ["error", "errors"]
 const html = `<p>Use <code>assert</code> and <code>raise</code> to check inputs and validate state.</p>
 <p>When an error occurs, it will halt the entire function call, undoing any changes.</p>
 <p>You will still need to pay gas for the failed transaction.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 x: public(uint256)
 owner: public(address)

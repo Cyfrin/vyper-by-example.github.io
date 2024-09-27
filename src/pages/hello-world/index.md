@@ -5,7 +5,7 @@ description: Hello world in Vyper
 keywords: [hello, world, version]
 ---
 
-`@version` specifies the compiler version of Vyper.
+`pragma` specifies the compiler version of Vyper.
 
 ```vyper
 {{{HelloWorld}}}

@@ -5,7 +5,7 @@ export const description = "If else conditional statement in Vyper"
 
 export const keywords = ["if", "else", "conditional", "statement"]
 
-const html = `<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+const html = `<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">if_else</span>(<span class="hljs-params">x: uint256</span>) -&gt; uint256:

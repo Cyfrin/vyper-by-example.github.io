@@ -5,8 +5,8 @@ export const description = "Hello world in Vyper"
 
 export const keywords = ["hello", "world", "version"]
 
-const html = `<p><code>@version</code> specifies the compiler version of Vyper.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+const html = `<p><code>pragma</code> specifies the compiler version of Vyper.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Create a string variable that can store maximum 100 characters</span>
 greet: public(String[<span class="hljs-number">100</span>])

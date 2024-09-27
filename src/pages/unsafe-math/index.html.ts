@@ -6,7 +6,7 @@ export const description = "Unsafe math in Vyper"
 export const keywords = ["gas", "unsafe", "math"]
 
 const html = `<p>Critical math checks such as overflow, underflow and division by 0 can be skipped using unsafe functions</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_add</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:

@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 MY_CONSTANT: constant(uint256) = 123
 MIN: constant(uint256) = 1

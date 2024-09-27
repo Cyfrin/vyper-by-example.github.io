@@ -6,7 +6,7 @@ export const description = "Curve Add and Remove Liquidity"
 export const keywords = ["curve", "add", "remove liquidity", "defi", "amm"]
 
 const html = `<p>Add and remove liquidity from Curve pools</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-keyword">from</span> ethereum.ercs <span class="hljs-keyword">import</span> IERC20
 

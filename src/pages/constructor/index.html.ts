@@ -6,7 +6,7 @@ export const description = "Constructor in Vyper"
 export const keywords = ["constructor"]
 
 const html = `<p><code>__init__</code> is a special function that is executed only once when the contract is deployed.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 owner: public(address)
 name: public(String[<span class="hljs-number">10</span>])

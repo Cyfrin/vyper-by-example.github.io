@@ -7,7 +7,7 @@ export const keywords = ["event", "events"]
 
 const html = `<p>Events write logs to the blockchain, commonly used by application to monitor blockchain state and as a cheaper alternative to store data on the blockchain without using state variables.</p>
 <p>Events can be efficiently searched by indexing their arguments. Up to 3 parameters can be indexed.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># up to 3 index</span>
 event Transfer:

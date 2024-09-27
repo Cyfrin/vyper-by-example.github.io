@@ -6,7 +6,7 @@ export const description = "Rebase token in Vyper"
 export const keywords = ["rebase", "token", "app"]
 
 const html = `<p>Example of rebase token</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Rebase token (compound interest rate)</span>
 

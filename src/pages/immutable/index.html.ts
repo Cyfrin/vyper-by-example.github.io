@@ -14,7 +14,7 @@ for example like setting contract owner to <code>msg.sender</code></li>
 </ul>
 <h4>Why declare variables as <code>immutable</code>?</h4>
 <p>Like constants, <code>immutable</code> variables save run time gas</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)

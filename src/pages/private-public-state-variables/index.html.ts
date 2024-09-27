@@ -7,7 +7,7 @@ export const keywords = ["private", "public", "state", "variable", "variables"]
 
 const html = `<p>Private state variables cannot be accessed from outside the contract.</p>
 <p>Public state variables can be read by anyone, including users and other contracts.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># publis state variable</span>
 owner: public(address)

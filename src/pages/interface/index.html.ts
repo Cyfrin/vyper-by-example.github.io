@@ -8,7 +8,7 @@ export const keywords = ["interface", "interfaces"]
 const html = `<p>Use <code>interface</code> to call other smart contracts.</p>
 <p>Here is the <code>TestInterface</code> self.contract that we will call.</p>
 <p>TestInterface.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 owner: public(address)
 eth: public(uint256)
@@ -28,7 +28,7 @@ eth: public(uint256)
     <span class="hljs-variable language_">self</span>.owner = owner
     <span class="hljs-variable language_">self</span>.eth = msg.value
 </code></pre><p>Interface.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 interface TestInterface:
     <span class="hljs-comment"># get address of owner</span>

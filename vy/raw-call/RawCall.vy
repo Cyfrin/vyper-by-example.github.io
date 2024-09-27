@@ -1,4 +1,4 @@
-# @pragma version ^0.4.0
+# pragma version ^0.4.0
 
 @external
 def test_raw_call(to: address, x: uint256, y: uint256):

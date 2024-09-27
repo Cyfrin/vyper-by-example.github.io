@@ -6,7 +6,7 @@ export const description = "Hash function in Vyper"
 export const keywords = ["hash", "keccack256", "function", "functions"]
 
 const html = `<p>Vyper supports the same hash function available in Solidity, <code>keccack256</code>.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>

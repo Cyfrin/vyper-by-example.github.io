@@ -32,7 +32,7 @@ const html = `<p>Some values available in Vyper</p>
 <li><code>Bytes</code></li>
 <li><code>String</code></li>
 </ul>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Must be compiled with --enable-decimals</span>
 

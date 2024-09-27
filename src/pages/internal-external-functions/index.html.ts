@@ -7,7 +7,7 @@ export const keywords = ["internal", "external", "function", "functions"]
 
 const html = `<p><code>@internal</code> functions can only be called inside the contract.</p>
 <p><code>@external</code> functions can only be called from outside the contract.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Internal functions can only be called inside this contract</span>
 <span class="hljs-meta">@internal</span>

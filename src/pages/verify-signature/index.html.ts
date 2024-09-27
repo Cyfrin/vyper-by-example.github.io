@@ -11,7 +11,7 @@ const html = `<p>Signing and verifying signature takes 3 steps.</p>
 <li>Sign the hash. This must be done off chain.</li>
 <li>Verify the signature. This is done using a smart contract.</li>
 </ol>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># hash = get_hash("Hello Vyper!")</span>
 <span class="hljs-comment"># 0x5436c86f18e3d25a10e557ae125450118dd0a481ca22112b1977d55a676e4c91</span>
