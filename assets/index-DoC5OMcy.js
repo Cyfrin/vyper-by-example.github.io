@@ -65,7 +65,7 @@ Error generating stack: `+l.message+`
  *
  * @license MIT
  */function ur(e){return e===void 0&&(e=""),new URLSearchParams(typeof e=="string"||Array.isArray(e)||e instanceof URLSearchParams?e:Object.keys(e).reduce((n,s)=>{let t=e[s];return n.concat(Array.isArray(t)?t.map(a=>[s,a]):[[s,t]])},[]))}function Oh(e,n){let s=ur(e);return n&&n.forEach((t,a)=>{s.has(a)||n.getAll(a).forEach(l=>{s.append(a,l)})}),s}const Ah="6";try{window.__reactRouterVersion=Ah}catch{}const Dh="startTransition",Pi=Ip[Dh];function Fh(e){let{basename:n,children:s,future:t,window:a}=e,l=S.useRef();l.current==null&&(l.current=Wf({window:a,v5Compat:!0}));let r=l.current,[o,i]=S.useState({action:r.action,location:r.location}),{v7_startTransition:c}=t||{},d=S.useCallback(f=>{c&&Pi?Pi(()=>i(f)):i(f)},[i,c]);return S.useLayoutEffect(()=>r.listen(d),[r,d]),S.createElement(Lh,{basename:n,children:s,location:o.location,navigationType:o.action,navigator:r,future:t})}var Ni;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher",e.useViewTransitionState="useViewTransitionState"})(Ni||(Ni={}));var bi;(function(e){e.UseFetcher="useFetcher",e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(bi||(bi={}));function Mh(e){let n=S.useRef(ur(e)),s=S.useRef(!1),t=Oa(),a=S.useMemo(()=>Oh(t.search,s.current?null:n.current),[t.search]),l=jh(),r=S.useCallback((o,i)=>{const c=ur(typeof o=="function"?o(a):o);s.current=!0,l("?"+c,i)},[l,a]);return[a,r]}const $h="_component_nqcni_1",Vh="_sideNav_nqcni_6",Uh="_main_nqcni_13",Bh="_children_nqcni_21",Rt={component:$h,sideNav:Vh,main:Uh,children:Bh},Hh="_list_1ltry_1",Wh="_title_1ltry_6",Qh="_listItem_1ltry_11",Yh="_listItemActive_1ltry_18",Kh="_link_1ltry_26",Vn={list:Hh,title:Wh,listItem:Qh,listItemActive:Yh,link:Kh},Xh=[{lang:"Simplified Chinese",url:"https://github.com/Web3-Club/vyper-by-example_Chinese"}],Gh=[{path:"whats-new",title:"What's New in Vyper 0.4"},{path:"hello-world",title:"Hello World"},{path:"values",title:"Data Types - Values"},{path:"references",title:"Data Types - References"},{path:"dynamic-arrays",title:"Dynamic Arrays"},{path:"constants",title:"Constants"},{path:"constructor",title:"Constructor"},{path:"private-public-state-variables",title:"Private and Public State Variables"},{path:"immutable",title:"Immutable"},{path:"function",title:"Function"},{path:"internal-external-functions",title:"Internal and External Functions"},{path:"view-pure-functions",title:"View and Pure Functions"},{path:"if-else",title:"If Else"},{path:"for-loop",title:"For Loop"},{path:"error",title:"Error"},{path:"event",title:"Event"},{path:"payable",title:"Payable"},{path:"default-function",title:"Default Function"},{path:"send-ether",title:"Send Ether"},{path:"raw-call",title:"Raw Call"},{path:"delegate-call",title:"Delegate Call"},{path:"interface",title:"Interface"},{path:"hash-function",title:"Hash Function"},{path:"verify-signature",title:"Verify Signature"},{path:"create-new-contract",title:"Create New Contract"},{path:"re-entrancy-lock",title:"Re-entrancy Lock"},{path:"self-destruct",title:"Self Destruct"},{path:"print",title:"Debug with Print"},{path:"unsafe-math",title:"Unsafe Math"},{path:"imports",title:"Imports"},{path:"modules",title:"Modules"}],qh=[{path:"rebase-token",title:"Rebase token"}],Zh=[{path:"curve-swap",title:"Curve Swap"},{path:"curve-liquidity",title:"Curve Add and Remove Liquidity"}],co=[{title:"",routes:Gh.map(e=>({...e,path:`/${e.path}`}))},{title:"App",routes:qh.map(e=>({...e,path:`/app/${e.path}`}))},{title:"DeFi",routes:Zh.map(e=>({...e,path:`/defi/${e.path}`}))}],ma=co.map(({routes:e})=>e).flat(),Jh=ma.reduce((e,n,s)=>(e[n.path]=s,e),{});function em(e){const n=Jh[e];if(n>=0){const s=ma[n-1]||null,t=ma[n+1]||null;return{prev:s,next:t}}return{prev:null,next:null}}const nm=({onClick:e})=>{const n=Oa();function s(t,a){t.preventDefault(),e(a)}return g.jsxs(g.Fragment,{children:[g.jsx("h3",{className:Vn.category,children:"Basic"}),co.map(({routes:t,title:a},l)=>g.jsxs("div",{children:[a&&g.jsx("h3",{className:Vn.title,children:a}),g.jsx("ul",{className:Vn.list,children:t.map(({path:r,title:o})=>{const i=!!ir(r,n.pathname);return g.jsx("li",{className:i?Vn.listItemActive:Vn.listItem,children:g.jsx("a",{className:Vn.link,href:r,onClick:c=>s(c,r),children:o})},r)})})]},l))]})},sm=({size:e,className:n="",onClick:s})=>g.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 20 20",strokeWidth:2,stroke:"currentColor",className:n,width:e,height:e,onClick:s,children:g.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"})}),tm="_component_15x91_1",am="_a_15x91_13",lm="_center_15x91_16",rm="_logo_15x91_21",om="_header_15x91_24",im="_mode_15x91_28",cm="_hamburger_15x91_33",nn={component:tm,a:am,center:lm,logo:rm,header:om,mode:im,hamburger:cm},um=({size:e,className:n=""})=>g.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",fill:"#fff",viewBox:"0 0 438.277 438.277",width:e,height:e,className:n,children:g.jsx("path",{d:"M428.756 300.104c-.664-3.81-2.334-7.047-4.996-9.713-5.9-5.903-12.752-7.142-20.554-3.716-20.937 9.708-42.641 14.558-65.097 14.558-28.171 0-54.152-6.94-77.943-20.838-23.791-13.894-42.631-32.736-56.525-56.53-13.899-23.793-20.844-49.773-20.844-77.945 0-21.888 4.333-42.683 12.991-62.384 8.66-19.7 21.176-36.973 37.543-51.82 6.283-5.898 7.713-12.752 4.287-20.557-3.236-7.801-9.041-11.511-17.415-11.132-29.121 1.141-56.72 7.664-82.797 19.556C111.33 31.478 88.917 47.13 70.168 66.548c-18.747 19.414-33.595 42.399-44.54 68.95-10.942 26.553-16.416 54.39-16.416 83.511 0 29.694 5.806 58.054 17.416 85.082 11.613 27.028 27.218 50.344 46.824 69.949 19.604 19.599 42.92 35.207 69.951 46.822 27.028 11.607 55.384 17.415 85.075 17.415 42.64 0 81.987-11.563 118.054-34.69 36.069-23.124 63.05-54.006 80.944-92.645 1.524-3.423 1.951-7.036 1.28-10.838zm-122.191 84.064c-24.646 11.711-50.676 17.562-78.087 17.562-24.743 0-48.39-4.853-70.947-14.558-22.554-9.705-41.971-22.695-58.246-38.972-16.271-16.272-29.259-35.686-38.97-58.241-9.707-22.556-14.561-46.203-14.561-70.948 0-40.922 12.135-77.466 36.403-109.636 24.266-32.165 55.531-53.959 93.788-65.379-19.795 31.405-29.694 65.379-29.694 101.926 0 34.644 8.564 66.715 25.697 96.223 17.128 29.499 40.446 52.811 69.95 69.948 29.499 17.129 61.565 25.694 96.211 25.694 10.656 0 21.129-.855 31.408-2.57-17.318 20.938-38.307 37.255-62.952 48.951z"})}),pm=({size:e,className:n=""})=>g.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 302.4 302.4",width:e,height:e,className:n,children:[g.jsx("path",{d:"M204.8 97.6C191.2 84 172 75.2 151.2 75.2s-40 8.4-53.6 22.4c-13.6 13.6-22.4 32.8-22.4 53.6s8.8 40 22.4 53.6c13.6 13.6 32.8 22.4 53.6 22.4s40-8.4 53.6-22.4c13.6-13.6 22.4-32.8 22.4-53.6s-8.4-40-22.4-53.6zm-14.4 92.8c-10 10-24 16-39.2 16s-29.2-6-39.2-16-16-24-16-39.2 6-29.2 16-39.2 24-16 39.2-16 29.2 6 39.2 16 16 24 16 39.2-6 29.2-16 39.2z",stroke:"#252519",strokeWidth:12}),g.jsx("path",{d:"M292 140.8h-30.8c-5.6 0-10.4 4.8-10.4 10.4 0 5.6 4.8 10.4 10.4 10.4H292c5.6 0 10.4-4.8 10.4-10.4 0-5.6-4.8-10.4-10.4-10.4zm-140.8 110c-5.6 0-10.4 4.8-10.4 10.4V292c0 5.6 4.8 10.4 10.4 10.4 5.6 0 10.4-4.8 10.4-10.4v-30.8c0-5.6-4.8-10.4-10.4-10.4zm106.8-7.2-22-22c-3.6-4-10.4-4-14.4 0s-4 10.4 0 14.4l22 22c4 4 10.4 4 14.4 0s4-10.4 0-14.4zM151.2 0c-5.6 0-10.4 4.8-10.4 10.4v30.8c0 5.6 4.8 10.4 10.4 10.4 5.6 0 10.4-4.8 10.4-10.4V10.4c0-5.6-4.8-10.4-10.4-10.4zm107.2 44.4c-4-4-10.4-4-14.4 0l-22 22c-4 4-4 10.4 0 14.4 3.6 4 10.4 4 14.4 0l22-22c4-4 4-10.4 0-14.4zM41.2 140.8H10.4c-5.6 0-10.4 4.8-10.4 10.4s4.4 10.4 10.4 10.4h30.8c5.6 0 10.4-4.8 10.4-10.4 0-5.6-4.8-10.4-10.4-10.4zm39.2 80.8c-3.6-4-10.4-4-14.4 0l-22 22c-4 4-4 10.4 0 14.4s10.4 4 14.4 0l22-22c4-4 4-10.4 0-14.4zm0-155.2-22-22c-4-4-10.4-4-14.4 0s-4 10.4 0 14.4l22 22c4 4 10.4 4 14.4 0s4-10.4 0-14.4z",stroke:"#252519",strokeWidth:5})]}),dm=({size:e,className:n="",fill:s})=>g.jsxs("svg",{"data-name":"Transparent Logo",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 2048 1773.62",width:e,height:e,className:n,fill:s,children:[g.jsx("path",{style:{opacity:.8},d:"m1024 886.81-256 443.41 256 443.4 256-443.4-256-443.41z"}),g.jsx("path",{style:{opacity:.6},d:"m1280 443.41-256 443.4 256 443.41 256-443.41-256-443.4zM768 443.41l-256 443.4 256 443.41 256-443.41-256-443.4z"}),g.jsx("path",{style:{opacity:.45},d:"m1536 0-256 443.41 256 443.4 256-443.4L1536 0zM1152 221.7H896L768 443.41l256 443.4 256-443.4-128-221.71zM512 0 256 443.41l256 443.4 256-443.4L512 0z"}),g.jsx("path",{style:{opacity:.3},d:"M1792 443.4 2048 0h-512l256 443.4zM256 443.4 512 0H0l256 443.4z"})]});function fm(){const{state:e,setTheme:n,toggleSideNav:s}=oo();function t(){n(e.theme=="light"?"dark":"light")}return g.jsxs("div",{className:nn.component,children:[g.jsx(sm,{size:20,className:nn.hamburger,onClick:s}),g.jsxs("div",{className:nn.center,children:[g.jsx("a",{href:"/",className:nn.a,children:g.jsx(dm,{className:nn.logo,size:30,fill:e.theme=="dark"?"rgb(255, 0, 255)":"currentColor"})}),g.jsx("h3",{className:nn.header,children:g.jsx("a",{href:"/",className:nn.a,children:"Vyper by Example"})})]}),g.jsx("button",{className:nn.mode,onClick:t,children:e.theme=="dark"?g.jsx(um,{size:20}):g.jsx(pm,{size:20})})]})}const hm="_component_h47vh_1",mm="_row_h47vh_8",gm="_bar_h47vh_13",ym="_to_h47vh_21",vm="_social_h47vh_24",jm="_sce_h47vh_29",wm="_telegram_h47vh_34",_m="_discord_h47vh_38",xm="_youTube_h47vh_42",ve={component:hm,row:mm,bar:gm,to:ym,social:vm,sce:jm,telegram:wm,discord:_m,youTube:xm},km="data:image/png;base64,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",dp="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAyCAYAAAAOX8ZtAAAABmJLR0QA/wD/AP+gvaeTAAADmUlEQVRoge3bT2wUZRjH8c9Ml39S09IC/uFiRBIwabzVE15oiJBwLBcP3npS4E4IBA/EAwmcCInhoCeJNwgQoDGRC8GESMDYhJRyUAQplZa2tBYdD+9suqmsadHO+6J8kzd5Z3Znnt/+9p1ndt593swCKViFV7EWK8vWjpewouyvLLdfLg9rxZKG0ywt39NIOzL8gdE5r42W++uMY6bs/4pJTOARxsr+RHncOO7hbsbjhXzWrNkLBcvxPt5FF97Ga8L+55VR/Ijv8R0u45uM3+d9hoK+gnsFxf+g3S74cD6mrCj4PAHBMdpXRUgLTc35IgGRMduXzYz5OAFxKbSP6p5kpTHtuI22eSem/y4P8UbGaF7u6PXCmDrtgh/q5vTE05IkPcya0x1RSIp0Q1aEy+lhZDEpsirH+tgqEmV9jjdjq0iUt3Ksi60iUdbl6Kw05NatrFlTachnpDPH6kpD7tjBrVscOMCyZZWGXiCrqzcHWlvZv5/r1+ntrTz8POms/rJqZMMGTp7k4kW6uqLJaMLqHB2xVdiyhatXOX48pXzUmQvTmfGp1ejrY2CA3bvDdlyW50grK3Z0cORIyEfbtsVUsjQ9c+ps3MiZM1y4wKZNMRQsS9ecOj09XLvG0aO0VTqrkvDIaWTJEnbtYnAw5KOWliqiPgcjp5HOzpCPrlxh8+bFjrY0R7HYUZ5Tshy/xVYxb4aH2bOH7m4uXVrsaFM1TEvlt04zZmY4dox9+xgbqyrqdN2cdDl9OoyWwcGqI0/nUjVnYIDt28NTfPXGkKQ5IyNhpHR1cfZsTCVTNaF8Iz5PnnDiBHv3hsQbn6kaRmKr0N8fRsuNG7GVNDKcI97XdPMmO3eGR4S0jIHhmhjmjI9z+DCHDjGdVsprIII5p05x8CD371ca9hl4UMODSkOeP19puH/AcI47sVUkys85bsVWkSiDLwoJmtOWZ6H8dCi2ksQYyhir1+dciSolPb5ltnipP6KQFPmaFwWTT+ORUDA5kkMWEvIncTUlw6fZ3OfNgpaCUwnUAcds/QVP/6u1YHnBZwmIjNHOFbOrfJpT8EHBUAKCq2h3i1C9n8/14e+WFLXgPWFJ0TvCkqLXxajn+fd4jJ/wg7Cs6DLOZU1mQ5ua04wi/Am4Fq8Id7lWs4vSVjX0W4W7X17GaZ9zqvriszr19xb++ov9EZ40bD/GVNkfFWYzJ8vjJsp+fWHaJH7BnSzsmzd/AkgxNaTAmykLAAAAAElFTkSuQmCC",Sm="/assets/telegram-DMavHjFx.png",Em="/assets/discord-BqSoMD3G.png";function Cm(){return g.jsxs("div",{className:ve.component,children:[g.jsxs("div",{className:ve.row,children:[g.jsx("img",{src:km,alt:"smart contract engineer",className:ve.sce}),g.jsx("a",{href:"https://www.smartcontract.engineer",target:"__blank",children:"Smart Contract Engineer"})]}),g.jsxs("div",{className:ve.social,children:[g.jsxs("div",{className:ve.row,children:[g.jsx("img",{src:Em,alt:"discord",className:ve.discord}),g.jsx("a",{href:"https://discord.gg/bt8FK2wkcW",target:"__blank",children:"Discord"})]}),g.jsxs("div",{className:ve.row,children:[g.jsx("img",{src:Sm,alt:"telegram",className:ve.telegram}),g.jsx("a",{href:"https://t.me/smartcontractprogrammer",target:"__blank",children:"Telegram"})]}),g.jsxs("div",{className:ve.row,children:[g.jsx("img",{src:dp,alt:"youtube",className:ve.youTube}),g.jsx("a",{href:"https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA",target:"__blank",children:"YouTube"})]})]}),g.jsx("div",{className:ve.row,children:g.jsx("a",{href:"mailto:contact@vyper-by-example.org",children:"contact@vyper-by-example.org"})}),g.jsxs("div",{className:ve.row,children:[g.jsx("a",{href:"https://github.com/vyper-by-example/vyper-by-example.github.io",target:"__blank",children:"source"}),g.jsx("div",{className:ve.bar,children:"|"}),g.jsx("a",{href:"https://github.com/vyper-by-example/vyper-by-example.github.io/blob/gh-pages/LICENSE",target:"__blank",children:"license"})]})]})}const Pm=({children:e})=>{const{state:n}=oo(),s=S.useRef(null);S.useLayoutEffect(()=>{s.current&&(s.current.scrollTop=sessionStorage.getItem("scroll")||0)},[]);function t(a){var l;sessionStorage.setItem("scroll",(l=s.current)==null?void 0:l.scrollTop),window.location.href=a}return g.jsxs("div",{className:Rt.component,children:[g.jsx("div",{ref:s,className:Rt.sideNav,style:n.sideNav?{width:"var(--side-nav-width)",padding:"20px 10px 60px 10px"}:{width:0},children:n.sideNav?g.jsx(nm,{onClick:t}):null}),g.jsxs("div",{className:Rt.main,children:[g.jsx(fm,{}),g.jsxs("div",{className:Rt.children,children:[e,g.jsx(Cm,{})]})]})]})},fp=({title:e,description:n})=>(S.useEffect(()=>{document.title=e;const s=document.querySelector("meta[name='description']");s&&s.setAttribute("content",n)},[]),null),Ti='<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="20" height="20" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" /> </svg>',Nm='<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="20" height="20" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>';function bm(e=[]){S.useEffect(()=>{const n=a=>{try{const l=document.createElement("textarea");l.setAttribute("style","width:1px;border:0;opacity:0;"),document.body.appendChild(l),navigator.clipboard.writeText(a.innerText),document.body.removeChild(l)}catch(l){console.error(l)}},s=[];return document.querySelectorAll("pre").forEach(a=>{var c;if(((c=a.parentElement)==null?void 0:c.className)=="copy-wrapper")return;const l=document.createElement("div");l.className="copy-wrapper",a.parentElement.insertBefore(l,a),l.appendChild(a);const r=document.createElement("button");r.className="copy",r.title="Copy",r.innerHTML=Ti,r.ariaLabel="Copy to clipboard",a.after(r);function o(d){d.preventDefault(),n(a.childNodes[0]),r.innerHTML=Nm}function i(d){d.preventDefault(),r.innerHTML=Ti}r.addEventListener("click",o),r.addEventListener("blur",i),s.push(()=>{r.removeEventListener("click",o),r.removeEventListener("blur",i)})}),()=>{for(let a=0;a<s.length;a++)s[a]()}},e)}const Tm=({className:e="",html:n})=>(bm([]),g.jsx("div",{className:`code ${e}`,dangerouslySetInnerHTML:{__html:n}})),Rm="_component_ni5i2_1",Im="_content_ni5i2_5",Lm="_prevNext_ni5i2_8",dl={component:Rm,content:Im,prevNext:Lm},z=({title:e,version:n,description:s,html:t,prev:a,next:l})=>g.jsxs("div",{className:dl.component,children:[g.jsx(fp,{title:`${e} | Vyper by Example | ${n}`,description:s}),g.jsxs("div",{className:dl.content,children:[g.jsx("h2",{children:e}),g.jsx(Tm,{html:t}),g.jsxs("div",{className:dl.prevNext,children:[a&&g.jsxs("a",{href:a.path,children:["< ",a.title]}),l&&g.jsxs("a",{href:l.path,children:[l.title," >"]})]}),g.jsxs("p",{children:["Try on"," ",g.jsx("a",{href:"https://smartcontract.engineer/challenges?language=vyper",target:"__blank",children:"Smart Contract Engineer"})]})]})]}),zm="0.4.0",Om="Rebase token",Am="Rebase token in Vyper",Dm=`<p>Example of rebase token</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Rebase token (compound interest rate)</span>
 
@@ -179,7 +179,7 @@ t: public(uint256)
         <span class="hljs-variable language_">self</span>.slices[msg.sender] -= s
         <span class="hljs-variable language_">self</span>.slices[dst] += s
 </code></pre>`,Fm=({prev:e,next:n})=>g.jsx(z,{version:zm,title:Om,description:Am,html:Dm,prev:e,next:n}),Mm="0.4.0",$m="Constants",Vm="Constants in Vyper",Um=`<p>Constants are variables that cannot change.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 MY_CONSTANT: constant(uint256) = <span class="hljs-number">123</span>
 MIN: constant(uint256) = <span class="hljs-number">1</span>
@@ -199,7 +199,7 @@ ADDR: constant(address) = <span class="hljs-number">0xAb5801a7D398351b8bE11C439e
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">getMyConstants</span>() -&gt; (uint256, uint256, address):
     <span class="hljs-keyword">return</span> (MIN, MAX, ADDR)
 </code></pre>`,Bm=({prev:e,next:n})=>g.jsx(z,{version:Mm,title:$m,description:Vm,html:Um,prev:e,next:n}),Hm="0.4.0",Wm="Constructor",Qm="Constructor in Vyper",Ym=`<p><code>__init__</code> is a special function that is executed only once when the contract is deployed.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 owner: public(address)
 name: public(String[<span class="hljs-number">10</span>])
@@ -224,7 +224,7 @@ expiresAt: public(uint256)
 </ol>
 <p>Here is <code>ContractToDeploy</code></p>
 <p>ContractToDeploy.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 owner: public(address)
 
@@ -246,7 +246,7 @@ owner: public(address)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">kill</span>():
   selfdestruct(msg.sender)
 </code></pre><p>Create.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 interface ContractToDeploy:
     <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner</span>(<span class="hljs-params">owner: address</span>): nonpayable
@@ -267,7 +267,7 @@ event Log:
     log Log(addr)
 </code></pre>`,Jm=({prev:e,next:n})=>g.jsx(z,{version:Xm,title:Gm,description:qm,html:Zm,prev:e,next:n}),eg="0.4.0",ng="Default Function",sg="Default function in Vyper",tg=`<p>A contract can have a default function, executed when a function that does not exist is called. This is the same function as the fallback function in Solidity.</p>
 <p>This function is named <code>__default__</code> and it is commonly used to receive Ether.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 event Payment:
     sender: indexed(address)
@@ -278,7 +278,7 @@ event Payment:
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__default__</span>():
     log Payment(msg.sender, msg.value)
 </code></pre>`,ag=({prev:e,next:n})=>g.jsx(z,{version:eg,title:ng,description:sg,html:tg,prev:e,next:n}),lg="0.4.0",rg="Curve Add and Remove Liquidity",og="Curve Add and Remove Liquidity",ig=`<p>Add and remove liquidity from Curve pools</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-keyword">from</span> ethereum.ercs <span class="hljs-keyword">import</span> IERC20
 
@@ -367,7 +367,7 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
     bal: uint256 = staticcall IERC20(COINS[i]).balanceOf(<span class="hljs-variable language_">self</span>)
     <span class="hljs-variable language_">self</span>._safe_transfer(COINS[i], msg.sender, bal)
 </code></pre>`,cg=({prev:e,next:n})=>g.jsx(z,{version:lg,title:rg,description:og,html:ig,prev:e,next:n}),ug="0.4.0",pg="Curve Swap",dg="Curve Swap",fg=`<p>Swap tokens on Curve</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-keyword">from</span> ethereum.ercs <span class="hljs-keyword">import</span> IERC20
 
@@ -437,7 +437,7 @@ COINS: constant(address[<span class="hljs-number">3</span>]) = [DAI, USDC, USDT]
 <p>Delegate call is commonly used to create an upgradable contract.</p>
 <p>Here is the contract that we will delegate call to.</p>
 <p>TestDelegateCall.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># State variables must be declared in the same order</span>
 <span class="hljs-comment"># as contract making the call</span>
@@ -455,7 +455,7 @@ y: public(uint256)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">update_y</span>(<span class="hljs-params">y: uint256</span>):
     <span class="hljs-variable language_">self</span>.y = y * y
 </code></pre><p>DelegateCall.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 x: public(uint256)
 y: public(uint256)
@@ -482,7 +482,7 @@ y: public(uint256)
         is_delegate_call=<span class="hljs-literal">True</span>
     )
 </code></pre>`,jg=({prev:e,next:n})=>g.jsx(z,{version:mg,title:gg,description:yg,html:vg,prev:e,next:n}),wg="0.4.0",_g="Dynamic Arrays",xg="Dynamic arrays in Vyper",kg=`<p>Dynamic arrays are bounded arrays whose length can change. The length of the array cannot exceed the maximum length set where the array is declared.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Dynamic array of type uint256, max 3 elements</span>
 nums: DynArray[uint256, <span class="hljs-number">3</span>]
@@ -523,7 +523,7 @@ nums: DynArray[uint256, <span class="hljs-number">3</span>]
 </code></pre>`,Sg=({prev:e,next:n})=>g.jsx(z,{version:wg,title:_g,description:xg,html:kg,prev:e,next:n}),Eg="0.4.0",Cg="Error",Pg="Error in Vyper",Ng=`<p>Use <code>assert</code> and <code>raise</code> to check inputs and validate state.</p>
 <p>When an error occurs, it will halt the entire function call, undoing any changes.</p>
 <p>You will still need to pay gas for the failed transaction.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 x: public(uint256)
 owner: public(address)
@@ -564,7 +564,7 @@ owner: public(address)
     <span class="hljs-variable language_">self</span>.owner = owner
 </code></pre>`,bg=({prev:e,next:n})=>g.jsx(z,{version:Eg,title:Cg,description:Pg,html:Ng,prev:e,next:n}),Tg="0.4.0",Rg="Event",Ig="Event in Vyper",Lg=`<p>Events write logs to the blockchain, commonly used by application to monitor blockchain state and as a cheaper alternative to store data on the blockchain without using state variables.</p>
 <p>Events can be efficiently searched by indexing their arguments. Up to 3 parameters can be indexed.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># up to 3 index</span>
 event Transfer:
@@ -589,7 +589,7 @@ event Transfer:
     <span class="hljs-comment"># some code ...</span>
     log Transfer(msg.sender, empty(address), amount)
 </code></pre>`,zg=({prev:e,next:n})=>g.jsx(z,{version:Tg,title:Rg,description:Ig,html:Lg,prev:e,next:n}),Og="0.4.0",Ag="For Loop",Dg="For loop in Vyper",Fg=`<p>There are 2 ways to loop through an array, using <code>range</code> and directly looping through array elements.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
@@ -629,7 +629,7 @@ event Transfer:
     <span class="hljs-keyword">for</span> n: uint256 <span class="hljs-keyword">in</span> nums:
         s += n
     <span class="hljs-keyword">return</span> s
-</code></pre>`,Mg=({prev:e,next:n})=>g.jsx(z,{version:Og,title:Ag,description:Dg,html:Fg,prev:e,next:n}),$g="0.4.0",Vg="Function",Ug="Function in Vyper",Bg=`<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+</code></pre>`,Mg=({prev:e,next:n})=>g.jsx(z,{version:Og,title:Ag,description:Dg,html:Fg,prev:e,next:n}),$g="0.4.0",Vg="Function",Ug="Function in Vyper",Bg=`<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
@@ -660,7 +660,7 @@ event Transfer:
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">addAndSub</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; (uint256, uint256):
     <span class="hljs-keyword">return</span> (x + y, x - y)
 </code></pre>`,Hg=({prev:e,next:n})=>g.jsx(z,{version:$g,title:Vg,description:Ug,html:Bg,prev:e,next:n}),Wg="0.4.0",Qg="Hash Function",Yg="Hash function in Vyper",Kg=`<p>Vyper supports the same hash function available in Solidity, <code>keccack256</code>.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
@@ -679,8 +679,8 @@ event Transfer:
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_message_hash</span>(<span class="hljs-params"><span class="hljs-built_in">str</span>: String[<span class="hljs-number">100</span>]</span>) -&gt; bytes32:
     <span class="hljs-keyword">return</span> keccak256(<span class="hljs-built_in">str</span>)
-</code></pre>`,Xg=({prev:e,next:n})=>g.jsx(z,{version:Wg,title:Qg,description:Yg,html:Kg,prev:e,next:n}),Gg="0.4.0",qg="Hello World",Zg="Hello world in Vyper",Jg=`<p><code>@version</code> specifies the compiler version of Vyper.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+</code></pre>`,Xg=({prev:e,next:n})=>g.jsx(z,{version:Wg,title:Qg,description:Yg,html:Kg,prev:e,next:n}),Gg="0.4.0",qg="Hello World",Zg="Hello world in Vyper",Jg=`<p><code>pragma</code> specifies the compiler version of Vyper.</p>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Create a string variable that can store maximum 100 characters</span>
 greet: public(String[<span class="hljs-number">100</span>])
@@ -688,7 +688,7 @@ greet: public(String[<span class="hljs-number">100</span>])
 <span class="hljs-meta">@deploy</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
     <span class="hljs-variable language_">self</span>.greet = <span class="hljs-string">"Hello World"</span>
-</code></pre>`,ey=({prev:e,next:n})=>g.jsx(z,{version:Gg,title:qg,description:Zg,html:Jg,prev:e,next:n}),ny="0.4.0",sy="If Else Conditional Statement",ty="If else conditional statement in Vyper",ay=`<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+</code></pre>`,ey=({prev:e,next:n})=>g.jsx(z,{version:Gg,title:qg,description:Zg,html:Jg,prev:e,next:n}),ny="0.4.0",sy="If Else Conditional Statement",ty="If else conditional statement in Vyper",ay=`<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">if_else</span>(<span class="hljs-params">x: uint256</span>) -&gt; uint256:
@@ -714,7 +714,7 @@ for example like setting contract owner to <code>msg.sender</code></li>
 </ul>
 <h4>Why declare variables as <code>immutable</code>?</h4>
 <p>Like constants, <code>immutable</code> variables save run time gas</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 OWNER: immutable(address)
 MY_IMMUTABLE: immutable(uint256)
@@ -733,13 +733,13 @@ MY_IMMUTABLE: immutable(uint256)
 <pre><code>├── example.vy
 └── math.vy
 </code></pre><p>math.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">mul</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
   <span class="hljs-keyword">return</span> x * y
 </code></pre><p>example.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-keyword">import</span> math
 <span class="hljs-comment"># Other ways to import</span>
@@ -754,7 +754,7 @@ MY_IMMUTABLE: immutable(uint256)
 </code></pre>`,my=({prev:e,next:n})=>g.jsx(z,{version:py,title:dy,description:fy,html:hy,prev:e,next:n}),gy="0.4.0",yy="Interface",vy="Interface in Vyper",jy=`<p>Use <code>interface</code> to call other smart contracts.</p>
 <p>Here is the <code>TestInterface</code> self.contract that we will call.</p>
 <p>TestInterface.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 owner: public(address)
 eth: public(uint256)
@@ -774,7 +774,7 @@ eth: public(uint256)
     <span class="hljs-variable language_">self</span>.owner = owner
     <span class="hljs-variable language_">self</span>.eth = msg.value
 </code></pre><p>Interface.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 interface TestInterface:
     <span class="hljs-comment"># get address of owner</span>
@@ -822,7 +822,7 @@ test: public(TestInterface)
     extcall <span class="hljs-variable language_">self</span>.test.set_owner_and_send_eth(owner, value=msg.value)
 </code></pre>`,wy=({prev:e,next:n})=>g.jsx(z,{version:gy,title:yy,description:vy,html:jy,prev:e,next:n}),_y="0.4.0",xy="Internal and External Functions",ky="Internal and external functions in Vyper",Sy=`<p><code>@internal</code> functions can only be called inside the contract.</p>
 <p><code>@external</code> functions can only be called from outside the contract.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Internal functions can only be called inside this contract</span>
 <span class="hljs-meta">@internal</span>
@@ -972,7 +972,7 @@ exports: auth_2_step.__interface__
     auth.__init__()
     auth_2_step.__init__()
 </code></pre>`,Ty=({prev:e,next:n})=>g.jsx(z,{version:Cy,title:Py,description:Ny,html:by,prev:e,next:n}),Ry="0.4.0",Iy="Payable",Ly="Payable in Vyper",zy=`<p>Functions declared with <code>@payable</code> can receive Ether.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 event Deposit:
     sender: indexed(address)
@@ -997,7 +997,7 @@ owner: public(address)
     <span class="hljs-keyword">assert</span> msg.value &gt; <span class="hljs-number">0</span>, <span class="hljs-string">"msg.value = 0"</span>
     <span class="hljs-variable language_">self</span>.owner = msg.sender
 </code></pre>`,Oy=({prev:e,next:n})=>g.jsx(z,{version:Ry,title:Iy,description:Ly,html:zy,prev:e,next:n}),Ay="0.4.0",Dy="Debug with Print",Fy="Debug with Print",My=`<p>Use the built-in function <code>print</code> to debug smart contracts.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_print</span>():
@@ -1006,7 +1006,7 @@ owner: public(address)
     <span class="hljs-built_in">print</span>(<span class="hljs-string">"print something here"</span>, x, hardhat_compat=<span class="hljs-literal">True</span>)
 </code></pre>`,$y=({prev:e,next:n})=>g.jsx(z,{version:Ay,title:Dy,description:Fy,html:My,prev:e,next:n}),Vy="0.4.0",Uy="Private and Public State Variables",By="Private and public state variables in Vyper",Hy=`<p>Private state variables cannot be accessed from outside the contract.</p>
 <p>Public state variables can be read by anyone, including users and other contracts.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># publis state variable</span>
 owner: public(address)
@@ -1022,7 +1022,7 @@ bar: public(<span class="hljs-built_in">bool</span>)
 </code></pre>`,Wy=({prev:e,next:n})=>g.jsx(z,{version:Vy,title:Uy,description:By,html:Hy,prev:e,next:n}),Qy="0.4.0",Yy="Raw Call",Ky="Raw call in Vyper",Xy=`<p><code>raw_call</code> is a low level function. It is used to call and send Ether to other functions.</p>
 <p>For this example, we will write a contract that calls this contract below.</p>
 <p>TestRawCall.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 
 sender: public(address)
@@ -1037,7 +1037,7 @@ sender: public(address)
     <span class="hljs-variable language_">self</span>.sender = msg.sender
     <span class="hljs-keyword">return</span> x - y
 </code></pre><p>RawCall.vy</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_raw_call</span>(<span class="hljs-params">to: address, x: uint256, y: uint256</span>):
@@ -1081,7 +1081,7 @@ diff: public(uint256)
 </code></pre>`,Gy=({prev:e,next:n})=>g.jsx(z,{version:Qy,title:Yy,description:Ky,html:Xy,prev:e,next:n}),qy="0.4.0",Zy="Re-Entrancy Lock",Jy="Re-entrancy lock in Vyper",ev=`<p>Vyper has a handy way to secure your contract from re-entrancy.</p>
 <p>A re-entrancy lock can be created on a function with <code>@nonreentrant("lock")</code>.</p>
 <p>Functions can be locked together by using the same name for the locks.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@nonreentrant</span>
@@ -1090,7 +1090,7 @@ diff: public(uint256)
     raw_call(msg.sender, <span class="hljs-string">b""</span>, value=<span class="hljs-number">0</span>)
 
 </code></pre>`,nv=({prev:e,next:n})=>g.jsx(z,{version:qy,title:Zy,description:Jy,html:ev,prev:e,next:n}),sv="0.4.0",tv="Data Types - References",av="References in Vyper",lv=`<p>References types are data types that are passed by their reference, pointer to where the actual data is stored.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 struct Person:
     name: String[<span class="hljs-number">100</span>]
@@ -1123,7 +1123,7 @@ person: public(Person)
     p: Person = <span class="hljs-variable language_">self</span>.person
     p.name = <span class="hljs-string">"Solidity"</span>
 </code></pre>`,rv=({prev:e,next:n})=>g.jsx(z,{version:sv,title:tv,description:av,html:lv,prev:e,next:n}),ov="0.4.0",iv="Self Destruct",cv="Self destruct in Vyper",uv=`<p><code>selfdestruct</code> deletes the contract from the blockchain. It takes a single input, an address to send all of Ether stored in the contract.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
@@ -1134,7 +1134,7 @@ person: public(Person)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">kill</span>():
     selfdestruct(msg.sender)
 </code></pre>`,pv=({prev:e,next:n})=>g.jsx(z,{version:ov,title:iv,description:cv,html:uv,prev:e,next:n}),dv="0.4.0",fv="Send Ether",hv="Send ETH in Vyper",mv=`<p>There are two ways to send Ether from a contract, <code>send</code> and <code>raw_call</code>. Here we introduce the simpler function to use, <code>send</code>.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Receive Ether into this contract</span>
 <span class="hljs-meta">@external</span>
@@ -1153,7 +1153,7 @@ person: public(Person)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">send_all</span>(<span class="hljs-params">to: address</span>):
     send(to, <span class="hljs-variable language_">self</span>.balance)
 </code></pre>`,gv=({prev:e,next:n})=>g.jsx(z,{version:dv,title:fv,description:hv,html:mv,prev:e,next:n}),yv="0.4.0",vv="Unsafe Math",jv="Unsafe math in Vyper",wv=`<p>Critical math checks such as overflow, underflow and division by 0 can be skipped using unsafe functions</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_add</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
@@ -1197,7 +1197,7 @@ person: public(Person)
 <li><code>Bytes</code></li>
 <li><code>String</code></li>
 </ul>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Must be compiled with --enable-decimals</span>
 
@@ -1226,7 +1226,7 @@ s: public(String[<span class="hljs-number">100</span>])
 <li>Sign the hash. This must be done off chain.</li>
 <li>Verify the signature. This is done using a smart contract.</li>
 </ol>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># hash = get_hash("Hello Vyper!")</span>
 <span class="hljs-comment"># 0x5436c86f18e3d25a10e557ae125450118dd0a481ca22112b1977d55a676e4c91</span>
@@ -1277,7 +1277,7 @@ s: public(String[<span class="hljs-number">100</span>])
 </code></pre>`,Rv=({prev:e,next:n})=>g.jsx(z,{version:Pv,title:Nv,description:bv,html:Tv,prev:e,next:n}),Iv="0.4.0",Lv="View and Pure Functions",zv="View and pure functions in Vyper",Ov=`<p>Both <code>pure</code> and <code>view</code> functions are read only function, they cannot write anything to the blockchain.</p>
 <p><code>pure</code> functions do not read any state or global variables</p>
 <p><code>view</code> functions can read state variables, global variables and call internal functions.</p>
-<pre><code class="language-vyper"><span class="hljs-comment"># @pragma version ^0.4.0</span>
+<pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 num: public(uint256)
 
