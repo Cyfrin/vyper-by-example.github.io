@@ -47,6 +47,3 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
 npx ts-node --project ./scripts/tsconfig.json scripts/build-search-index.ts
 
 ```
-
-### TODO
-- Vyper 0.4 modules
