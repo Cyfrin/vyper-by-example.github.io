@@ -75,5 +75,6 @@
   "/create-new-contract": ["create", "new", "contract", "create_forwarder_to"],
   "/constructor": ["constructor"],
   "/constants": ["constant", "constants"],
-  "/app/rebase-token": ["rebase", "token", "app"]
+  "/app/rebase-token": ["rebase", "token", "app"],
+  "/app/lerp": ["lerp", "math", "app"]
 }

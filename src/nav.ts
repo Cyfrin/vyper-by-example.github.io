@@ -63,6 +63,10 @@ export const APP_ROUTES = [
     path: "rebase-token",
     title: "Rebase token",
   },
+  {
+    path: "lerp",
+    title: "Linear interpolation",
+  },
 ]
 
 export const DEFI_ROUTES = [

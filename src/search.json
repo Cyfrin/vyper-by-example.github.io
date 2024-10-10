@@ -39,7 +39,7 @@
   "String": ["/values"],
   "gas": ["/unsafe-math"],
   "unsafe": ["/unsafe-math"],
-  "math": ["/unsafe-math"],
+  "math": ["/unsafe-math", "/app/lerp"],
   "send": ["/send-ether"],
   "ether": ["/send-ether"],
   "raw_call": ["/send-ether", "/raw-call"],
@@ -113,5 +113,6 @@
   "constructor": ["/constructor"],
   "rebase": ["/app/rebase-token"],
   "token": ["/app/rebase-token"],
-  "app": ["/app/rebase-token"]
+  "app": ["/app/rebase-token", "/app/lerp"],
+  "lerp": ["/app/lerp"]
 }

@@ -1,3 +1,4 @@
+import component_app_lerp from "./pages/app/lerp"
 import component_app_rebase_token from "./pages/app/rebase-token"
 import component_constants from "./pages/constants"
 import component_constructor from "./pages/constructor"
@@ -51,6 +52,10 @@ interface Route {
 }
 
 const routes: Route[] = [
+  {
+    path: "/app/lerp",
+    component: component_app_lerp,
+  },
   {
     path: "/app/rebase-token",
     component: component_app_rebase_token,
