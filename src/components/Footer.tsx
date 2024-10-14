@@ -1,13 +1,22 @@
 import React from "react"
+import { useAppContext } from "../contexts/AppContext"
 import styles from "./Footer.module.css"
 import youTube from "./youtube.png"
+import updraftDark from "./updraft-dark.png"
+import updraftLight from "./updraft-light.png"
 import telegram from "./telegram.png"
 import discord from "./discord.png"
 
 function Footer() {
+  const app = useAppContext()
   return (
     <div className={styles.component}>
       <div className={styles.row}>
+        <img
+          src={app.state.theme == "dark" ? updraftLight : updraftDark}
+          alt="updraft"
+          className={styles.updraft}
+        />
         <a href="https://updraft.cyfrin.io" target="__blank">
           Cyfrin Updraft
         </a>
@@ -39,15 +48,12 @@ function Footer() {
         <a href="mailto:contact@vyper-by-example.org">contact@vyper-by-example.org</a>
       </div>
       <div className={styles.row}>
-        <a
-          href="https://github.com/vyper-by-example/vyper-by-example.github.io"
-          target="__blank"
-        >
+        <a href="https://github.com/Cyfrin/vyper-by-example.github.io" target="__blank">
           source
         </a>
         <div className={styles.bar}>|</div>
         <a
-          href="https://github.com/vyper-by-example/vyper-by-example.github.io/blob/gh-pages/LICENSE"
+          href="https://github.com/Cyfrin/vyper-by-example.github.io/blob/gh-pages/LICENSE"
           target="__blank"
         >
           license

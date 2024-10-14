@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react"
 import { useSearchParams } from "react-router-dom"
+import { useAppContext } from "../contexts/AppContext"
 import SEO from "../components/SEO"
 import SearchBar from "../components/SearchBar"
 import useDebounce from "../hooks/useDebounce"
 import { search, unique } from "../lib/search"
 import styles from "./index.module.css"
 import youTube from "../components/youtube.png"
+import updraftLight from "../components/updraft-light.png"
+import updraftDark from "../components/updraft-dark.png"
 import { ROUTES, ROUTES_BY_CATEGORY, TRANSLATIONS } from "../nav"
 
 const UPDATES = [
@@ -15,6 +18,7 @@ const UPDATES = [
 ]
 
 export default function HomePage() {
+  const app = useAppContext()
   const [query, setQuery] = useState("")
   const [searchParams, setSearchParams] = useSearchParams()
   const [searchResults, setSearchResults] = useState<{
@@ -133,7 +137,12 @@ export default function HomePage() {
           </a>
         </div>
 
-        <div className={styles.youTube}>
+        <div className={styles.updraft}>
+          <img
+            src={app.state.theme == "dark" ? updraftLight : updraftDark}
+            alt="logo"
+            className={styles.updraftLogo}
+          />
           <a href="https://updraft.cyfrin.io" target="__blank">
             Learn more at Cyfrin Updraft
           </a>
