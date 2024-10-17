@@ -1,7 +1,7 @@
 # pragma version ^0.4.0
 
 # Dynamic array of type uint256, max 3 elements
-nums: DynArray[uint256, 3]
+nums: public(DynArray[uint256, 3])
 
 @deploy
 def __init__():

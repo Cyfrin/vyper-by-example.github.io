@@ -12,7 +12,7 @@ import updraftDark from "../components/updraft-dark.png"
 import { ROUTES, ROUTES_BY_CATEGORY, TRANSLATIONS } from "../nav"
 
 const UPDATES = [
-  "2024/10/10 - Lerp",
+  "2024/10/10 - Linear interpolation",
   "2024/08/12 - Vyper 0.4.0",
   "2023/06/19 - Chinese translations",
 ]

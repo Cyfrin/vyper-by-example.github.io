@@ -9,7 +9,7 @@ const html = `<p>Dynamic arrays are bounded arrays whose length can change. The 
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
 <span class="hljs-comment"># Dynamic array of type uint256, max 3 elements</span>
-nums: DynArray[uint256, <span class="hljs-number">3</span>]
+nums: public(DynArray[uint256, <span class="hljs-number">3</span>])
 
 <span class="hljs-meta">@deploy</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
