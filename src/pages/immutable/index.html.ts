@@ -16,8 +16,8 @@ for example like setting contract owner to <code>msg.sender</code></li>
 <p>Like constants, <code>immutable</code> variables save run time gas</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
-OWNER: immutable(address)
-MY_IMMUTABLE: immutable(uint256)
+OWNER: public(immutable(address))
+MY_IMMUTABLE: public(immutable(uint256))
 
 <span class="hljs-meta">@deploy</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">val: uint256</span>):

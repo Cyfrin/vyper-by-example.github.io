@@ -8,10 +8,10 @@ export const keywords = ["constant", "constants"]
 const html = `<p>Constants are variables that cannot change.</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
-MY_CONSTANT: constant(uint256) = <span class="hljs-number">123</span>
-MIN: constant(uint256) = <span class="hljs-number">1</span>
-MAX: constant(uint256) = <span class="hljs-number">10</span>
-ADDR: constant(address) = <span class="hljs-number">0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B</span>
+MY_CONSTANT: public(constant(uint256)) = <span class="hljs-number">123</span>
+MIN: public(constant(uint256)) = <span class="hljs-number">1</span>
+MAX: public(constant(uint256)) = <span class="hljs-number">10</span>
+ADDR: public(constant(address)) = <span class="hljs-number">0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B</span>
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>

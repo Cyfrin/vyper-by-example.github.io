@@ -1,7 +1,7 @@
 # pragma version ^0.4.0
 
-OWNER: immutable(address)
-MY_IMMUTABLE: immutable(uint256)
+OWNER: public(immutable(address))
+MY_IMMUTABLE: public(immutable(uint256))
 
 @deploy
 def __init__(val: uint256):
