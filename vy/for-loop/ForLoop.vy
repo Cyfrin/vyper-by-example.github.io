@@ -2,34 +2,49 @@
 
 @external
 @pure
-def for_loop():
-    # for loop through range
-    # sum from 0 to 9
-    s: uint256 = 0
-    for i: uint256 in range(10):
-        s += i
+def for_loop() -> DynArray[uint256, 10]:
+    arr: DynArray[uint256, 10] = []
 
-    # for loop through array elements
-    # find minimum of nums
-    nums: uint256[5] = [4, 5, 1, 9, 0]
-    x: uint256 = max_value(uint256)
-    for num: uint256 in nums:
-        if x < num:
-            x = num
+    for i: uint256 in range(5):
+        arr.append(i)
 
-    # continue - skip current iteration
-    # break - exit for loop
-    c: uint256 = 0
-    for i: uint256 in [1, 2, 3, 4, 5]:
-        # skip 2
+    return arr
+
+@external
+@pure
+def for_loop_start_end() -> DynArray[uint256, 10]:
+    arr: DynArray[uint256, 10] = []
+
+    for i: uint256 in range(5, 10):
+        arr.append(i)
+
+    return arr
+
+@external
+@pure
+def for_loop_list() -> DynArray[uint256, 10]:
+    arr: DynArray[uint256, 10] = []
+
+    nums: uint256[4] = [11, 22, 33, 44]
+
+    for i: uint256 in nums:
+        arr.append(i)
+
+    return arr
+
+@external
+@pure
+def for_loop_skip() -> DynArray[uint256, 10]:
+    arr: DynArray[uint256, 10] = []
+
+    for i: uint256 in range(5):
         if i == 2:
             continue
-        # end loop at i = 4
         if i == 4:
             break
-        # otherwise increment c by 1
-        c += 1
-    # c = 2 (incremented at i = 1 and 3)
+        arr.append(i)
+
+    return arr
 
 @external
 @pure
