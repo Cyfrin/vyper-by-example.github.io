@@ -1,46 +1,36 @@
 # pragma version ^0.4.0
 
-interface TestInterface:
-    # get address of owner
-    def owner() -> address: view
-    # set new owner
-    def set_owner(owner: address): nonpayable
-    # send ETH
-    def send_eth(): payable
-    # set owner and send ETH
-    def set_owner_and_send_eth(owner: address): payable
+interface ITest:
+    def val() -> uint256: view
+    def set_val(val: uint256): nonpayable
+    def set_val_with_msg_value(val: uint256): payable
+    def set_val_return_val(val: uint256) -> uint256: nonpayable
+    def get_val() -> uint256: view
 
-# store contract having the above interface
-test: public(TestInterface)
+test: public(ITest)
+v: public(uint256)
 
 @deploy
-def __init__(test: address):
+def __init__(test_addr: address):
     # store contract instance
-    self.test = TestInterface(test)
+    self.test = ITest(test_addr)
     # if you need to get address from self.test
     addr: address = self.test.address
 
 @external
-@view
-def get_owner() -> address:
-    return staticcall self.test.owner()
-
-@external
-@view
-def get_owner_from_addr(test: address) -> address:
-    # you can also call functions by passing in the address of the interface
-    return staticcall TestInterface(test).owner()
-
-@external
-def set_owner(owner: address):
-    extcall self.test.set_owner(owner)
+def test_set_val(val: uint256):
+    extcall self.test.set_val(val)
 
 @external
 @payable
-def send_eth():
-    extcall self.test.send_eth(value=msg.value)
+def test_msg_val(test_addr: address, val: uint256):
+    extcall ITest(test_addr).set_val_with_msg_value(val, value = msg.value)
 
 @external
-@payable
-def set_owner_and_send_eth(owner: address):
-    extcall self.test.set_owner_and_send_eth(owner, value=msg.value)
+def test_return_val(test_addr: address, val: uint256):
+    self.v = extcall ITest(test_addr).set_val_return_val(val)
+
+@external
+@view
+def test_get_val() -> uint256:
+    return staticcall self.test.get_val()

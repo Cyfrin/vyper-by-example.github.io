@@ -7,10 +7,18 @@ keywords: [re-entrancy, lock, nonreentrant]
 
 Vyper has a handy way to secure your contract from re-entrancy.
 
-A re-entrancy lock can be created on a function with `@nonreentrant("lock")`.
+A re-entrancy lock can be created on a function with `@nonreentrant`.
 
 Functions can be locked together by using the same name for the locks.
 
 ```vyper
-{{{ReEntrancyLock}}}
+{{{Lock}}}
+```
+
+```vyper
+{{{NoLock}}}
+```
+
+```vyper
+{{{TestLock}}}
 ```

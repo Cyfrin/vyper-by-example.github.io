@@ -10,70 +10,66 @@ const html = `<p>Use <code>interface</code> to call other smart contracts.</p>
 <p>TestInterface.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
-owner: public(address)
-eth: public(uint256)
+val: public(uint256)
+msg_value: public(uint256)
 
 <span class="hljs-meta">@external</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner</span>(<span class="hljs-params">owner: address</span>):
-    <span class="hljs-variable language_">self</span>.owner = owner
-
-<span class="hljs-meta">@external</span>
-<span class="hljs-meta">@payable</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">send_eth</span>():
-    <span class="hljs-variable language_">self</span>.eth = msg.value
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_val</span>(<span class="hljs-params">val: uint256</span>):
+    <span class="hljs-variable language_">self</span>.val = val
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner_and_send_eth</span>(<span class="hljs-params">owner: address</span>):
-    <span class="hljs-variable language_">self</span>.owner = owner
-    <span class="hljs-variable language_">self</span>.eth = msg.value
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_val_with_msg_value</span>(<span class="hljs-params">val: uint256</span>):
+    <span class="hljs-variable language_">self</span>.val = val
+    <span class="hljs-variable language_">self</span>.msg_value = msg.value
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_val_return_val</span>(<span class="hljs-params">val: uint256</span>) -&gt; uint256:
+    <span class="hljs-variable language_">self</span>.val = val
+    <span class="hljs-keyword">return</span> val
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-meta">@view</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_val</span>() -&gt; uint256:
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.val
+
 </code></pre><p>Interface.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
-interface TestInterface:
-    <span class="hljs-comment"># get address of owner</span>
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">owner</span>() -&gt; address: view
-    <span class="hljs-comment"># set new owner</span>
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner</span>(<span class="hljs-params">owner: address</span>): nonpayable
-    <span class="hljs-comment"># send ETH</span>
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">send_eth</span>(): payable
-    <span class="hljs-comment"># set owner and send ETH</span>
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner_and_send_eth</span>(<span class="hljs-params">owner: address</span>): payable
+interface ITest:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">val</span>() -&gt; uint256: view
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_val</span>(<span class="hljs-params">val: uint256</span>): nonpayable
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_val_with_msg_value</span>(<span class="hljs-params">val: uint256</span>): payable
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_val_return_val</span>(<span class="hljs-params">val: uint256</span>) -&gt; uint256: nonpayable
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_val</span>() -&gt; uint256: view
 
-<span class="hljs-comment"># store contract having the above interface</span>
-test: public(TestInterface)
+test: public(ITest)
+v: public(uint256)
 
 <span class="hljs-meta">@deploy</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">test: address</span>):
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">test_addr: address</span>):
     <span class="hljs-comment"># store contract instance</span>
-    <span class="hljs-variable language_">self</span>.test = TestInterface(test)
+    <span class="hljs-variable language_">self</span>.test = ITest(test_addr)
     <span class="hljs-comment"># if you need to get address from self.test</span>
     addr: address = <span class="hljs-variable language_">self</span>.test.address
 
 <span class="hljs-meta">@external</span>
-<span class="hljs-meta">@view</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_owner</span>() -&gt; address:
-    <span class="hljs-keyword">return</span> staticcall <span class="hljs-variable language_">self</span>.test.owner()
-
-<span class="hljs-meta">@external</span>
-<span class="hljs-meta">@view</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_owner_from_addr</span>(<span class="hljs-params">test: address</span>) -&gt; address:
-    <span class="hljs-comment"># you can also call functions by passing in the address of the interface</span>
-    <span class="hljs-keyword">return</span> staticcall TestInterface(test).owner()
-
-<span class="hljs-meta">@external</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner</span>(<span class="hljs-params">owner: address</span>):
-    extcall <span class="hljs-variable language_">self</span>.test.set_owner(owner)
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">test_set_val</span>(<span class="hljs-params">val: uint256</span>):
+    extcall <span class="hljs-variable language_">self</span>.test.set_val(val)
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@payable</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">send_eth</span>():
-    extcall <span class="hljs-variable language_">self</span>.test.send_eth(value=msg.value)
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">test_msg_val</span>(<span class="hljs-params">test_addr: address, val: uint256</span>):
+    extcall ITest(test_addr).set_val_with_msg_value(val, value = msg.value)
 
 <span class="hljs-meta">@external</span>
-<span class="hljs-meta">@payable</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner_and_send_eth</span>(<span class="hljs-params">owner: address</span>):
-    extcall <span class="hljs-variable language_">self</span>.test.set_owner_and_send_eth(owner, value=msg.value)
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">test_return_val</span>(<span class="hljs-params">test_addr: address, val: uint256</span>):
+    <span class="hljs-variable language_">self</span>.v = extcall ITest(test_addr).set_val_return_val(val)
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-meta">@view</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">test_get_val</span>() -&gt; uint256:
+    <span class="hljs-keyword">return</span> staticcall <span class="hljs-variable language_">self</span>.test.get_val()
 </code></pre>`
 
 export default html
