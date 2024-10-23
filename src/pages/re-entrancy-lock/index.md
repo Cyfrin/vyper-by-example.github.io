@@ -11,13 +11,19 @@ A re-entrancy lock can be created on a function with `@nonreentrant`.
 
 Functions can be locked together by using the same name for the locks.
 
+Contract with re-entrancy lock
+
 ```vyper
 {{{Lock}}}
 ```
 
+Contract without re-entrancy lock
+
 ```vyper
 {{{NoLock}}}
 ```
+
+Contract to test re-entrancy
 
 ```vyper
 {{{TestLock}}}
