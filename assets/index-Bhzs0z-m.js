@@ -1131,7 +1131,6 @@ diff: public(uint256)
     <span class="hljs-variable language_">self</span>.diff = convert(res, uint256)
 </code></pre>`,ng=({prev:e,next:n})=>y.jsx(z,{version:qv,title:Zv,description:Jv,html:eg,prev:e,next:n}),sg="0.4.0",tg="Re-Entrancy Lock",ag="Re-entrancy lock in Vyper",lg=`<p>Vyper has a handy way to secure your contract from re-entrancy.</p>
 <p>A re-entrancy lock can be created on a function with <code>@nonreentrant</code>.</p>
-<p>Functions can be locked together by using the same name for the locks.</p>
 <p>Contract with re-entrancy lock</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
