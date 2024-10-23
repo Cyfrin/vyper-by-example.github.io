@@ -7,7 +7,6 @@ export const keywords = ["re-entrancy", "lock", "nonreentrant"]
 
 const html = `<p>Vyper has a handy way to secure your contract from re-entrancy.</p>
 <p>A re-entrancy lock can be created on a function with <code>@nonreentrant</code>.</p>
-<p>Functions can be locked together by using the same name for the locks.</p>
 <p>Contract with re-entrancy lock</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 
