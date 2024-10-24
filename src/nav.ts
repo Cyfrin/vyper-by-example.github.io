@@ -49,13 +49,13 @@ export const VY_ROUTES: Route[] = [
   { path: "delegate-call", title: "Delegate Call" },
   { path: "hash-function", title: "Hash Function" },
   { path: "verify-signature", title: "Verify Signature" },
-  { path: "create-new-contract", title: "Create New Contract" },
   { path: "re-entrancy-lock", title: "Re-entrancy Lock" },
+  { path: "create-new-contract", title: "Create New Contract" },
   { path: "self-destruct", title: "Self Destruct" },
-  { path: "print", title: "Debug with Print" },
-  { path: "unsafe-math", title: "Unsafe Math" },
   { path: "imports", title: "Imports" },
   { path: "modules", title: "Modules" },
+  { path: "unsafe-math", title: "Unsafe Math" },
+  { path: "print", title: "Debug with Print" },
 ]
 
 export const APP_ROUTES = [

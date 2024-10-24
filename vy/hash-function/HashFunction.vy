@@ -2,7 +2,7 @@
 
 @external
 @pure
-def get_hash(addr: address, num: uint256, ) -> bytes32:
+def get_hash(addr: address, num: uint256) -> bytes32:
     # input of keccak256 can be String, Bytes or bytes32
     return keccak256(
         # convert different data into Bytes
