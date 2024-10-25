@@ -72,7 +72,7 @@
     "fallback",
     "payable"
   ],
-  "/create-new-contract": ["create", "new", "contract", "create_forwarder_to"],
+  "/create-new-contract": ["create", "new", "contract", "create_minimal_proxy_to"],
   "/constructor": ["constructor"],
   "/constants": ["constant", "constants"],
   "/app/rebase-token": ["rebase", "token", "app"],

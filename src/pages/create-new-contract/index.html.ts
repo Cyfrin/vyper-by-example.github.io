@@ -3,12 +3,12 @@ export const version = "0.4.0"
 export const title = "Create New Contract"
 export const description = "Create new contract in Vyper"
 
-export const keywords = ["create", "new", "contract", "create_forwarder_to"]
+export const keywords = ["create", "new", "contract", "create_minimal_proxy_to"]
 
-const html = `<p>Vyper contracts can deploy new contracts using the function <code>create_forwarder_to</code>.</p>
-<p><code>create_forwarder_to</code> is also known as "minimal proxy contract". How it works, we won&#39;t explain it here.</p>
+const html = `<p>Vyper contracts can deploy new contracts using the function <code>create_minimal_proxy_to</code>.</p>
+<p><code>create_minimal_proxy_to</code> is also known as "minimal proxy contract". How it works, we won&#39;t explain it here.</p>
 <p>Here we will focus on how to use it to deploy new contracts.</p>
-<h3>How to use <code>create_forwarder_to</code></h3>
+<h3>How to use <code>create_minimal_proxy_to</code></h3>
 <ol>
 <li>Deploy <code>ContractToDeploy</code>. This is the "master copy." All deployed contracts will execute code from this master copy.</li>
 <li>Call <code>deploy()</code> passing the address of the master copy and any other arguments needed to setup the new contract</li>
@@ -19,18 +19,29 @@ const html = `<p>Vyper contracts can deploy new contracts using the function <co
 
 owner: public(address)
 
-<span class="hljs-comment"># __init__ is not called when deployed from create_forwarder_to</span>
+<span class="hljs-comment"># create_minimal_proxy_to</span>
+<span class="hljs-comment"># 1. Deploy master copy</span>
+<span class="hljs-comment"># 2. Call create_minimal_proxy_to</span>
+
+<span class="hljs-comment"># Master copy contract M (Test.vy)</span>
+<span class="hljs-comment">#                      |</span>
+<span class="hljs-comment">#                      V</span>
+<span class="hljs-comment"># Factory -- create_minimal_proxy_to --&gt; contract A (Test.vy)</span>
+
+<span class="hljs-comment"># user -&gt; A -- delegate call --&gt; M</span>
+
+<span class="hljs-comment"># __init__ is not called when deployed from create_minimal_proxy_to</span>
 <span class="hljs-meta">@deploy</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
   <span class="hljs-variable language_">self</span>.owner = msg.sender
 
-<span class="hljs-comment"># call once after create_forwarder_to</span>
+<span class="hljs-comment"># call once after create_minimal_proxy_to</span>
 <span class="hljs-meta">@external</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">set_owner</span>(<span class="hljs-params">owner: address</span>):
   <span class="hljs-keyword">assert</span> <span class="hljs-variable language_">self</span>.owner == empty(address), <span class="hljs-string">"owner != zero address"</span>
   <span class="hljs-variable language_">self</span>.owner = owner
 
-<span class="hljs-comment"># DANGER: never have selfdestruct in original contract used by create_forwarder_to</span>
+<span class="hljs-comment"># DANGER: never have selfdestruct in original contract used by create_minimal_proxy_to</span>
 <span class="hljs-comment"># This function has been deprecated from version 0.3.8 onwards. The underlying</span>
 <span class="hljs-comment"># opcode will eventually undergo breaking changes, and its use is not recommended.</span>
 <span class="hljs-meta">@external</span>

@@ -109,7 +109,7 @@
   "create": ["/create-new-contract"],
   "new": ["/create-new-contract"],
   "contract": ["/create-new-contract"],
-  "create_forwarder_to": ["/create-new-contract"],
+  "create_minimal_proxy_to": ["/create-new-contract"],
   "constructor": ["/constructor"],
   "rebase": ["/app/rebase-token"],
   "token": ["/app/rebase-token"],
