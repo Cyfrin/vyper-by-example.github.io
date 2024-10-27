@@ -34,6 +34,8 @@ owner: public(address)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>():
     <span class="hljs-variable language_">self</span>.owner = msg.sender
 
+<span class="hljs-meta">@internal</span>
+<span class="hljs-meta">@view</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">_check_owner</span>():
     <span class="hljs-keyword">assert</span> <span class="hljs-variable language_">self</span>.owner == msg.sender
 
@@ -77,7 +79,7 @@ my_num: public(uint256)
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">my_func</span>(<span class="hljs-params">x: uint256, y: uint256</span>) -&gt; uint256:
     <span class="hljs-keyword">return</span> math.mul(x, y)
 
-</code></pre><h3>Th use statement</h3>
+</code></pre><h3>The <code>use</code> statement</h3>
 <p>auth_2_step.vy</p>
 <pre><code class="language-vyper"><span class="hljs-comment"># pragma version ^0.4.0</span>
 <span class="hljs-keyword">import</span> auth

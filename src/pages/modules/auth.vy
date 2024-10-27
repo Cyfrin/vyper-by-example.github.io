@@ -7,6 +7,8 @@ owner: public(address)
 def __init__():
     self.owner = msg.sender
 
+@internal
+@view
 def _check_owner():
     assert self.owner == msg.sender
 

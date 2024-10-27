@@ -35,7 +35,7 @@ example_1.vy
 {{{example_1}}}
 ```
 
-### Th use statement
+### The `use` statement
 
 auth_2_step.vy
 
