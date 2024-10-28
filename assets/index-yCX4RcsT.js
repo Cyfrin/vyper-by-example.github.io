@@ -690,6 +690,22 @@ event Transfer:
 
 <span class="hljs-meta">@external</span>
 <span class="hljs-meta">@pure</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">for_loop_bound</span>(<span class="hljs-params">start: uint256, end: uint256</span>) -&gt; uint256:
+  last: uint256 = start
+  <span class="hljs-keyword">for</span> i: uint256 <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(start, end, bound = <span class="hljs-number">5</span>):
+    last = i
+  <span class="hljs-keyword">return</span> last
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-meta">@pure</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">for_loop_bound_dyn_arr</span>(<span class="hljs-params">xs: DynArray[uint256, <span class="hljs-number">5</span>]</span>) -&gt; uint256:
+    last: uint256 = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i: uint256 <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(xs), bound = <span class="hljs-number">3</span>):
+      last = i
+    <span class="hljs-keyword">return</span> last
+
+<span class="hljs-meta">@external</span>
+<span class="hljs-meta">@pure</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">sum</span>(<span class="hljs-params">nums: uint256[<span class="hljs-number">10</span>]</span>) -&gt; uint256:
     s: uint256 = <span class="hljs-number">0</span>
     <span class="hljs-keyword">for</span> n: uint256 <span class="hljs-keyword">in</span> nums:
