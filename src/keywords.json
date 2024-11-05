@@ -76,5 +76,6 @@
   "/constructor": ["constructor"],
   "/constants": ["constant", "constants"],
   "/app/rebase-token": ["rebase", "token", "app"],
+  "/app/multi-sig-wallet": ["app", "multi", "sig", "wallet"],
   "/app/lerp": ["lerp", "math", "app"]
 }

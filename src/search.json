@@ -113,6 +113,9 @@
   "constructor": ["/constructor"],
   "rebase": ["/app/rebase-token"],
   "token": ["/app/rebase-token"],
-  "app": ["/app/rebase-token", "/app/lerp"],
+  "app": ["/app/rebase-token", "/app/multi-sig-wallet", "/app/lerp"],
+  "multi": ["/app/multi-sig-wallet"],
+  "sig": ["/app/multi-sig-wallet"],
+  "wallet": ["/app/multi-sig-wallet"],
   "lerp": ["/app/lerp"]
 }

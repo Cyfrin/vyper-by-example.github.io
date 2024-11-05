@@ -1,4 +1,5 @@
 import component_app_lerp from "./pages/app/lerp"
+import component_app_multi_sig_wallet from "./pages/app/multi-sig-wallet"
 import component_app_rebase_token from "./pages/app/rebase-token"
 import component_constants from "./pages/constants"
 import component_constructor from "./pages/constructor"
@@ -55,6 +56,10 @@ const routes: Route[] = [
   {
     path: "/app/lerp",
     component: component_app_lerp,
+  },
+  {
+    path: "/app/multi-sig-wallet",
+    component: component_app_multi_sig_wallet,
   },
   {
     path: "/app/rebase-token",

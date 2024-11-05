@@ -61,11 +61,15 @@ export const VY_ROUTES: Route[] = [
 export const APP_ROUTES = [
   {
     path: "rebase-token",
-    title: "Rebase token",
+    title: "Rebase Token",
   },
   {
     path: "lerp",
-    title: "Linear interpolation",
+    title: "Linear Interpolation",
+  },
+  {
+    path: "multi-sig-wallet",
+    title: "Multi Sig Wallet",
   },
 ]
 
