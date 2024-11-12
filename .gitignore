@@ -31,3 +31,7 @@ memo.js
 memo
 crytic-export
 tmp
+
+# moccassin
+.venv
+uv.lock
