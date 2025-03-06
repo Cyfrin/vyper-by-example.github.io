@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Debug with Print"
 export const description = "Debug with Print"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/debug-with-print-vyper-code-example"
 
 export const keywords = ["debug", "print"]
 

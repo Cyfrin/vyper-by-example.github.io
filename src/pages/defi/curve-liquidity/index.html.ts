@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Curve Add and Remove Liquidity"
 export const description = "Curve Add and Remove Liquidity"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/curve-add-and-remove-liquidity-vyper-code-example"
 
 export const keywords = ["curve", "add", "remove liquidity", "defi", "amm"]
 

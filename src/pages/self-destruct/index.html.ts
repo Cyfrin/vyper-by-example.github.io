@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Self Destruct"
 export const description = "Self destruct in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/self-destruct-vyper-code-example"
 
 export const keywords = ["selfdestruct", "self", "destruct"]
 

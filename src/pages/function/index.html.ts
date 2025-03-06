@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Function"
 export const description = "Function in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/function-vyper-code-example"
 
 export const keywords = ["function", "functions"]
 

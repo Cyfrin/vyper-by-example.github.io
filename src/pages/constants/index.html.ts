@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Constants"
 export const description = "Constants in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/constants-vyper-code-example"
 
 export const keywords = ["constant", "constants"]
 

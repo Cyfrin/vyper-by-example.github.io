@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Linear interpolation"
 export const description = "Lerp"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/linear-interpolation-vyper-code-example"
 
 export const keywords = ["lerp", "math", "app"]
 

@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Verify Signature"
 export const description = "Verify signature in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/verify-signature-vyper-code-example"
 
 export const keywords = ["verify", "signature", "ecrecover"]
 

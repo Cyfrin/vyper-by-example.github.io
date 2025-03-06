@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Send Ether"
 export const description = "Send ETH in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/send-ether-vyper-code-example"
 
 export const keywords = ["send", "ether", "raw_call", "payable"]
 

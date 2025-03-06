@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Private and Public State Variables"
 export const description = "Private and public state variables in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/private-and-public-state-variables-vyper-code-example"
 
 export const keywords = ["private", "public", "state", "variable", "variables"]
 

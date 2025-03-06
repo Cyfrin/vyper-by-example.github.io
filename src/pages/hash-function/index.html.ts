@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Hash Function"
 export const description = "Hash function in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/hash-function-vyper-code-example"
 
 export const keywords = ["hash", "keccack256", "function", "functions"]
 

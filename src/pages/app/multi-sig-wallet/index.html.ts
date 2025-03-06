@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Multi Sig Wallet"
 export const description = "multi sig wallet"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/multi-sig-wallet-vyper-code-example"
 
 export const keywords = ["app", "multi", "sig", "wallet"]
 

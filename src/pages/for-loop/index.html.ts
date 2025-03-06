@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "For Loop"
 export const description = "For loop in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/for-loop-vyper-code-example"
 
 export const keywords = ["for", "loop", "loops", "range"]
 

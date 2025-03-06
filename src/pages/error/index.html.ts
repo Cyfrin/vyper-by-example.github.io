@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Error"
 export const description = "Error in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/error-vyper-code-example"
 
 export const keywords = ["error", "errors"]
 

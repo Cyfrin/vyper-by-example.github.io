@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Data Types - Values"
 export const description = "Values in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/data-types-values-vyper-code-example"
 
 export const keywords = [
   "data",

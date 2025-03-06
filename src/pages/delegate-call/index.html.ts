@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Delegate Call"
 export const description = "Delegate call in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/delegate-call-vyper-code-example"
 
 export const keywords = ["delegate", "call"]
 

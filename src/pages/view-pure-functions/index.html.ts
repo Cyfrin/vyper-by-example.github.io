@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "View and Pure Functions"
 export const description = "View and pure functions in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/view-and-pure-functions-vyper-code-example"
 
 export const keywords = ["view", "pure", "function", "functions"]
 

@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Curve Swap"
 export const description = "Curve Swap"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/curve-swap-vyper-code-example"
 
 export const keywords = ["curve", "swap", "defi", "amm"]
 

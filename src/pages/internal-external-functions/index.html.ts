@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Internal and External Functions"
 export const description = "Internal and external functions in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/internal-and-external-functions-vyper-code-example"
 
 export const keywords = ["internal", "external", "function", "functions"]
 

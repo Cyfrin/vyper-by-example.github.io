@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "What's New"
 export const description = "What's new in Vyper 0.4"
+export const cyfrinLink = ""
 
 export const keywords = ["vyper", "0.4"]
 

@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Raw Call"
 export const description = "Raw call in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/raw-call-vyper-code-example"
 
 export const keywords = ["raw", "call", "raw_call"]
 

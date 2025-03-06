@@ -2,6 +2,7 @@
 export const version = "0.4.0"
 export const title = "Payable"
 export const description = "Payable in Vyper"
+export const cyfrinLink = "https://www.cyfrin.io/glossary/payable-vyper-code-example"
 
 export const keywords = ["payable", "function", "functions"]
 

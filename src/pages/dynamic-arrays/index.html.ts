@@ -2,6 +2,8 @@
 export const version = "0.4.0"
 export const title = "Dynamic Arrays"
 export const description = "Dynamic arrays in Vyper"
+export const cyfrinLink =
+  "https://www.cyfrin.io/glossary/dynamic-arrays-vyper-code-example"
 
 export const keywords = ["dynamic", "arrays", "array"]
 
