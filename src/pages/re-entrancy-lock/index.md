@@ -3,6 +3,7 @@ title: Re-Entrancy Lock
 version: 0.4.0
 description: Re-entrancy lock in Vyper
 keywords: [re-entrancy, lock, nonreentrant]
+cyfrinLink: https://www.cyfrin.io/glossary/reentrancy-lock-vyper-code-example
 ---
 
 Vyper has a handy way to secure your contract from re-entrancy.

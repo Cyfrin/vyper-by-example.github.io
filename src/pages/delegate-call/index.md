@@ -3,6 +3,7 @@ title: Delegate Call
 version: 0.4.0
 description: Delegate call in Vyper
 keywords: [delegate, call]
+cyfrinLink: https://www.cyfrin.io/glossary/delegate-call-vyper-code-example
 ---
 
 When contract `A` delegates call to contract `B`, `B`'s code will be executed inside contract `A`. This will update state variables and Ether balance inside contract `A` and not `B`.

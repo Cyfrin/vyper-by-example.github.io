@@ -64,6 +64,7 @@ async function mdToHtml(filePath: string) {
       version: metadata.version,
       description: metadata.description,
       keywords: metadata.keywords,
+      cyfrinLink: metadata.cyfrinLink || "",
     },
   )
 }

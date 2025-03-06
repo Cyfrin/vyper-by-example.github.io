@@ -18,6 +18,7 @@ keywords:
     HashMap,
     mapping,
   ]
+cyfrinLink: https://www.cyfrin.io/glossary/data-types-references-vyper-code-example
 ---
 
 References types are data types that are passed by their reference, pointer to where the actual data is stored.

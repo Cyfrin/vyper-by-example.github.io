@@ -3,6 +3,7 @@ title: Verify Signature
 version: 0.4.0
 description: Verify signature in Vyper
 keywords: [verify, signature, ecrecover]
+cyfrinLink: https://www.cyfrin.io/glossary/verify-signature-vyper-code-example
 ---
 
 Signing and verifying signature takes 3 steps.

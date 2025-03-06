@@ -3,6 +3,7 @@ title: Error
 version: 0.4.0
 description: Error in Vyper
 keywords: [error, errors]
+cyfrinLink: https://www.cyfrin.io/glossary/error-vyper-code-example
 ---
 
 Use `assert` and `raise` to check inputs and validate state.

@@ -3,6 +3,7 @@ title: Linear interpolation
 version: 0.4.0
 description: Lerp
 keywords: [lerp, math, app]
+cyfrinLink: https://www.cyfrin.io/glossary/linear-interpolation-vyper-code-example
 ---
 
 Example of linear interpolation (lerp).

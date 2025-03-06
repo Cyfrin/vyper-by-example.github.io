@@ -3,6 +3,7 @@ title: Immutable
 version: 0.4.0
 description: Immutable in Vyper
 keywords: [immutable, immutables, constant, constants]
+cyfrinLink: https://www.cyfrin.io/glossary/immutable-vyper-code-example
 ---
 
 Immutable variables are like constants except value are assigned when the contract is deployed.

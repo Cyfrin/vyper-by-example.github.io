@@ -20,6 +20,7 @@ keywords:
     Bytes,
     String,
   ]
+cyfrinLink: https://www.cyfrin.io/glossary/data-types-values-vyper-code-example
 ---
 
 Some values available in Vyper

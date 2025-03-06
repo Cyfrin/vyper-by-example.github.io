@@ -3,6 +3,7 @@ title: Modules
 version: 0.4.0
 description: Modules in Vyper
 keywords: [modules, use, exports, initializes]
+cyfrinLink: https://www.cyfrin.io/glossary/modules-vyper-code-example
 ---
 
 Reuse code with modules.

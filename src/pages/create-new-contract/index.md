@@ -3,6 +3,7 @@ title: Create New Contract
 version: 0.4.0
 description: Create new contract in Vyper
 keywords: [create, new, contract, create_minimal_proxy_to]
+cyfrinLink: https://www.cyfrin.io/glossary/create-new-contract-vyper-code-example
 ---
 
 Vyper contracts can deploy new contracts using the function `create_minimal_proxy_to`.
